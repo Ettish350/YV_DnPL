@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מקור משני להזמנה</label>
+    <name>OrderSubSource__c</name>
+    <picklistValues>
+        <masterLabel>בית הספר</masterLabel>
+        <translation><!-- בית הספר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הנצחה הזמנה ידנית</masterLabel>
+        <translation><!-- הנצחה הזמנה ידנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טריפ אדוויזור</masterLabel>
+        <translation><!-- טריפ אדוויזור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כניסה מהירה</masterLabel>
+        <translation><!-- כניסה מהירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מובייל</masterLabel>
+        <translation><!-- מובייל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מערכת הזמנות מקוונת</masterLabel>
+        <translation><!-- מערכת הזמנות מקוונת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קיוסק</masterLabel>
+        <translation><!-- קיוסק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

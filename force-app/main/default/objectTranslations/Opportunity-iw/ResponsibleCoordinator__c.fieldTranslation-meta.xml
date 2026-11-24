@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>רכז אחראי ביד ושם</label>
+    <name>ResponsibleCoordinator__c</name>
+    <relationshipLabel><!-- Responsible coordinator (Orders) --></relationshipLabel>
+</CustomFieldTranslation>

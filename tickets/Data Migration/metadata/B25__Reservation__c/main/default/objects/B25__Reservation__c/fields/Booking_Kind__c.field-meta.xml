@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Booking_Kind__c</fullName>
+    <label>Booking kind</label>
+    <description>DM-Reservation | legacy new_event_type (room values) | DD 11, A11-01 | Kind of room booking: regular, hold, full day, place saved without order, united resources.</description>
+    <inlineHelpText>סוג השיבוץ: שיבוץ, שריון, שיבוץ ליום שלם, שמירת מקום ללא הזמנה או איחוד משאבים</inlineHelpText>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>שיבוץ</fullName>
+                <default>true</default>
+                <label>שיבוץ</label>
+            </value>
+            <value>
+                <fullName>שריון</fullName>
+                <default>false</default>
+                <label>שריון</label>
+            </value>
+            <value>
+                <fullName>שיבוץ ליום שלם</fullName>
+                <default>false</default>
+                <label>שיבוץ ליום שלם</label>
+            </value>
+            <value>
+                <fullName>שמירת מקום ללא הזמנה</fullName>
+                <default>false</default>
+                <label>שמירת מקום ללא הזמנה</label>
+            </value>
+            <value>
+                <fullName>איחוד משאבים</fullName>
+                <default>false</default>
+                <label>איחוד משאבים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

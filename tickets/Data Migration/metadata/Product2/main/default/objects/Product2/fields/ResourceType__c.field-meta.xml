@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResourceType__c</fullName>
+    <label>Required resource type</label>
+    <description>A1-01 | A11-04 | Category of resource the product requires, for example a classroom. Resource__c keeps the GoMeddo link. Picklist or lookup to the GoMeddo resource type is open (Neev, B1).</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מוזיאון</fullName>
+                <default>false</default>
+                <label>מוזיאון</label>
+            </value>
+            <value>
+                <fullName>חדר השאלות הגדולות</fullName>
+                <default>false</default>
+                <label>חדר השאלות הגדולות</label>
+            </value>
+            <value>
+                <fullName>אולם</fullName>
+                <default>false</default>
+                <label>אולם</label>
+            </value>
+            <value>
+                <fullName>כיתה/אולם</fullName>
+                <default>false</default>
+                <label>כיתה/אולם</label>
+            </value>
+            <value>
+                <fullName>קמפוס</fullName>
+                <default>false</default>
+                <label>קמפוס</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+            <value>
+                <fullName>חדר ישיבות</fullName>
+                <default>false</default>
+                <label>חדר ישיבות</label>
+            </value>
+            <value>
+                <fullName>עיר הבה&quot;דים</fullName>
+                <default>false</default>
+                <label>עיר הבה&quot;דים</label>
+            </value>
+            <value>
+                <fullName>חזרה לחיים</fullName>
+                <default>false</default>
+                <label>חזרה לחיים</label>
+            </value>
+            <value>
+                <fullName>מיצג</fullName>
+                <default>false</default>
+                <label>מיצג</label>
+            </value>
+            <value>
+                <fullName>החיים שלפני</fullName>
+                <default>false</default>
+                <label>החיים שלפני</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

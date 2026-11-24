@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interviewer_Amount_Base_Payment__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    Interviewer__r.Is_YV_Guide__c,
+
+    /* Guide */
+    CASE(
+        TEXT(Interviewer_Location_For_Payment__c),
+
+        &quot;בבית המרואיין בעיר מגורי המראיין&quot;,390,
+        &quot;בבית המרואיין הנמצא עד 60 ק״מ ממגורי המראיין&quot;,410,
+        &quot;בבית המרואיין הנמצא במרחק 60 ועד 120 ק״מ ממגורי המראיין&quot;,490,
+        &quot;בבית המרואיין הנמצא במרחק מעל 120 ק״מ ממגורי המראיין&quot;,550,
+        &quot;ראיון שני באותו מקום בו התקיים הראיון הראשון&quot;,240,
+
+        0
+    ),
+
+    /* Regular interviewer */
+    CASE(
+        TEXT(Interviewer_Location_For_Payment__c),
+
+        &quot;בבית המרואיין בעיר מגורי המראיין&quot;,480,
+        &quot;בבית המרואיין הנמצא עד 60 ק״מ ממגורי המראיין&quot;,510,
+        &quot;בבית המרואיין הנמצא במרחק 60 ועד 120 ק״מ ממגורי המראיין&quot;,610,
+        &quot;בבית המרואיין הנמצא במרחק מעל 120 ק״מ ממגורי המראיין&quot;,680,
+        &quot;ראיון שני באותו מקום בו התקיים הראיון הראשון&quot;,300,
+
+        0
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Interviewer Amount Base Payment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

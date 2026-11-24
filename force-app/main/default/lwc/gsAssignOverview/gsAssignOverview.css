@@ -1,0 +1,38 @@
+:host {
+    display: block;
+    --gs-accent: var(--slds-g-color-brand-base-50, #0b5cab);
+    --gs-on-accent: var(--slds-g-color-on-brand, #ffffff);
+    --gs-surface: var(--slds-g-color-surface-container-1, #ffffff);
+    --gs-ink: var(--slds-g-color-on-surface, #16212e);
+    --gs-muted: var(--slds-g-color-on-surface-2, #5b6978);
+    --gs-line: var(--slds-g-color-border-1, #dce3eb);
+    --gs-ok: var(--slds-g-color-success-base-40, #17744a);
+    --gs-ok-soft: var(--slds-g-color-success-base-95, #e2f4ea);
+    --gs-warn: var(--slds-g-color-warning-base-30, #8f5200);
+    --gs-warn-soft: var(--slds-g-color-warning-base-95, #fff1d6);
+}
+.screen { background: var(--gs-surface); color: var(--gs-ink); border: 1px solid var(--gs-line); border-radius: 16px; overflow: hidden; }
+.pad { padding: 24px; }
+.title { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.25; }
+.sub { margin: 4px 0 0; color: var(--gs-muted); }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+.tile { border: 1px solid var(--gs-line); border-radius: 12px; padding: 14px 16px; }
+.tile b { display: block; font-size: 34px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile span { font-size: 14px; color: var(--gs-muted); }
+.tile.ok { background: var(--gs-ok-soft); border-color: transparent; }
+.tile.ok b { color: var(--gs-ok); }
+.tile.warn { background: var(--gs-warn-soft); border-color: transparent; }
+.tile.warn b { color: var(--gs-warn); }
+.choices { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.big { font: inherit; text-align: start; border-radius: 12px; padding: 16px 18px; cursor: pointer;
+    border: 1px solid var(--gs-line); background: var(--gs-surface); color: var(--gs-ink);
+    display: flex; flex-direction: column; gap: 2px; }
+.big strong { font-size: 17px; }
+.big small { color: var(--gs-muted); font-size: 14px; }
+.big.primary { background: var(--gs-accent); border-color: var(--gs-accent); color: var(--gs-on-accent); }
+.big.primary small { color: var(--gs-on-accent); opacity: 0.85; }
+.big:focus-visible { outline: 3px solid var(--gs-accent); outline-offset: 2px; }
+@media (max-width: 520px) {
+    .tiles { grid-template-columns: 1fr; }
+    .pad { padding: 18px; }
+}

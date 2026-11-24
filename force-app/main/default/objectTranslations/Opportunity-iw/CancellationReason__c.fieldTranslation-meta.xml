@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סיבה לביטול הפעילות</label>
+    <name>CancellationReason__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בוטל ע&quot;י המזמין</masterLabel>
+        <translation><!-- בוטל ע&quot;י המזמין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביטול ביום הביקור</masterLabel>
+        <translation><!-- ביטול ביום הביקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הזמנה כפולה</masterLabel>
+        <translation><!-- הזמנה כפולה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הזמנה מהאינטרנט</masterLabel>
+        <translation><!-- הזמנה מהאינטרנט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>העברה לאגף אחר</masterLabel>
+        <translation><!-- העברה לאגף אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפגנה</masterLabel>
+        <translation><!-- הפגנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הפך להשתלמות</masterLabel>
+        <translation><!-- הפך להשתלמות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקפצה</masterLabel>
+        <translation><!-- הקפצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מזג אוויר</masterLabel>
+        <translation><!-- מזג אוויר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מלחמה</masterLabel>
+        <translation><!-- מלחמה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מס&apos; משתתפים מועט</masterLabel>
+        <translation><!-- מס&apos; משתתפים מועט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מצב בטחוני</masterLabel>
+        <translation><!-- מצב בטחוני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדחה למועד שטרם נקבע</masterLabel>
+        <translation><!-- נדחה למועד שטרם נקבע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נדחה לתאריך אחר</masterLabel>
+        <translation><!-- נדחה לתאריך אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נסיון</masterLabel>
+        <translation><!-- נסיון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צהל- היסעים</masterLabel>
+        <translation><!-- צהל- היסעים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צהל- שינויי לוז</masterLabel>
+        <translation><!-- צהל- שינויי לוז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קורונה</masterLabel>
+        <translation><!-- קורונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שביתה</masterLabel>
+        <translation><!-- שביתה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- External Relations Coordinator --></label>
+    <name>External_Relations_Coordinator__c</name>
+    <relationshipLabel><!-- YV Presents (External Relations Coordinator) --></relationshipLabel>
+</CustomFieldTranslation>

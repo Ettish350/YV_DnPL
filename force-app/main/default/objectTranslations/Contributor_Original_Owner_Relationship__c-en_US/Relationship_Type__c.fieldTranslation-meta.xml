@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Relationship Type --></label>
+    <name>Relationship_Type__c</name>
+    <picklistValues>
+        <masterLabel>אח למחצה</masterLabel>
+        <translation><!-- אח למחצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אח/אחות של בעל הפריט</masterLabel>
+        <translation><!-- אח/אחות של בעל הפריט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחיינ/נית של</masterLabel>
+        <translation><!-- אחיינ/נית של --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בן/ת זוג של בעל הפריטים</masterLabel>
+        <translation><!-- בן/ת זוג של בעל הפריטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בת/ ן של בעל הפריטים</masterLabel>
+        <translation><!-- בת/ ן של בעל הפריטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכר</masterLabel>
+        <translation><!-- מכר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נכד/ה של בעל הפריטים</masterLabel>
+        <translation><!-- נכד/ה של בעל הפריטים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרוב משפחה</masterLabel>
+        <translation><!-- קרוב משפחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שכן של בעל הפריטים</masterLabel>
+        <translation><!-- שכן של בעל הפריטים --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

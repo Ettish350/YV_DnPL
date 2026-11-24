@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SecondarySubject__c</fullName>
+    <label>Secondary Subject</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MainSubject__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>About the Holocaust</fullName>
+                <default>false</default>
+                <label>About the Holocaust</label>
+            </value>
+            <value>
+                <fullName>About Yad Vashem</fullName>
+                <default>false</default>
+                <label>About Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Artworks and artifacts in Yad Vashem&apos;s collections</fullName>
+                <default>false</default>
+                <label>Artworks and artifacts in Yad Vashem&apos;s collections</label>
+            </value>
+            <value>
+                <fullName>Collection Day Registration Form</fullName>
+                <default>false</default>
+                <label>Collection Day Registration Form</label>
+            </value>
+            <value>
+                <fullName>Conferences</fullName>
+                <default>false</default>
+                <label>Conferences</label>
+            </value>
+            <value>
+                <fullName>Documents and written testimonies</fullName>
+                <default>false</default>
+                <label>Documents and written testimonies</label>
+            </value>
+            <value>
+                <fullName>Donating Personal Items</fullName>
+                <default>false</default>
+                <label>Donating personal items</label>
+            </value>
+            <value>
+                <fullName>Educational consultation: resources, school projects and educational activities</fullName>
+                <default>false</default>
+                <label>Educational consultation: resources, school projects and educational activities</label>
+            </value>
+            <value>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+                <label>Feedback</label>
+            </value>
+            <value>
+                <fullName>Films and video/audio testimonies</fullName>
+                <default>false</default>
+                <label>Films and video/audio testimonies</label>
+            </value>
+            <value>
+                <fullName>Guided Tours</fullName>
+                <default>false</default>
+                <label>Guided Tours</label>
+            </value>
+            <value>
+                <fullName>Guided tours for students</fullName>
+                <default>false</default>
+                <label>Guided tours for students</label>
+            </value>
+            <value>
+                <fullName>Hall Of Name General</fullName>
+                <default>false</default>
+                <label>Hall Of Name General</label>
+            </value>
+            <value>
+                <fullName>IDF and Israeli security forces</fullName>
+                <default>false</default>
+                <label>IDF and Israeli security forces</label>
+            </value>
+            <value>
+                <fullName>Information about the Righteous among the Nations</fullName>
+                <default>false</default>
+                <label>Information about the Righteous Among the Nations</label>
+            </value>
+            <value>
+                <fullName>Information for Journalists</fullName>
+                <default>false</default>
+                <label>Information for journalists</label>
+            </value>
+            <value>
+                <fullName>Information on the fate of the Jews during the Holocaust</fullName>
+                <default>false</default>
+                <label>Information on the fate of the Jews during the Holocaust</label>
+            </value>
+            <value>
+                <fullName>International programs and seminars</fullName>
+                <default>false</default>
+                <label>International programs and seminars</label>
+            </value>
+            <value>
+                <fullName>Israel teacher training programs</fullName>
+                <default>false</default>
+                <label>Israel teacher training programs</label>
+            </value>
+            <value>
+                <fullName>Jewish education</fullName>
+                <default>false</default>
+                <label>Jewish education</label>
+            </value>
+            <value>
+                <fullName>Library</fullName>
+                <default>false</default>
+                <label>Library</label>
+            </value>
+            <value>
+                <fullName>Magazine</fullName>
+                <default>false</default>
+                <label>Magazine</label>
+            </value>
+            <value>
+                <fullName>Museum</fullName>
+                <default>false</default>
+                <label>Museum</label>
+            </value>
+            <value>
+                <fullName>New request for recognition and/or inquiry about application status</fullName>
+                <default>false</default>
+                <label>New request for recognition and/or inquiry about application status</label>
+            </value>
+            <value>
+                <fullName>Online courses</fullName>
+                <default>false</default>
+                <label>Online courses</label>
+            </value>
+            <value>
+                <fullName>Online Store</fullName>
+                <default>false</default>
+                <label>Online Store</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Permissions and Partnership Inquiries</fullName>
+                <default>false</default>
+                <label>Permissions and Partnership Inquiries</label>
+            </value>
+            <value>
+                <fullName>Photographs</fullName>
+                <default>false</default>
+                <label>Photographs</label>
+            </value>
+            <value>
+                <fullName>Preparatory courses for students visiting Poland</fullName>
+                <default>false</default>
+                <label>Preparatory courses for students visiting Poland</label>
+            </value>
+            <value>
+                <fullName>Press Releases</fullName>
+                <default>false</default>
+                <label>Press releases</label>
+            </value>
+            <value>
+                <fullName>Publications</fullName>
+                <default>false</default>
+                <label>Publications</label>
+            </value>
+            <value>
+                <fullName>Research</fullName>
+                <default>false</default>
+                <label>Research</label>
+            </value>
+            <value>
+                <fullName>Schedule a survivor testimony recording</fullName>
+                <default>false</default>
+                <label>Schedule a survivor testimony recording</label>
+            </value>
+            <value>
+                <fullName>Scholars Information</fullName>
+                <default>false</default>
+                <label>Scholars Information</label>
+            </value>
+            <value>
+                <fullName>Search for information on Shoah victims</fullName>
+                <default>false</default>
+                <label>Search for information on Shoah victims</label>
+            </value>
+            <value>
+                <fullName>Shoah victims commemoration (Names database)</fullName>
+                <default>false</default>
+                <label>Shoah victims commemoration (Names database)</label>
+            </value>
+            <value>
+                <fullName>Submitting Materials to Yad Vashem</fullName>
+                <default>false</default>
+                <label>Submitting Materials to Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Technical support</fullName>
+                <default>false</default>
+                <label>Technical support</label>
+            </value>
+            <value>
+                <fullName>Visiting</fullName>
+                <default>false</default>
+                <label>Visiting</label>
+            </value>
+            <value>
+                <fullName>Yaatz Info General</fullName>
+                <default>false</default>
+                <label>Yaatz Info General</label>
+            </value>
+            <value>
+                <fullName>תערוכות ניידות ready2print</fullName>
+                <default>false</default>
+                <label>תערוכות ניידות ready2print</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>About the Holocaust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>About Yad Vashem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>Artworks and artifacts in Yad Vashem&apos;s collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>Museum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>Online Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <controllingFieldValue>Academic Research and Publications</controllingFieldValue>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <controllingFieldValue>Media and Internet</controllingFieldValue>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>Visiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Information</controllingFieldValue>
+            <valueName>תערוכות ניידות ready2print</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Research and Publications</controllingFieldValue>
+            <valueName>Conferences</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Research and Publications</controllingFieldValue>
+            <valueName>Publications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Research and Publications</controllingFieldValue>
+            <valueName>Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Research and Publications</controllingFieldValue>
+            <valueName>Scholars Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Righteous Among the Nations</controllingFieldValue>
+            <valueName>Information about the Righteous among the Nations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Righteous Among the Nations</controllingFieldValue>
+            <valueName>New request for recognition and/or inquiry about application status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Educational consultation: resources, school projects and educational activities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Guided Tours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Guided tours for students</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>IDF and Israeli security forces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>International programs and seminars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Israel teacher training programs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Jewish education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Online courses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Permissions and Partnership Inquiries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Preparatory courses for students visiting Poland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media and Internet</controllingFieldValue>
+            <valueName>Information for Journalists</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media and Internet</controllingFieldValue>
+            <valueName>Magazine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media and Internet</controllingFieldValue>
+            <valueName>Press Releases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media and Internet</controllingFieldValue>
+            <valueName>Technical support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Collection Day Registration Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Documents and written testimonies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Donating Personal Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Films and video/audio testimonies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Information on the fate of the Jews during the Holocaust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Photographs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Schedule a survivor testimony recording</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Search for information on Shoah victims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Shoah victims commemoration (Names database)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</controllingFieldValue>
+            <valueName>Submitting Materials to Yad Vashem</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

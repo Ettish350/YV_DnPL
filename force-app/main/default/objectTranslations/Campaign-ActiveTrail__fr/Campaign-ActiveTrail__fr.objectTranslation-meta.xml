@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Campaign Event --></label>
+        <name>Campaign_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Collection Day - Collect Fragments --></label>
+        <name>Collection_Day_Collect_Fragments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Campaigns --></label>
+        <name>Digital_Campaigns</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Events --></label>
+        <name>Events</name>
+    </recordTypes>
+</CustomObjectTranslation>

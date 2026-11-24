@@ -1,0 +1,101 @@
+<template>
+    <section class="yvedu-res" dir={langDir}>
+        <h2 class="yvedu-res-title">{text.title}</h2>
+
+        <div class="yvedu-res-cal">
+            <div class="yvedu-res-cal-head">
+                <button type="button" class="yvedu-res-cal-nav" aria-label={text.prevMonth} disabled={isPrevDisabled} onclick={handlePrev}>{prevChar}</button>
+                <span class="yvedu-res-cal-title">{monthTitle}</span>
+                <button type="button" class="yvedu-res-cal-nav" aria-label={text.nextMonth} disabled={isNextDisabled} onclick={handleNext}>{nextChar}</button>
+            </div>
+
+            <template if:true={isLoading}>
+                <span class="yvedu-res-spinner yvedu-res-spinner_inline" role="status" aria-label={text.loading}></span>
+            </template>
+            <template if:true={errorMessage}>
+                <p class="yvedu-res-status yvedu-res-status_error" role="alert">{errorMessage}</p>
+            </template>
+
+            <div class="yvedu-res-cal-grid">
+                <template for:each={weekdayLabels} for:item="weekday">
+                    <div key={weekday.key} class="yvedu-res-cal-dow">{weekday.label}</div>
+                </template>
+                <template for:each={cells} for:item="cell">
+                    <div key={cell.key} class="yvedu-res-cal-cell">
+                        <template if:false={cell.isBlank}>
+                            <button
+                                type="button"
+                                class={cell.className}
+                                data-date={cell.date}
+                                disabled={cell.disabled}
+                                aria-pressed={cell.ariaPressed}
+                                onclick={handleDayClick}
+                            >{cell.label}</button>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <template if:true={showTimes}>
+            <h2 class="yvedu-res-title">{text.timeTitle}</h2>
+            <template if:true={isLoadingTimes}>
+                <span class="yvedu-res-spinner yvedu-res-spinner_inline" role="status" aria-label={text.timesLoading}></span>
+            </template>
+            <template if:true={timesErrorMessage}>
+                <p class="yvedu-res-status yvedu-res-status_error" role="alert">{timesErrorMessage}</p>
+            </template>
+            <template if:true={hasNoTimes}>
+                <p class="yvedu-res-status">{text.noTimes}</p>
+            </template>
+            <template if:false={hasNoTimes}>
+                <div class="yvedu-res-field yvedu-res-time-field">
+                    <select aria-label={text.timeTitle} onchange={handleTimeChange}>
+                        <option value="">{text.timePlaceholder}</option>
+                        <template for:each={timeOptions} for:item="option">
+                            <option key={option.time} value={option.time} selected={option.selected}>{option.time}</option>
+                        </template>
+                    </select>
+                </div>
+            </template>
+        </template>
+
+        <template if:true={isLoadingMuseum}>
+            <span class="yvedu-res-spinner yvedu-res-spinner_inline" role="status" aria-label={text.timesLoading}></span>
+        </template>
+        <template if:true={museumErrorMessage}>
+            <p class="yvedu-res-status yvedu-res-status_error" role="alert">{museumErrorMessage}</p>
+        </template>
+        <template if:true={showMuseum}>
+            <h2 class="yvedu-res-title">{museumHeading}</h2>
+            <template if:true={hasNoMuseumRoom}>
+                <p class="yvedu-res-status">{text.museumNoRoom}</p>
+            </template>
+            <div class="yvedu-res-museum">
+                <template for:each={museumRows} for:item="row">
+                    <div key={row.key} class={row.cardClass}>
+                        <div class="yvedu-res-museum-head">
+                            <span class="yvedu-res-museum-num">{row.number}</span>
+                            <span class="yvedu-res-museum-name">{row.title}</span>
+                            <template if:true={row.entryText}>
+                                <span class="yvedu-res-museum-entry">{row.entryText}</span>
+                            </template>
+                        </div>
+                        <div class="yvedu-res-museum-body">
+                            <div class="yvedu-res-field">
+                                <select aria-label={row.title} data-index={row.index} onchange={handleMuseumChange}>
+                                    <option value="">{text.museumChoose}</option>
+                                    <template for:each={row.options} for:item="option">
+                                        <option key={option.time} value={option.time} selected={option.selected}>{option.time}</option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <button type="button" class="yvedu-res-order yvedu-res-next" disabled={submitDisabled} onclick={handleSubmit}>{text.submit}</button>
+    </section>
+</template>

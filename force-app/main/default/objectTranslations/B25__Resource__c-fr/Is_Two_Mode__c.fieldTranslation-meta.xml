@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- משאב בעל שני אופני שימוש, כגון בית הכנסת. אופן השימוש נבחר בעת השריון --></help>
+    <label><!-- Two-mode resource --></label>
+    <name>Is_Two_Mode__c</name>
+</CustomFieldTranslation>

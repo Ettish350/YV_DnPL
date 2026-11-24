@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>GiftDesignation</baseObject>
+    <category>accounts</category>
+    <deployed>false</deployed>
+    <description>test</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>GiftDefaultDesignation</relationship>
+    </join>
+    <label>GD WITH WITHOUT GDD</label>
+    <sections>
+        <masterLabel>Gift Designations</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Gift Default Designations</masterLabel>
+    </sections>
+</ReportType>

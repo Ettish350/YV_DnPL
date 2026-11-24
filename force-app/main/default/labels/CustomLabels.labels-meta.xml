@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>YvBundleAddProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Add a product</shortDescription>
+        <value>Add a product</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleErrItemNotInBundle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | An item does not belong to this bundle.</shortDescription>
+        <value>An item does not belong to this bundle.</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleErrProductRequired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Choose a product for every item.</shortDescription>
+        <value>Choose a product for every item.</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleErrQuantity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Quantity must be a whole number between 1 and 9999.</shortDescription>
+        <value>Quantity must be a whole number between 1 and 9999.</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleHelp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | A new product starts at its list price in each price book. Y</shortDescription>
+        <value>Each price starts at the product&apos;s list price in that price book. You can change any price. An empty price means no price in that price book.</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleListPrice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | List price</shortDescription>
+        <value>List price</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleNoItems</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | No products in this bundle yet. Add them as Bundle Items first.</shortDescription>
+        <value>No products in this bundle yet. Add a product below.</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleOrder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Order</shortDescription>
+        <value>Order</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleQuantity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleRemove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleSave</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleSaved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Bundle items saved</shortDescription>
+        <value>Bundle items saved</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Bundle Items and Prices</shortDescription>
+        <value>Bundle Items and Prices</value>
+    </labels>
+    <labels>
+        <fullName>YvBundleTotal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | A01-02 | Bundle price (sum of price x quantity)</shortDescription>
+        <value>Bundle price (sum of price x quantity)</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingErrDuplicateBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | A product cannot have two prices in the same price book.</shortDescription>
+        <value>A product cannot have two prices in the same price book.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingErrFreeNotZero</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | A free product can only be saved at price 0.</shortDescription>
+        <value>A free product can only be saved at price 0.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingErrNameRequired</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Product name required</shortDescription>
+        <value>יש להזין שם מוצר</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingErrNegative</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | A price cannot be negative.</shortDescription>
+        <value>A price cannot be negative.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingFreeProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Free Product</shortDescription>
+        <value>Free Product</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingHelpFree</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | A free product is saved at price 0 in every price book.</shortDescription>
+        <value>A free product is saved at price 0 in every price book.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingHelpPaid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | An empty price removes the row from the price book. In the S</shortDescription>
+        <value>An empty price removes the row from the price book. In the Standard Price Book, an empty price is saved as 0.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingLoading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Loading</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingNoBooks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | There are no active price books in effect.</shortDescription>
+        <value>There are no active price books in effect.</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingPrice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingSave</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Save Prices</shortDescription>
+        <value>Save Prices</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingSaved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Prices saved</shortDescription>
+        <value>Prices saved</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingStandardBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Standard Price Book</shortDescription>
+        <value>Standard Price Book</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Prices by Price Book</shortDescription>
+        <value>Prices by Price Book</value>
+    </labels>
+    <labels>
+        <fullName>YvPricingUnexpected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PR1 | V01-03 | Unexpected error</shortDescription>
+        <value>Unexpected error</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_EmailLabel</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Email field label</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_EmailPlaceholder</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Email field placeholder</shortDescription>
+        <value>Enter your email</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_ForgotPassword</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Forgot password link</shortDescription>
+        <value>Forgot password</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_HeroAlt</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Hero image alt text</shortDescription>
+        <value>Yad Vashem - Mount of Remembrance overlook</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_HidePassword</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Hide password toggle</shortDescription>
+        <value>Hide</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_InstitutionIdLabel</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Institution ID field label</shortDescription>
+        <value>Institution code or company ID</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_InstitutionIdPlaceholder</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Institution ID field placeholder</shortDescription>
+        <value>Enter institution code or company ID</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_InvalidCredentialsError</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Invalid institution ID or password message</shortDescription>
+        <value>Invalid institution code/company ID or password</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_LoginButton</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Submit button</shortDescription>
+        <value>Sign in</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_LogoAlt</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Logo alt text</shortDescription>
+        <value>Yad Vashem</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_PasswordLabel</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Password field label</shortDescription>
+        <value>Password</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_PasswordPlaceholder</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Password field placeholder</shortDescription>
+        <value>Enter password</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_RequiredFieldError</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Required fields validation message</shortDescription>
+        <value>Please enter your institution code/company ID, email, and password</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_ShowPassword</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Show password toggle</shortDescription>
+        <value>Show</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_Subtitle</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Page subtitle</shortDescription>
+        <value>Log in with your institution details</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_Title</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Page title</shortDescription>
+        <value>Sign in to the tours portal</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_UsernameLabel</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Username field label</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Login_UsernamePlaceholder</fullName>
+        <categories>yvEdu,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Login - Username field placeholder</shortDescription>
+        <value>Enter your username</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_Home</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - Home link</shortDescription>
+        <value>Home</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_InstitutionFallback</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - Fallback text when no institution is found</shortDescription>
+        <value>No institution linked</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_LanguageEnglish</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - English language option</shortDescription>
+        <value>English</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_LanguageError</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - Language update failure message</shortDescription>
+        <value>Unable to update language right now</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_LanguageHebrew</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - Hebrew language option</shortDescription>
+        <value>עברית</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_Logout</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - Logout button</shortDescription>
+        <value>Log out</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_MenuAriaLabel</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - User menu aria-label</shortDescription>
+        <value>User menu</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_MyReservations</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - My reservations link</shortDescription>
+        <value>My reservations</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Nav_NewReservation</fullName>
+        <categories>yvEdu,NavBar</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Nav Bar - New reservation link</shortDescription>
+        <value>New reservation</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_AddGroup</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Add a group button</shortDescription>
+        <value>Add a group</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_AudienceTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Audience question title</shortDescription>
+        <value>Who is the activity for?</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_AvailabilityError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Calendar failed to load</shortDescription>
+        <value>We could not check availability. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_ChangeSelection</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Link from the groups step back to the bundle selection</shortDescription>
+        <value>Change selection</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_CheckingAvailability</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Shown while the calendar loads</shortDescription>
+        <value>Checking availability...</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_CheckingTimes</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Shown while the times load</shortDescription>
+        <value>Checking times...</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_ClassName</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Group name field</shortDescription>
+        <value>Class name</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_CreateOrder</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Final button</shortDescription>
+        <value>Create order</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_CreatingOrder</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Spinner label while the order is saved</shortDescription>
+        <value>Creating your order...</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DateHint</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Hint under the date title</shortDescription>
+        <value>Only days on which everything you chose is available can be selected</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DateTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Date section title</shortDescription>
+        <value>Choose a date</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneActivities</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - bundles and items</shortDescription>
+        <value>Activities</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneArrival</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - arrival ({0} = time)</shortDescription>
+        <value>Arrival {0}</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneArriveEarly</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done notice - arrive before the museum entry</shortDescription>
+        <value>Please arrive 30 minutes before your museum entry time.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneDate</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - date</shortDescription>
+        <value>Visit date</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneMuseumEntry</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - museum entry ({0} = time)</shortDescription>
+        <value>Museum entry {0}</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneParticipants</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - participants ({0} = number)</shortDescription>
+        <value>{0} participants</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneReference</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Confirmation reference ({0} = order id)</shortDescription>
+        <value>Order reference: {0}</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneStartTime</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - start time</shortDescription>
+        <value>Start time</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Confirmation title</shortDescription>
+        <value>Your order was created</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_DoneTotal</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Done summary - total ({0} = number)</shortDescription>
+        <value>Total: {0} participants</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Duplicate</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Duplicate a group</shortDescription>
+        <value>Duplicate</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Empty</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - No activities message</shortDescription>
+        <value>No activities are available right now</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_FilterAll</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Filter: all activities</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_FilterUpTo3</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Filter: up to 3 hours</shortDescription>
+        <value>Up to 3 hours</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_FilterUpTo6</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Filter: up to 6 hours</shortDescription>
+        <value>Up to 6 hours</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_GroupTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Title of one group ({0} = its number)</shortDescription>
+        <value>Group {0}</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_GroupsSummary</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Summary under the groups ({0} = groups, {1} = participants)</shortDescription>
+        <value>{0} groups, {1} participants</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_GroupsTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Groups section title</shortDescription>
+        <value>Groups</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Hours</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Duration chip ({0} = number of hours)</shortDescription>
+        <value>{0} hours</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_InstructionLanguage</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Language of the guiding (order level)</shortDescription>
+        <value>Instruction language</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_ItemsTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Title above the items of a selected bundle</shortDescription>
+        <value>Choose the items you want</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_LoadError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Load failure message</shortDescription>
+        <value>We couldn&apos;t load the activities. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Loading</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Loading text</shortDescription>
+        <value>Loading activities...</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MaxPerGroup</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Max participants in a class (a number, used by page and Apex)</shortDescription>
+        <value>35</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumArrivalTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Museum - title of the arrival question (long visit)</shortDescription>
+        <value>When would you like to arrive?</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumChoose</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Placeholder of the museum entry dropdown</shortDescription>
+        <value>Choose a time</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumClass</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Class row in the museum entry ({0} = name, {1} = participants)</shortDescription>
+        <value>{0} ({1} participants)</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Museum entry slots failed to load</shortDescription>
+        <value>We could not load the museum entry times. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumNoRoom</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - No museum entry slot with free places</shortDescription>
+        <value>There is no room in the museum on this date. Please choose another date.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_MuseumTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Museum entry section title</shortDescription>
+        <value>Museum entry time for each class</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_NeedItems</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Message when a selected bundle has no item ticked</shortDescription>
+        <value>Choose at least one item</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Next</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Continue to the next step</shortDescription>
+        <value>Continue</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_NextMonth</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Calendar next month (aria label)</shortDescription>
+        <value>Next month</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_NoTimes</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - No free start time on the chosen date</shortDescription>
+        <value>There are no free times on this date. Please choose another date.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_OrderNow</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Order button</shortDescription>
+        <value>Order now</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Participants</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Group participants field</shortDescription>
+        <value>Number of participants</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_ParticipantsError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Participants out of range ({0} = maximum)</shortDescription>
+        <value>Enter between 1 and {0} participants</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_PrevMonth</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Calendar previous month (aria label)</shortDescription>
+        <value>Previous month</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Remove</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Remove a selected bundle or a group</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SelectBundle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Button to select a bundle card</shortDescription>
+        <value>Select this activity</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SelectedCount</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Number of selected bundles ({0} = number)</shortDescription>
+        <value>{0} selected</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_StepActivity</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Stepper - step 1</shortDescription>
+        <value>Choose an activity</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_StepDone</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Stepper - last step</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_StepWhen</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Stepper - step 3</shortDescription>
+        <value>When</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_StepWho</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Stepper - step 2</shortDescription>
+        <value>Who is coming</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SubjectEmpty</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - No activity day subject available</shortDescription>
+        <value>No subjects are available</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SubjectPlaceholder</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Activity day subject empty option</shortDescription>
+        <value>Select a subject (optional)</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SubjectTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Activity day subject title</shortDescription>
+        <value>Activity day subject</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_SubmitError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Order could not be created</shortDescription>
+        <value>We could not create the order. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_TimePlaceholder</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Start time empty option</shortDescription>
+        <value>Select a time</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_TimeTitle</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Time section title</shortDescription>
+        <value>Choose a start time</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_TimesError</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu Res - Times failed to load</shortDescription>
+        <value>We could not load the times. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>yvEdu_Res_Title</fullName>
+        <categories>yvEdu,Reservation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yvEdu New Reservation - Page heading</shortDescription>
+        <value>Choose an activity</value>
+    </labels>
+    <labels>
+        <fullName>yvLogin_TypeGroupAria</fullName>
+        <categories>yv,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yv Login - accessible name of the login type toggle</shortDescription>
+        <value>Login type</value>
+    </labels>
+    <labels>
+        <fullName>yvLogin_Type_Agent</fullName>
+        <categories>yv,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yv Login - toggle option, travel agent</shortDescription>
+        <value>Travel agent</value>
+    </labels>
+    <labels>
+        <fullName>yvLogin_Type_Edu</fullName>
+        <categories>yv,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yv Login - toggle option, educational institution</shortDescription>
+        <value>Educational institution</value>
+    </labels>
+    <labels>
+        <fullName>yvLogin_UsernameLabel</fullName>
+        <categories>yv,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yv Login - username field label</shortDescription>
+        <value>Username</value>
+    </labels>
+    <labels>
+        <fullName>yvLogin_UsernamePlaceholder</fullName>
+        <categories>yv,Login</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>yv Login - username field placeholder</shortDescription>
+        <value>Enter your username</value>
+    </labels>
+</CustomLabels>

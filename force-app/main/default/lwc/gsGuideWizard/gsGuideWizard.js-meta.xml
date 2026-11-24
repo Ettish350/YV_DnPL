@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>A09-02 Guide wizard</masterLabel>
+    <description>PROTOTYPE | A09-02 | All groups of the order in one component: choose a guide per group, move between groups freely, see the state of each group.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="orderId" type="String" role="inputOnly" label="Order Id"/>
+            <property name="rows" type="apex://GS_AssignRow[]" role="inputOnly" label="Groups waiting (plan rows)"/>
+            <property name="mode" type="String" role="inputOnly" label="AUTO or ONE"/>
+            <property name="pairs" type="String[]" label="Chosen (reservationId|staffId|name)"/>
+            <property name="skips" type="String[]" label="Groups skipped (reservation Ids)"/>
+            <property name="pairCount" type="Integer" role="outputOnly" label="Groups assigned"/>
+            <property name="skipCount" type="Integer" role="outputOnly" label="Groups not assigned"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Transaction_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Amount__c</columns>
+    <columns>Broadcast_Number__c</columns>
+    <columns>DNE_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Transaction_ID__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DNE_Number__c</field>
+        <operation>contains</operation>
+        <value>dne</value>
+    </filters>
+    <label>All</label>
+</ListView>

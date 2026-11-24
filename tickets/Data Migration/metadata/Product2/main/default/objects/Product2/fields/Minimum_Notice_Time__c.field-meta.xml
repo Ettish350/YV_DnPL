@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Notice_Time__c</fullName>
+    <label>Minimum Notice Time</label>
+    <description>A1-01 | V01-02 | Minimum notice time for a product shown in the online system. Unit is hours (working assumption, Lior confirming with Yad Vashem). Whether it is set per activity type or per audience is open: Doc 1 and Doc 2 differ.</description>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

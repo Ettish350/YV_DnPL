@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <description>PR1 | A01-02 pricing rule | One price per bundle item per price book: fills Unique_Key__c (item Id + price book Id). The unique constraint on the field blocks a duplicate.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>UniqueKeyFormula</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Bundle_Item__c} &amp; &quot;-&quot; &amp; {!$Record.Price_Book__c}</expression>
+    </formulas>
+    <interviewLabel>A1_Bundle_Item_Entry_Unique_Key {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bundle Item Entry - Unique Key</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Unique_Key</name>
+        <label>Set Unique Key</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Unique_Key__c</field>
+            <value>
+                <elementReference>UniqueKeyFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Unique_Key</targetReference>
+        </connector>
+        <object>Bundle_Item_Entry__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

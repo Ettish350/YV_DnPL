@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג נותן שירות</label>
+    <name>ServiceProviderType__c</name>
+    <picklistValues>
+        <masterLabel>בת שרות</masterLabel>
+        <translation><!-- בת שרות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חזן</masterLabel>
+        <translation><!-- חזן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריך</masterLabel>
+        <translation><!-- מדריך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריך הכשרת מורים</masterLabel>
+        <translation><!-- מדריך הכשרת מורים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריך מגמת הדרכה</masterLabel>
+        <translation><!-- מדריך מגמת הדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריך עיר הבה&quot;דים</masterLabel>
+        <translation><!-- מדריך עיר הבה&quot;דים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריך פולין</masterLabel>
+        <translation><!-- מדריך פולין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מדריכי ה-25</masterLabel>
+        <translation><!-- מדריכי ה-25 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מורה דרך</masterLabel>
+        <translation><!-- מורה דרך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרצה</masterLabel>
+        <translation><!-- מרצה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדויות - מראיין</masterLabel>
+        <translation><!-- עדויות - מראיין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדויות - צלם</masterLabel>
+        <translation><!-- עדויות - צלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדות</masterLabel>
+        <translation><!-- עדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עובד</masterLabel>
+        <translation><!-- עובד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צלם</masterLabel>
+        <translation><!-- צלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רכז</masterLabel>
+        <translation><!-- רכז --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שחקן</masterLabel>
+        <translation><!-- שחקן --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

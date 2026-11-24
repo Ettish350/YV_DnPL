@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label><!-- שיבוץ מדריכים --></label>
+        <name>A09_Assign_Guides</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Created for grant processes only --></description>
+        <label><!-- Grant Opportunity --></label>
+        <name>Grant_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Process for individual potential donor --></description>
+        <label><!-- Individual Gift Opportunity --></label>
+        <name>Individual_Gift_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Order --></label>
+        <name>Order</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- יש לשייך מסגרת תקציבית להזמנה --></errorMessage>
+        <name>Budget_Framework_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- הזמנת בית ספר מחייבת מוסד --></errorMessage>
+        <name>Institution_Required_For_School_Order</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה לבחור סיבת ביטול --></errorMessage>
+        <name>P11_V11_07_Order_Cancel_Reason</name>
+    </validationRules>
+</CustomObjectTranslation>

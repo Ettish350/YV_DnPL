@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Budget Framework</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Budget Frameworks</value>
+    </caseValues>
+    <layouts>
+        <layout>Budget Framework Layout</layout>
+        <sections>
+            <label><!-- Framework Details --></label>
+            <section>Framework Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- המדור שנבחר שייך למחלקה אחרת --></errorMessage>
+        <name>Section_Department_Match</name>
+    </validationRules>
+</CustomObjectTranslation>

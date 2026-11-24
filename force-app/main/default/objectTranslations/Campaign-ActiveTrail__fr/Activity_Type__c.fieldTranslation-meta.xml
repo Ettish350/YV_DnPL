@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity Type --></label>
+    <name>Activity_Type__c</name>
+    <picklistValues>
+        <masterLabel>Art Museum</masterLabel>
+        <translation><!-- Art Museum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Book of Names</masterLabel>
+        <translation><!-- Book of Names --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of the Abahdim</masterLabel>
+        <translation><!-- City of the Abahdim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation><!-- Event --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heritage Campus</masterLabel>
+        <translation><!-- Heritage Campus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lottery Removal</masterLabel>
+        <translation><!-- Lottery Removal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meetings with Yad Vashem</masterLabel>
+        <translation><!-- Meetings with Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Museum</masterLabel>
+        <translation><!-- Museum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Righteous Among the Nations Award</masterLabel>
+        <translation><!-- Righteous Among the Nations Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart Classrooms</masterLabel>
+        <translation><!-- Smart Classrooms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sound and Light Show</masterLabel>
+        <translation><!-- Sound and Light Show --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Synagogue</masterLabel>
+        <translation><!-- Synagogue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The Cave of Memory</masterLabel>
+        <translation><!-- The Cave of Memory --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Touch Memory Theater</masterLabel>
+        <translation><!-- Touch Memory Theater --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tour of the Yad Vashem Campus</masterLabel>
+        <translation><!-- Tour of the Yad Vashem Campus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Twinning</masterLabel>
+        <translation><!-- Twinning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yad Layeled</masterLabel>
+        <translation><!-- Yad Layeled --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

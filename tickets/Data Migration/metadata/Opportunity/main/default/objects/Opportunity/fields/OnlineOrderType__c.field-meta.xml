@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlineOrderType__c</fullName>
+    <label>Online order type</label>
+    <description>DM-Opportunity | legacy new_online_reservation_type | Online order type.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>קבוצה פרטית - הזמנה ישירה</fullName>
+                <default>false</default>
+                <label>קבוצה פרטית - הזמנה ישירה</label>
+            </value>
+            <value>
+                <fullName>קבוצה פרטית - הזמנה באמצעות סוכן</fullName>
+                <default>false</default>
+                <label>קבוצה פרטית - הזמנה באמצעות סוכן</label>
+            </value>
+            <value>
+                <fullName>הזמנה בי"ס</fullName>
+                <default>false</default>
+                <label>הזמנה בי"ס</label>
+            </value>
+            <value>
+                <fullName>קיוסק</fullName>
+                <default>false</default>
+                <label>קיוסק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Department__c</fullName>
+    <description>YV20-227 | A04-04 | D-042 | The department of the user. Set by a system administrator. The flow on Opportunity uses it to default the department of an order the user creates.</description>
+    <label>מחלקה (הזמנות)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Order_Department</valueSetName>
+    </valueSet>
+</CustomField>

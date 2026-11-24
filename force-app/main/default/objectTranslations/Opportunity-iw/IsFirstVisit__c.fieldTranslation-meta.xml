@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>האם זהו ביקורכם הראשון ביד ושם ב-5 שנים האחרונות –</label>
+    <name>IsFirstVisit__c</name>
+</CustomFieldTranslation>

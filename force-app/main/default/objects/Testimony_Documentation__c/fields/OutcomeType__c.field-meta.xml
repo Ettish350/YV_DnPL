@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OutcomeType__c</fullName>
+    <label>Outcome Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Photos</fullName>
+                <default>false</default>
+                <label>Photos</label>
+            </value>
+            <value>
+                <fullName>Address to the Hasidim of the World</fullName>
+                <default>false</default>
+                <label>Address to the Hasidim of the World</label>
+            </value>
+            <value>
+                <fullName>Objects</fullName>
+                <default>false</default>
+                <label>Objects</label>
+            </value>
+            <value>
+                <fullName>Association of Friends</fullName>
+                <default>false</default>
+                <label>Association of Friends</label>
+            </value>
+            <value>
+                <fullName>Photo Archive</fullName>
+                <default>false</default>
+                <label>Photo Archive</label>
+            </value>
+            <value>
+                <fullName>Questionnaire for Generations</fullName>
+                <default>false</default>
+                <label>Questionnaire for Generations</label>
+            </value>
+            <value>
+                <fullName>Incoming Archive</fullName>
+                <default>false</default>
+                <label>Incoming Archive</label>
+            </value>
+            <value>
+                <fullName>Fragments Archive</fullName>
+                <default>false</default>
+                <label>Fragments Archive</label>
+            </value>
+            <value>
+                <fullName>Library</fullName>
+                <default>false</default>
+                <label>Library</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

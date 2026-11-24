@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Desk_from_Account</name>
+        <label>Assign Desk from Account</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Account.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Desk_from_Created_by_user</name>
+        <label>Assign Desk from Created by user</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Account.CreatedBy.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Department_from_Budget_Framework</name>
+        <label>Assign Department from Budget Framework</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Department__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Budget_Framework__r.Department__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Department_from_User</name>
+        <label>Assign Department from User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Department__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Department_of_User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_if_Department_of_User_was_found</name>
+        <label>Check if Department of User was found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Department record for the user</defaultConnectorLabel>
+        <rules>
+            <name>Department_of_User_found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Department_of_User</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Department_from_User</targetReference>
+            </connector>
+            <label>Department of User found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Account_has_a_desk</name>
+        <label>Check if Account has a desk</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Desk_from_Created_by_user</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Account doesn&apos;t have a Desk</defaultConnectorLabel>
+        <rules>
+            <name>Account_has_a_desk</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Desk__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Desk_from_Account</targetReference>
+            </connector>
+            <label>Account has a desk</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Opp_has_a_desk</name>
+        <label>Check if Opp has a desk</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Account_has_a_desk</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Opp doesn&apos;t have a Desk</defaultConnectorLabel>
+        <rules>
+            <name>Opp_has_a_Desk</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Desk__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Opp has a Desk</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Opportunity_is_New</name>
+        <label>Check if Opportunity is New</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Updated Opportunity</defaultConnectorLabel>
+        <rules>
+            <name>New_Opportunity</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_Opp_has_a_desk</targetReference>
+            </connector>
+            <label>New Opportunity</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Order_needs_a_Department</name>
+        <label>Check if Order needs a Department</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not an Order, or Department is set</defaultConnectorLabel>
+        <rules>
+            <name>Order_without_a_Department</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Order</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Department__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_Order_has_a_Budget_Framework</targetReference>
+            </connector>
+            <label>Order without a Department</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Order_has_a_Budget_Framework</name>
+        <label>Check if Order has a Budget Framework</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_User_has_a_Department</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Budget Framework</defaultConnectorLabel>
+        <rules>
+            <name>Order_has_a_Budget_Framework</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Budget_Framework__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Department_from_Budget_Framework</targetReference>
+            </connector>
+            <label>Order has a Budget Framework</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_User_has_a_Department</name>
+        <label>Check if User has a Department</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Update, or the user has no Department</defaultConnectorLabel>
+        <rules>
+            <name>New_Order_and_User_has_a_Department</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$User.Order_Department__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Department_of_User</targetReference>
+            </connector>
+            <label>New Order and User has a Department</label>
+        </rules>
+    </decisions>
+    <description>YV20-227 | A04-04 | D-042 | New version (Draft): an Order without a Department gets it from its Budget Framework, or on create from the user (User.Order_Department__c, matched to Department__c.Order_Department__c). Never overwrites a Department already set. The Desk logic below is unchanged.
+[04/09/2025] [Nissim] -
+Assigning Desk to Opportunity (not of type Desk) default Desk in case it does not have one initially</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Opportunity Before Create &amp; Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Before Create &amp; Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Department_of_User</name>
+        <label>Get Department of User</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_Department_of_User_was_found</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Check_if_Opportunity_is_New</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Order_Department__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Order_Department__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Department__c</object>
+        <outputReference>Department_of_User</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Order_needs_a_Department</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>Department_of_User</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Department__c</objectType>
+    </variables>
+</Flow>

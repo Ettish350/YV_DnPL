@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Previous Desk --></label>
+    <name>Previous_Desk__c</name>
+    <picklistValues>
+        <masterLabel>ASYV</masterLabel>
+        <translation><!-- ASYV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CSYV</masterLabel>
+        <translation><!-- CSYV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Christian</masterLabel>
+        <translation><!-- Christian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Claims Conference</masterLabel>
+        <translation><!-- Claims Conference --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>French</masterLabel>
+        <translation><!-- French --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>German</masterLabel>
+        <translation><!-- German --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small donations</masterLabel>
+        <translation><!-- Small donations --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

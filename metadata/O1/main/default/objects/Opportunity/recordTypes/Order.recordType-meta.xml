@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order</fullName>
+    <active>true</active>
+    <businessProcess>Order</businessProcess>
+    <label>Order</label>
+    <picklistValues>
+        <picklist>AdditionalCharacterization__c</picklist>
+        <values>
+            <fullName>Awareness %28for teachers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Development %28for teachers%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinars for Students</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinars for Teachers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workshop for Students</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח גבעתי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח גולני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח העורף</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח חיל האוויר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח כפיר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח נחל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח צנחנים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח שריון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בא%22ח תותחנים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בה%22ד חיל הים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בה%22ד מגב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בה%22ד מודיעין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בהל%22ץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביה%22ס לאיסוף קרבי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביסל%22א</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הכנה לפולין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>זיכרון מתחדש- פרוייקט באינסטגרם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חוות השומר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ליל הבדולח</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לימודים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מגזר חרדי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחווה אלון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מחנה קיץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מנהיגות צעירה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מסע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מסע תלמידים בארץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מרכז הובלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נתיב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-אזרחים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-בה%22ד חינוך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-ביה%22ס לפיקוד והדרכה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-כוחות הביטחון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-מפקדה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>עיר הבה%22דים-צה%22ל חוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פעילות רכז חו%22ל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרוייקט קולנוע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קולכם שמעתי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תגלית</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AgeGroup__c</picklist>
+        <values>
+            <fullName>גננות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חט%22ב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חט%22ב %2B חט%22ע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חט%22ע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יסודי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יסודי וחט%22ב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יסודי וחט%22ע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יסודי חט%22ב וחט%22ע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ישיבת הסדר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כוחות הבטחון - עובדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כוחות הביטחון - הכשרות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לא פורמאלי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ללא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מבוגרים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדריכים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מדרשה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכינה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מכללה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מנהיגות צעירה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מעצבי דעת קהל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נוער חו%22ל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סטודנטים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סמינר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>על תיכון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>פרויקט אסירים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל בה%22ד 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל בכירים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל בסיסים גדולים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל הכנה לקצונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל הכנת סגל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל הכשרת מפקדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל השלמת קצונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל חרדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל טירונים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל כניסה לקבע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל מילואים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל נגדים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל סגל מפקדה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל סדירים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל קורס המשך - מקצוע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צה%22ל קצינים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קהילה לומדת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קהל רחב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שירות לאומי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שרות לאומי %2F יחידת הסברה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תלמידים %2B מורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תנועות נוער</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Audience_Category__c</picklist>
+        <values>
+            <fullName>Army_Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elementary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General_Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High_School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle_School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preschool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CancellationReason__c</picklist>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>בוטל ע%22י המזמין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביטול ביום הביקור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הזמנה כפולה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הזמנה מהאינטרנט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>העברה לאגף אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הפגנה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הפך להשתלמות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הקפצה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מזג אוויר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מלחמה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מס%27 משתתפים מועט</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מצב בטחוני</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נדחה למועד שטרם נקבע</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נדחה לתאריך אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נסיון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צהל- היסעים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>צהל- שינויי לוז</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קורונה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שביתה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Desk_Name__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>European</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnerships and Global Campaigns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FormLanguage__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GefenType__c</picklist>
+        <values>
+            <fullName>מבצעים פדגוגים- משולם ע%22י המזמין</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מבצעים פדגוגים- משולם ע%22י משרד החינוך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן 14556- ימי עיון לתלמידים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן 14605 - פרוייקט י%22א משרד החינוך</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן 14640- ניידות חינוכיות עד תשפ%22ה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן 2774- בשבילי הזיכרון- תכנית למורים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן 56743 - ניידות חינוכיות</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תכנית גפן- השת%27 חדר מורים</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grade__c</picklist>
+        <values>
+            <fullName>א%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ב%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ג%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ד%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ה%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ה%27-ו%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ו%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ז%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ז%27-ח%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ח%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ט%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>י%22א</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>י%22ב</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>י%27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>יחידת הסברה</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HandlingStatus__c</picklist>
+        <values>
+            <fullName>ממתין לשיבוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>סיום טיפול</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InstructionLanguage__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OnlineOrderType__c</picklist>
+        <values>
+            <fullName>הזמנה בי%22ס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבוצה פרטית - הזמנה באמצעות סוכן</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קבוצה פרטית - הזמנה ישירה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קיוסק</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OrderSubSource__c</picklist>
+        <values>
+            <fullName>בית הספר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הנצחה הזמנה ידנית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טריפ אדוויזור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כניסה מהירה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מובייל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מערכת הזמנות מקוונת</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קיוסק</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PaymentStatus__c</picklist>
+        <values>
+            <fullName>אין צורך בתשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הועבר לטיפול כספים</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הופק חשבון</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>הופק חשבון חלקית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התחייבות לתשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>התקבל וואוצ%27ר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חשבון בוטל</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טרם שולם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>טרם שולם %28התחשבנות פנימית%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>לחיוב בחבילה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ללא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ממתין לתשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שולם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שולם %28התחשבנות פנימית%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שולם ובוצע זיכוי חלקי</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שולם ובוצע זיכוי מלא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שולם חלקית</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שמירת מקום - אין צורך בתשלום</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תשלום נכשל</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recognition_Level__c</picklist>
+        <values>
+            <fullName>Anonymous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Named Recognition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VisitStatus__c</picklist>
+        <values>
+            <fullName>ביקור חוזר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ביקור ראשון</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VisitorDescription__c</picklist>
+        <values>
+            <fullName>אחר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>מלך%2Fנסיך%2Fקיסר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>משרד החוץ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>נשיא</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>קנצלר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ראש ממשלה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שגריר</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>שגריר חדש</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תורם</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>תורם פוטנציאלי</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

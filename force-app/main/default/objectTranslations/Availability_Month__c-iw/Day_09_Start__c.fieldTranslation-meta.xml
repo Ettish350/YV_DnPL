@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>שעת ההתחלה ביום 9</help>
+    <label>יום 9 שעת התחלה</label>
+    <name>Day_09_Start__c</name>
+</CustomFieldTranslation>

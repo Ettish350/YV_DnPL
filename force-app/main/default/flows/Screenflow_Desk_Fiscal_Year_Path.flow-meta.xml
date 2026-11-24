@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <description>[31/08/2025] [Neev] - 
+A screen flow to present progress</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fPercent</name>
+        <dataType>Number</dataType>
+        <expression>ROUND(
+  MIN(
+    200,
+    MAX(0, ({!vAmount} / NULLVALUE({!vGoal}, 1)) * 100)
+  ),
+  0
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>fSteps</name>
+        <dataType>Number</dataType>
+        <expression>MIN(10, MAX(0, FLOOR({!fPercent} / 10)))</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>StonePath</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  {!fSteps},
+  0, &quot;⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜&quot;,
+  1, &quot;🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜&quot;,
+  2, &quot;🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜&quot;,
+  3, &quot;🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜&quot;,
+  4, &quot;🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜&quot;,
+  5, &quot;🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜&quot;,
+  6, &quot;🟩🟩🟩🟩🟩🟩⬜⬜⬜⬜&quot;,
+  7, &quot;🟩🟩🟩🟩🟩🟩🟩⬜⬜⬜&quot;,
+  8, &quot;🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜&quot;,
+  9, &quot;🟩🟩🟩🟩🟩🟩🟩🟩🟩⬜&quot;,
+  10,&quot;🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩&quot;,
+  &quot;&quot;
+)</expression>
+    </formulas>
+    <interviewLabel>Screenflow Desk Fiscal Year Path {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Screenflow Desk Fiscal Year Path</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Desk</name>
+        <label>Get Desk</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>First_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Desk_Fiscal_Year__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>First_Screen</name>
+        <label>First Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>SegmentBar</name>
+            <fieldText>&lt;p class=&quot;ql-direction-rtl&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 26px;&quot;&gt;Path:&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot; class=&quot;ql-direction-rtl&quot;&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); font-size: 26px;&quot;&gt;{!fPercent}% &lt;/strong&gt;&lt;strong style=&quot;font-size: 26px;&quot;&gt;{!StonePath}&amp;nbsp;Goal: {!Get_Desk.Total_Target_Amount__c}&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot; class=&quot;ql-direction-rtl&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-direction-rtl&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 26px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;({!Get_Desk.Current_Amount__c})&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;ql-direction-rtl&quot; style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p class=&quot;ql-direction-rtl&quot; style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Desk</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Segment_Process_Bar</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div style=&quot;
+  --p:{!fPercent};               /* progress in % (0–100) */
+  --segments:10;                 /* number of stones */
+  --gap:6px;                     /* space between stones */
+  --h:18px;                      /* height of stones */
+  --on:#1b9aaa;                  /* filled color */
+  --off:#e5e7eb;                 /* empty color (Tailwind gray-200-ish) */
+  --border:#c7cdd3;              /* subtle divider */
+  width:100%;
+&quot;&gt;
+  &lt;div style=&quot;
+    display:grid;
+    grid-template-columns: repeat(var(--segments), 1fr);
+    gap:var(--gap);
+    align-items:center;
+  &quot;&gt;
+    &lt;!-- Background cells --&gt;
+    &lt;div style=&quot;grid-column:1 / -1; height:var(--h); position:relative;&quot;&gt;
+      &lt;!-- 10 empty stones --&gt;
+      &lt;div style=&quot;
+        position:absolute; inset:0;
+        display:grid; grid-template-columns: repeat(var(--segments), 1fr);
+        gap:var(--gap);
+      &quot;&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+        &lt;div style=&quot;background:var(--off); border:1px solid var(--border); border-radius:999px;&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+
+        &lt;div style=&quot;
+        position:absolute; inset:0;
+        overflow:hidden; border-radius:999px;
+      &quot;&gt;
+        &lt;div style=&quot;
+          width:calc(var(--p) * 1%); height:100%;
+          background:var(--on);
+          transition: width 250ms ease;
+        &quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+   &lt;div style=&quot;display:flex; justify-content:space-between; margin-top:6px; font-size:12px; color:#6b7280;&quot;&gt;
+    &lt;span&gt;0%&lt;/span&gt;&lt;span&gt;10%&lt;/span&gt;&lt;span&gt;20%&lt;/span&gt;&lt;span&gt;30%&lt;/span&gt;&lt;span&gt;40%&lt;/span&gt;
+    &lt;span&gt;50%&lt;/span&gt;&lt;span&gt;60%&lt;/span&gt;&lt;span&gt;70%&lt;/span&gt;&lt;span&gt;80%&lt;/span&gt;&lt;span&gt;90%&lt;/span&gt;&lt;span&gt;100%&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;div style=&quot;margin-top:4px; font-size:12px; color:#374151;&quot;&gt;
+    התקדמות: &lt;b&gt;{!fPercent}%&lt;/b&gt; &amp;nbsp; (Amount: {!vAmount} / Goal: {!vGoal})
+  &lt;/div&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>vAmount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <elementReference>Get_Desk.Current_Amount__c</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>vGoal</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <elementReference>Get_Desk.Total_Target_Amount__c</elementReference>
+        </value>
+    </variables>
+</Flow>

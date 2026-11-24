@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foundations__c</fullName>
+    <label>Foundations</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>YV USA Foundation</fullName>
+                <default>false</default>
+                <label>YV USA Foundation</label>
+            </value>
+            <value>
+                <fullName>Yad Vashem UK Foundation</fullName>
+                <default>false</default>
+                <label>Yad Vashem UK Foundation</label>
+            </value>
+            <value>
+                <fullName>Australian Friends of Yad Vashem Inc</fullName>
+                <default>false</default>
+                <label>Australian Friends of Yad Vashem Inc</label>
+            </value>
+            <value>
+                <fullName>Canadian Society for Yad Vashem</fullName>
+                <default>false</default>
+                <label>Canadian Society for Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Comité Français pour Yad Vashem</fullName>
+                <default>false</default>
+                <label>Comité Français pour Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Freundeskreis Yad Vashem e.V.</fullName>
+                <default>false</default>
+                <label>Freundeskreis Yad Vashem e.V.</label>
+            </value>
+            <value>
+                <fullName>Les Amis Suisses de Yad Vashem</fullName>
+                <default>false</default>
+                <label>Les Amis Suisses de Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Stichting Vrienden van Yad Vashem</fullName>
+                <default>false</default>
+                <label>Stichting Vrienden van Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Verein der Liechtensteiner Freunde von Yad Vashem</fullName>
+                <default>false</default>
+                <label>Verein der Liechtensteiner Freunde von Yad Vashem</label>
+            </value>
+            <value>
+                <fullName>Amigos Yad Vashem, Argentina</fullName>
+                <default>false</default>
+                <label>Amigos Yad Vashem, Argentina</label>
+            </value>
+            <value>
+                <fullName>Amigos Yad Vashem Brasil</fullName>
+                <default>false</default>
+                <label>Amigos Yad Vashem Brasil</label>
+            </value>
+            <value>
+                <fullName>Asociacion Yad Vashem Costa Rica</fullName>
+                <default>false</default>
+                <label>Asociacion Yad Vashem Costa Rica</label>
+            </value>
+            <value>
+                <fullName>Asociación Yad Vashem España</fullName>
+                <default>false</default>
+                <label>Asociación Yad Vashem España</label>
+            </value>
+            <value>
+                <fullName>Asociacion Yad Vashem Venezuela</fullName>
+                <default>false</default>
+                <label>Asociacion Yad Vashem Venezuela</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

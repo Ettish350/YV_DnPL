@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Where you exposed advertising about YV? --></label>
+    <name>WhereyouexposedadvertisingaboutYV__c</name>
+    <picklistValues>
+        <masterLabel>Friends/Colleagues</masterLabel>
+        <translation><!-- Friends/Colleagues --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Google/Internet search</masterLabel>
+        <translation><!-- Google/Internet search --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Press/Media</masterLabel>
+        <translation><!-- Press/Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recommendation from another organization/institution</masterLabel>
+        <translation><!-- Recommendation from another organization/institution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social networks</masterLabel>
+        <translation><!-- Social networks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yad Vashem website</masterLabel>
+        <translation><!-- Yad Vashem website --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

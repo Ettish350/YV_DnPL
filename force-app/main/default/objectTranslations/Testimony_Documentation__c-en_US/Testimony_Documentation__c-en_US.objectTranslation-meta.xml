@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Testimony Documentation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Testimony Documentation</value>
+    </caseValues>
+    <layouts>
+        <layout>Testimony Documentation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- במקרה של ביטול ראיון חובה למלא סיבת ביטול ואחוז ביטול לתשלום --></errorMessage>
+        <name>Cancel_Value</name>
+    </validationRules>
+</CustomObjectTranslation>

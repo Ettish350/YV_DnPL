@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Method__c</fullName>
+    <label>Collection Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>איסוף ביד ושם</fullName>
+                <default>false</default>
+                <label>איסוף ביד ושם</label>
+            </value>
+            <value>
+                <fullName>איסוף מבית הלקוח</fullName>
+                <default>false</default>
+                <label>איסוף מבית הלקוח</label>
+            </value>
+            <value>
+                <fullName>יגיע ליד ושם</fullName>
+                <default>false</default>
+                <label>יגיע ליד ושם</label>
+            </value>
+            <value>
+                <fullName>יום איסוף מרוכז</fullName>
+                <default>false</default>
+                <label>יום איסוף מרוכז</label>
+            </value>
+            <value>
+                <fullName>ישלח ב-FEDEX</fullName>
+                <default>false</default>
+                <label>ישלח ב-FEDEX</label>
+            </value>
+            <value>
+                <fullName>ישלח בדואר</fullName>
+                <default>false</default>
+                <label>ישלח בדואר</label>
+            </value>
+            <value>
+                <fullName>ישלח בדואר אלקטרוני</fullName>
+                <default>false</default>
+                <label>ישלח בדואר אלקטרוני</label>
+            </value>
+            <value>
+                <fullName>ישלח בדואר דיפלומטי</fullName>
+                <default>false</default>
+                <label>ישלח בדואר דיפלומטי</label>
+            </value>
+            <value>
+                <fullName>פקס</fullName>
+                <default>false</default>
+                <label>פקס</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

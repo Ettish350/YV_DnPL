@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Clearance System --></label>
+    <name>Clearance_System__c</name>
+    <picklistValues>
+        <masterLabel>Donorbox</masterLabel>
+        <translation><!-- Donorbox --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PayPal</masterLabel>
+        <translation><!-- PayPal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pelecard</masterLabel>
+        <translation><!-- Pelecard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stripe</masterLabel>
+        <translation><!-- Stripe --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

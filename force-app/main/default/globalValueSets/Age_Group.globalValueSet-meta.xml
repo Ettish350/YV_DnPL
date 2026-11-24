@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>גננות</fullName>
+        <default>false</default>
+        <label>גננות</label>
+    </customValue>
+    <customValue>
+        <fullName>חט&quot;ב</fullName>
+        <default>false</default>
+        <label>חט&quot;ב</label>
+    </customValue>
+    <customValue>
+        <fullName>חט&quot;ב + חט&quot;ע</fullName>
+        <default>false</default>
+        <label>חט&quot;ב + חט&quot;ע</label>
+    </customValue>
+    <customValue>
+        <fullName>חט&quot;ע</fullName>
+        <default>false</default>
+        <label>חט&quot;ע</label>
+    </customValue>
+    <customValue>
+        <fullName>יסודי</fullName>
+        <default>false</default>
+        <label>יסודי</label>
+    </customValue>
+    <customValue>
+        <fullName>יסודי וחט&quot;ב</fullName>
+        <default>false</default>
+        <label>יסודי וחט&quot;ב</label>
+    </customValue>
+    <customValue>
+        <fullName>יסודי וחט&quot;ע</fullName>
+        <default>false</default>
+        <label>יסודי וחט&quot;ע</label>
+    </customValue>
+    <customValue>
+        <fullName>יסודי חט&quot;ב וחט&quot;ע</fullName>
+        <default>false</default>
+        <label>יסודי חט&quot;ב וחט&quot;ע</label>
+    </customValue>
+    <customValue>
+        <fullName>ישיבת הסדר</fullName>
+        <default>false</default>
+        <label>ישיבת הסדר</label>
+    </customValue>
+    <customValue>
+        <fullName>כוחות הבטחון - עובדים</fullName>
+        <default>false</default>
+        <label>כוחות הבטחון - עובדים</label>
+    </customValue>
+    <customValue>
+        <fullName>כוחות הביטחון - הכשרות</fullName>
+        <default>false</default>
+        <label>כוחות הביטחון - הכשרות</label>
+    </customValue>
+    <customValue>
+        <fullName>לא פורמאלי</fullName>
+        <default>false</default>
+        <label>לא פורמאלי</label>
+    </customValue>
+    <customValue>
+        <fullName>ללא</fullName>
+        <default>false</default>
+        <label>ללא</label>
+    </customValue>
+    <customValue>
+        <fullName>מבוגרים</fullName>
+        <default>false</default>
+        <label>מבוגרים</label>
+    </customValue>
+    <customValue>
+        <fullName>מדריכים</fullName>
+        <default>false</default>
+        <label>מדריכים</label>
+    </customValue>
+    <customValue>
+        <fullName>מדרשה</fullName>
+        <default>false</default>
+        <label>מדרשה</label>
+    </customValue>
+    <customValue>
+        <fullName>מורים</fullName>
+        <default>false</default>
+        <label>מורים</label>
+    </customValue>
+    <customValue>
+        <fullName>מכינה</fullName>
+        <default>false</default>
+        <label>מכינה</label>
+    </customValue>
+    <customValue>
+        <fullName>מכללה</fullName>
+        <default>false</default>
+        <label>מכללה</label>
+    </customValue>
+    <customValue>
+        <fullName>מנהיגות צעירה</fullName>
+        <default>false</default>
+        <label>מנהיגות צעירה</label>
+    </customValue>
+    <customValue>
+        <fullName>מעצבי דעת קהל</fullName>
+        <default>false</default>
+        <label>מעצבי דעת קהל</label>
+    </customValue>
+    <customValue>
+        <fullName>נוער חו&quot;ל</fullName>
+        <default>false</default>
+        <label>נוער חו&quot;ל</label>
+    </customValue>
+    <customValue>
+        <fullName>סטודנטים</fullName>
+        <default>false</default>
+        <label>סטודנטים</label>
+    </customValue>
+    <customValue>
+        <fullName>סמינר</fullName>
+        <default>false</default>
+        <label>סמינר</label>
+    </customValue>
+    <customValue>
+        <fullName>על תיכון</fullName>
+        <default>false</default>
+        <label>על תיכון</label>
+    </customValue>
+    <customValue>
+        <fullName>פרויקט אסירים</fullName>
+        <default>false</default>
+        <label>פרויקט אסירים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל בה&quot;ד 1</fullName>
+        <default>false</default>
+        <label>צה&quot;ל בה&quot;ד 1</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל בכירים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל בכירים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל בסיסים גדולים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל בסיסים גדולים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל הכנה לקצונה</fullName>
+        <default>false</default>
+        <label>צה&quot;ל הכנה לקצונה</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל הכנת סגל</fullName>
+        <default>false</default>
+        <label>צה&quot;ל הכנת סגל</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל הכשרת מפקדים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל הכשרת מפקדים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל השלמת קצונה</fullName>
+        <default>false</default>
+        <label>צה&quot;ל השלמת קצונה</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל חרדים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל חרדים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל טירונים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל טירונים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל כניסה לקבע</fullName>
+        <default>false</default>
+        <label>צה&quot;ל כניסה לקבע</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל מילואים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל מילואים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל נגדים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל נגדים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל סגל מפקדה</fullName>
+        <default>false</default>
+        <label>צה&quot;ל סגל מפקדה</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל סדירים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל סדירים</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל קורס המשך - מקצוע</fullName>
+        <default>false</default>
+        <label>צה&quot;ל קורס המשך - מקצוע</label>
+    </customValue>
+    <customValue>
+        <fullName>צה&quot;ל קצינים</fullName>
+        <default>false</default>
+        <label>צה&quot;ל קצינים</label>
+    </customValue>
+    <customValue>
+        <fullName>קהילה לומדת</fullName>
+        <default>false</default>
+        <label>קהילה לומדת</label>
+    </customValue>
+    <customValue>
+        <fullName>קהל רחב</fullName>
+        <default>false</default>
+        <label>קהל רחב</label>
+    </customValue>
+    <customValue>
+        <fullName>שירות לאומי</fullName>
+        <default>false</default>
+        <label>שירות לאומי</label>
+    </customValue>
+    <customValue>
+        <fullName>שרות לאומי / יחידת הסברה</fullName>
+        <default>false</default>
+        <label>שרות לאומי / יחידת הסברה</label>
+    </customValue>
+    <customValue>
+        <fullName>תלמידים + מורים</fullName>
+        <default>false</default>
+        <label>תלמידים + מורים</label>
+    </customValue>
+    <customValue>
+        <fullName>תנועות נוער</fullName>
+        <default>false</default>
+        <label>תנועות נוער</label>
+    </customValue>
+    <description>Global value set</description>
+    <masterLabel>Age Group</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

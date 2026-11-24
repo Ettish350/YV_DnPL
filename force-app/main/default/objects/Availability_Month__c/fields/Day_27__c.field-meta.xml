@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_27__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Guide availability status on day 27 of the month. Values from global value set Availability_Day_Status.</description>
+    <inlineHelpText>סטטוס הזמינות של המדריך ביום 27 בחודש</inlineHelpText>
+    <label>Day 27</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Availability_Day_Status</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_11_Date__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Date of day 11 of the record&apos;s month. Empty when the month has no day 11. For the Titan form and other systems (Mikey 19.11.2026).</description>
+    <formula>IF(11 &gt; Days_In_Month__c, NULL, DATE(VALUE(Year__c), VALUE(Month__c), 1) + 10)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>התאריך של יום 11</inlineHelpText>
+    <label>Day 11 Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Holacost Connection --></label>
+    <name>Holacost_Connection__c</name>
+    <picklistValues>
+        <masterLabel>Extended Family</masterLabel>
+        <translation><!-- Extended Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holocaust survivor</masterLabel>
+        <translation><!-- Holocaust survivor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Random Turns</masterLabel>
+        <translation><!-- Random Turns --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Second Generation</masterLabel>
+        <translation><!-- Second Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Generation</masterLabel>
+        <translation><!-- Third Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

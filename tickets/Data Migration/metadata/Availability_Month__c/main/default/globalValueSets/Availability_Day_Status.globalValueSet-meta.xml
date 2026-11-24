@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>זמין</fullName>
+        <default>false</default>
+        <label>זמין</label>
+    </customValue>
+    <customValue>
+        <fullName>מחוייב</fullName>
+        <default>false</default>
+        <label>מחוייב</label>
+    </customValue>
+    <customValue>
+        <fullName>לא זמין</fullName>
+        <default>false</default>
+        <label>לא זמין</label>
+    </customValue>
+    <customValue>
+        <fullName>משובץ</fullName>
+        <default>false</default>
+        <label>משובץ</label>
+    </customValue>
+    <customValue>
+        <fullName>שבת/חג</fullName>
+        <default>false</default>
+        <label>שבת/חג</label>
+    </customValue>
+    <customValue>
+        <fullName>יום חסום</fullName>
+        <default>false</default>
+        <label>יום חסום</label>
+    </customValue>
+    <description>DM-Availability | DD 13, A13-01 | Guide availability status per day, used by the 31 day status fields on Availability Month.</description>
+    <masterLabel>Availability Day Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

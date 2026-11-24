@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All of GoMeddo Permission sets combined</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GoMeddo</label>
+    <permissionSets>B25__B25_Admin</permissionSets>
+    <permissionSets>B25__B25_Experience_Cloud</permissionSets>
+    <permissionSets>B25__B25_Experience_Guest_Cloud</permissionSets>
+    <permissionSets>B25__B25_Scheduler</permissionSets>
+    <permissionSets>B25__B25_user</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

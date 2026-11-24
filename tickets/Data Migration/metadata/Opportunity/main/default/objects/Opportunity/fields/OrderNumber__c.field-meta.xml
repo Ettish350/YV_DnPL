@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderNumber__c</fullName>
+    <label>Order number</label>
+    <description>YV20-228 | A04-06 | Department prefix, a hyphen and the order sequence (for example SCB-0220275). Without a department or without a prefix on it, only the sequence. Changes by itself when the order moves to another department.</description>
+    <formula>IF(NOT(ISBLANK(Department__r.Order_Prefix__c)), Department__r.Order_Prefix__c &amp; "-" &amp; OrderSequence__c, OrderSequence__c)</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+</CustomField>

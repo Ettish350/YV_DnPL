@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <assignments>
+        <name>Clear_Need_Arrangement</name>
+        <label>Clear Need Arrangement</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Need_Arrangement__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Status_Rule_Applies</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Clear_Need_Refreshments</name>
+        <label>Clear Need Refreshments</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Need_Refreshments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Room_Without_Arrangement</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Status</name>
+        <label>Set Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.B25__Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Target_Status.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Room_Without_Arrangement</name>
+        <label>A11-06 Room without arrangement change</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Status_Rule_Applies</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Arrangement_Not_Supported</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ClearArrangement</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Need_Arrangement</targetReference>
+            </connector>
+            <label>Arrangement not supported</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Room_Without_Refreshments</name>
+        <label>A11-06 Room without refreshments</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Room_Without_Arrangement</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Refreshments_Not_Supported</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ClearRefreshments</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Need_Refreshments</targetReference>
+            </connector>
+            <label>Refreshments not supported</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Found</name>
+        <label>Status found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Target_Status</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Status</targetReference>
+            </connector>
+            <label>Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Rule_Applies</name>
+        <label>A11-05 A11-11 Status rule applies</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Applies</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ApplyStatusRule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Target_Status</targetReference>
+            </connector>
+            <label>Applies</label>
+        </rules>
+    </decisions>
+    <description>P11 | A11-05, A11-11, A11-06 | Before save on a GoMeddo room reservation. Entry: on create, when a flag is set or the status rule can apply; on update, only when a flag is set and a flag or the room changed. A11-06 (create and update): clears Need Refreshments / Need Arrangement when the room does not support them. A11-05 and A11-11 (create only, internal users, room reservations whose status is blank, approved or pending, not a private closing and not a sub-room copy): pending when the room needs approval, or when there is no order (none on the reservation or its parent) and the user lacks Reserve_Without_Approval; otherwise approved. The room flag wins over the permission (Lior 18.11.2026). Portal users and P11_Data_Load_Bypass are untouched. Separate from Tal&apos;s Reservation_Assign_Buffers (after save), which it does not change.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>ApplyStatusRule</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()
+&amp;&amp; NOT(ISBLANK({!$Record.B25__Resource__c}))
+&amp;&amp; ISBLANK({!$Record.Split_Parent__c})
+&amp;&amp; TEXT({!$User.UserType}) = &quot;Standard&quot;
+&amp;&amp; NOT({!$Permission.P11_Data_Load_Bypass})
+&amp;&amp; TEXT({!$Record.Booking_Kind__c}) &lt;&gt; &quot;סגירה לפעילות פרטית&quot;
+&amp;&amp; (ISBLANK({!$Record.B25__Status__c}) || {!$Record.B25__Status__r.Name} = &quot;אושרה&quot; || {!$Record.B25__Status__r.Name} = &quot;מחכה לאישור&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>ClearArrangement</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.Need_Arrangement__c} &amp;&amp; NOT(ISBLANK({!$Record.B25__Resource__c})) &amp;&amp; NOT({!$Record.B25__Resource__r.Modify_Arrangement_Available__c})</expression>
+    </formulas>
+    <formulas>
+        <name>ClearRefreshments</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.Need_Refreshments__c} &amp;&amp; NOT(ISBLANK({!$Record.B25__Resource__c})) &amp;&amp; NOT({!$Record.B25__Resource__r.Can_Have_Refreshments__c})</expression>
+    </formulas>
+    <formulas>
+        <name>TargetStatusName</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  {!$Record.B25__Resource__r.Need_Confirmed__c}
+  || (ISBLANK({!$Record.B25__Opportunity__c}) &amp;&amp; ISBLANK({!$Record.B25__Parent_Reservation__r.B25__Opportunity__c}) &amp;&amp; NOT({!$Permission.Reserve_Without_Approval})),
+  &quot;מחכה לאישור&quot;,
+  &quot;אושרה&quot;
+)</expression>
+    </formulas>
+    <interviewLabel>P11 Reservation Before Save {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>P11 שיבוץ חדר - לפני שמירה</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Target_Status</name>
+        <label>Get target status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Status_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>TargetStatusName</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>B25__Reservation_Status__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Room_Without_Refreshments</targetReference>
+        </connector>
+        <filterFormula>NOT(ISBLANK({!$Record.B25__Resource__c}))
+&amp;&amp; (
+  (ISNEW() &amp;&amp; (
+    {!$Record.Need_Refreshments__c} || {!$Record.Need_Arrangement__c}
+    || (TEXT({!$User.UserType}) = &quot;Standard&quot; &amp;&amp; NOT({!$Permission.P11_Data_Load_Bypass}) &amp;&amp; ISBLANK({!$Record.Split_Parent__c}) &amp;&amp; TEXT({!$Record.Booking_Kind__c}) &lt;&gt; &quot;סגירה לפעילות פרטית&quot;)
+  ))
+  || (NOT(ISNEW())
+    &amp;&amp; ({!$Record.Need_Refreshments__c} || {!$Record.Need_Arrangement__c})
+    &amp;&amp; (ISCHANGED({!$Record.Need_Refreshments__c}) || ISCHANGED({!$Record.Need_Arrangement__c}) || ISCHANGED({!$Record.B25__Resource__c})))
+)</filterFormula>
+        <object>B25__Reservation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

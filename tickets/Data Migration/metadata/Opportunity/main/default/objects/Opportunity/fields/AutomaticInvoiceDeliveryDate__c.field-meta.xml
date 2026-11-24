@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AutomaticInvoiceDeliveryDate__c</fullName>
+    <label>Automatic invoice delivery date</label>
+    <description>DM-Opportunity | legacy new_automatic_invoice_delivery_date | Automatic invoice delivery date.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

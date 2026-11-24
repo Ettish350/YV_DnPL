@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>English</masterLabel>
+        <translation>דסק אנגלי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>European</masterLabel>
+        <translation>דסק אירופי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Israel</masterLabel>
+        <translation>דסק ישראל</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Partnerships and Global Campaigns</masterLabel>
+        <translation>שיתופי פעולה וקמפיינים גלובליים</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Spanish</masterLabel>
+        <translation>דסק ספרדי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>USA</masterLabel>
+        <translation>דסק אמריקאי</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

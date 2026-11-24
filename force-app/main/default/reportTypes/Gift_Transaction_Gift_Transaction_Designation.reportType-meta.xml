@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>GiftTransaction</baseObject>
+    <category>accounts</category>
+    <deployed>false</deployed>
+    <description>Gift Transaction &amp; Gift Transaction Designation report</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>GiftTransactionDesignation</relationship>
+    </join>
+    <label>Gift Transaction &amp; Gift Transaction Designation</label>
+    <sections>
+        <masterLabel>Gift Transactions</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Gift Transaction Designations</masterLabel>
+    </sections>
+</ReportType>

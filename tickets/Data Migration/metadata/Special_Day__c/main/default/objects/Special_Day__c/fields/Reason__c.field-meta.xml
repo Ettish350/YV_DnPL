@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <label>Reason</label>
+    <description>DM-Availability | DD 13, A13-01 | Why the day is special.</description>
+    <inlineHelpText>סיבה</inlineHelpText>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>יום צום</fullName>
+                <default>false</default>
+                <label>יום צום</label>
+            </value>
+            <value>
+                <fullName>יום גיבוש</fullName>
+                <default>false</default>
+                <label>יום גיבוש</label>
+            </value>
+            <value>
+                <fullName>סגירת אתר</fullName>
+                <default>false</default>
+                <label>סגירת אתר</label>
+            </value>
+            <value>
+                <fullName>טיול שנתי</fullName>
+                <default>false</default>
+                <label>טיול שנתי</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

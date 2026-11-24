@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_Type__c</fullName>
+    <label>Item Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אלבום</fullName>
+                <default>false</default>
+                <label>אלבום</label>
+            </value>
+            <value>
+                <fullName>תצלום</fullName>
+                <default>false</default>
+                <label>תצלום</label>
+            </value>
+            <value>
+                <fullName>סרט מקור</fullName>
+                <default>false</default>
+                <label>סרט מקור</label>
+            </value>
+            <value>
+                <fullName>זכרונות</fullName>
+                <default>false</default>
+                <label>זכרונות</label>
+            </value>
+            <value>
+                <fullName>יומן</fullName>
+                <default>false</default>
+                <label>יומן</label>
+            </value>
+            <value>
+                <fullName>מכתב</fullName>
+                <default>false</default>
+                <label>מכתב</label>
+            </value>
+            <value>
+                <fullName>מסמך</fullName>
+                <default>false</default>
+                <label>מסמך</label>
+            </value>
+            <value>
+                <fullName>עדות</fullName>
+                <default>false</default>
+                <label>עדות</label>
+            </value>
+            <value>
+                <fullName>ספר</fullName>
+                <default>false</default>
+                <label>ספר</label>
+            </value>
+            <value>
+                <fullName>סרט הפקה</fullName>
+                <default>false</default>
+                <label>סרט הפקה</label>
+            </value>
+            <value>
+                <fullName>הקלטה מוזיקלית</fullName>
+                <default>false</default>
+                <label>הקלטה מוזיקלית</label>
+            </value>
+            <value>
+                <fullName>יצירת אמנות</fullName>
+                <default>false</default>
+                <label>יצירת אמנות</label>
+            </value>
+            <value>
+                <fullName>חפץ</fullName>
+                <default>false</default>
+                <label>חפץ</label>
+            </value>
+            <value>
+                <fullName>דף עד</fullName>
+                <default>false</default>
+                <label>דף עד</label>
+            </value>
+            <value>
+                <fullName>שאלון ניצול</fullName>
+                <default>false</default>
+                <label>שאלון ניצול</label>
+            </value>
+            <value>
+                <fullName>תצלום היכל השמות</fullName>
+                <default>false</default>
+                <label>תצלום היכל השמות</label>
+            </value>
+            <value>
+                <fullName>מידע נלווה</fullName>
+                <default>false</default>
+                <label>מידע נלווה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

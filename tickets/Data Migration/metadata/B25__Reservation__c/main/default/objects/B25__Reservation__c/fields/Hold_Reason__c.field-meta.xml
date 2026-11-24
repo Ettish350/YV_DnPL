@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hold_Reason__c</fullName>
+    <label>Hold reason</label>
+    <description>DM-Reservation | legacy new_reason_for_saving | DD 11 step 8, V11-06 | Reason for a hold or a place saved without an order.</description>
+    <inlineHelpText>הסיבה לשריון או לשמירת מקום ללא הזמנה</inlineHelpText>
+    <externalId>false</externalId>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

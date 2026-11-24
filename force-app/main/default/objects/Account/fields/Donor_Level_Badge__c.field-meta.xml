@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Level_Badge__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(&apos;/resource/YV_TierBadge&apos;, &apos;Donor Level&apos;, 64, 64) &amp; &quot; &quot; &amp;
+BLANKVALUE(Donor_Level__c, &quot;—&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Donor Level Badge</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

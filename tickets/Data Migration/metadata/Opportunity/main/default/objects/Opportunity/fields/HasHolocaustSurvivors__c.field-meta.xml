@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HasHolocaustSurvivors__c</fullName>
+    <label>Holocaust survivors in the group</label>
+    <description>DM-Opportunity | legacy new_holocaust_survivors | Holocaust survivors in the group.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

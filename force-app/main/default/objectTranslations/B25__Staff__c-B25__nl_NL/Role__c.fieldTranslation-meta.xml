@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This defines what the staff member actually does during the activity --></help>
+    <label><!-- Role --></label>
+    <name>Role__c</name>
+    <picklistValues>
+        <masterLabel>Coordinator (רכז)</masterLabel>
+        <translation><!-- Coordinator (רכז) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guide (מדריך)</masterLabel>
+        <translation><!-- Guide (מדריך) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lecturer (מרצה)</masterLabel>
+        <translation><!-- Lecturer (מרצה) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logistics Personnel (איש לוגיסטיקה)</masterLabel>
+        <translation><!-- Logistics Personnel (איש לוגיסטיקה) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

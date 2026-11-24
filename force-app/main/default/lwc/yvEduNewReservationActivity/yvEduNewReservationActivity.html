@@ -1,0 +1,126 @@
+<template>
+    <section class="yvedu-res" dir={langDir}>
+        <template if:true={showSpinner}>
+            <div class="yvedu-res-loading" role="status" aria-label={labels.loading}>
+                <span class="yvedu-res-spinner"></span>
+            </div>
+        </template>
+
+        <template if:true={showAudienceChoice}>
+            <h2 class="yvedu-res-title">{labels.audienceTitle}</h2>
+            <div class="yvedu-res-filters" role="group" aria-label={labels.audienceTitle}>
+                <template for:each={audienceOptions} for:item="option">
+                    <button
+                        key={option.value}
+                        type="button"
+                        class={option.className}
+                        data-value={option.value}
+                        aria-pressed={option.ariaPressed}
+                        onclick={handleAudienceClick}
+                    >{option.label}</button>
+                </template>
+            </div>
+        </template>
+
+        <template if:true={showCards}>
+            <template if:true={showSubject}>
+                <h2 class="yvedu-res-title">{labels.subjectTitle}</h2>
+                <div class="yvedu-res-field">
+                    <select aria-label={labels.subjectTitle} onchange={handleSubjectChange}>
+                        <option value="">{labels.subjectPlaceholder}</option>
+                        <template for:each={subjectOptions} for:item="option">
+                            <option key={option.value} value={option.value} selected={option.selected}>{option.label}</option>
+                        </template>
+                    </select>
+                </div>
+            </template>
+
+            <template if:true={showSubjectEmpty}>
+                <h2 class="yvedu-res-title">{labels.subjectTitle}</h2>
+                <p class="yvedu-res-status">{subjectEmptyText}</p>
+            </template>
+
+            <h2 class="yvedu-res-title">{labels.title}</h2>
+
+            <div class="yvedu-res-filters" role="group" aria-label={labels.title}>
+                <template for:each={filterOptions} for:item="filter">
+                    <button
+                        key={filter.key}
+                        type="button"
+                        class={filter.className}
+                        data-filter={filter.key}
+                        aria-pressed={filter.ariaPressed}
+                        onclick={handleFilterClick}
+                    >{filter.label}</button>
+                </template>
+            </div>
+
+            <template if:true={isLoading}>
+                <p class="yvedu-res-status" role="status">{labels.loading}</p>
+            </template>
+            <template if:true={hasError}>
+                <p class="yvedu-res-status yvedu-res-status_error" role="alert">{labels.loadError}</p>
+            </template>
+            <template if:true={isEmpty}>
+                <p class="yvedu-res-status">{labels.empty}</p>
+            </template>
+
+            <div class="yvedu-res-grid">
+                <template for:each={visibleCards} for:item="card">
+                    <article key={card.id} class={card.cardClass}>
+                        <div class="yvedu-res-card-body">
+                            <h3 class="yvedu-res-card-title">{card.name}</h3>
+
+                            <template if:true={card.hasHours}>
+                                <div class="yvedu-res-chips">
+                                    <span class="yvedu-res-chip">{card.hoursLabel}</span>
+                                </div>
+                            </template>
+
+                            <template if:false={card.isSelected}>
+                                <template if:true={card.hasItems}>
+                                    <ul class="yvedu-res-list">
+                                        <template for:each={card.includedItems} for:item="item">
+                                            <li key={item.key}>{item.text}</li>
+                                        </template>
+                                    </ul>
+                                </template>
+                            </template>
+
+                            <template if:true={card.isSelected}>
+                                <h4 class="yvedu-res-subtitle">{labels.itemsTitle}</h4>
+                                <ul class="yvedu-res-items">
+                                    <template for:each={card.items} for:item="item">
+                                        <li key={item.id}>
+                                            <label class={item.rowClass}>
+                                                <input type="checkbox" checked={item.checked} data-bundle={card.id} data-id={item.id} onchange={handleToggleItem} />
+                                                <span class="yvedu-res-item-name">{item.name}</span>
+                                                <template if:true={item.hasHours}>
+                                                    <span class="yvedu-res-chip">{item.hoursLabel}</span>
+                                                </template>
+                                            </label>
+                                        </li>
+                                    </template>
+                                </ul>
+                                <template if:true={card.needsItems}>
+                                    <p class="yvedu-res-status yvedu-res-status_error">{labels.needItems}</p>
+                                </template>
+                            </template>
+                        </div>
+
+                        <div class="yvedu-res-card-footer">
+                            <button type="button" class={card.buttonClass} data-id={card.id} onclick={handleToggleBundle}>
+                                {card.buttonLabel}
+                            </button>
+                        </div>
+                    </article>
+                </template>
+            </div>
+
+            <div class="yvedu-res-group-actions">
+                <span class="yvedu-res-summary">{summaryText}</span>
+            </div>
+            <button type="button" class="yvedu-res-order yvedu-res-next" disabled={nextDisabled} onclick={handleNext}>{labels.next}</button>
+        </template>
+    </section>
+</template>

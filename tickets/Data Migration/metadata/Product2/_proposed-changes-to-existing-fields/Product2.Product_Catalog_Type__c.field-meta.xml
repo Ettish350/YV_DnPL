@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Catalog_Type__c</fullName>
+    <label>Product Catalog Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הדרכה</fullName>
+                <default>false</default>
+                <label>הדרכה</label>
+            </value>
+            <value>
+                <fullName>הצגה</fullName>
+                <default>false</default>
+                <label>הצגה</label>
+            </value>
+            <value>
+                <fullName>סיור</fullName>
+                <default>false</default>
+                <label>סיור</label>
+            </value>
+            <value>
+                <fullName>חדר</fullName>
+                <default>false</default>
+                <label>חדר</label>
+            </value>
+            <value>
+                <fullName>טיסה</fullName>
+                <default>false</default>
+                <label>טיסה</label>
+            </value>
+            <value>
+                <fullName>מלון</fullName>
+                <default>false</default>
+                <label>מלון</label>
+            </value>
+            <value>
+                <fullName>הסעה</fullName>
+                <default>false</default>
+                <label>הסעה</label>
+            </value>
+            <value>
+                <fullName>ארוחה</fullName>
+                <default>false</default>
+                <label>ארוחה</label>
+            </value>
+            <value>
+                <fullName>כיבוד</fullName>
+                <default>false</default>
+                <label>כיבוד</label>
+            </value>
+            <value>
+                <fullName>פעילויות נוספות</fullName>
+                <default>false</default>
+                <label>פעילויות נוספות</label>
+            </value>
+            <value>
+                <fullName>הסעה ניידות</fullName>
+                <default>false</default>
+                <label>הסעה ניידות</label>
+            </value>
+            <value>
+                <fullName>הסעה סמינר</fullName>
+                <default>false</default>
+                <label>הסעה סמינר</label>
+            </value>
+            <value>
+                <fullName>אוזניות</fullName>
+                <default>false</default>
+                <label>אוזניות</label>
+            </value>
+            <value>
+                <fullName>אודיו גייד</fullName>
+                <default>false</default>
+                <label>אודיו גייד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_En__c</fullName>
+    <label>Comment (English)</label>
+    <description>DM-PricebookEntry | legacy new_yv_pricelist_item.new_comments_en | Comment on the price, in English.</description>
+    <inlineHelpText>הערה על המחיר באנגלית</inlineHelpText>
+    <externalId>false</externalId>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

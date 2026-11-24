@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hyperlink_Case__c</fullName>
+    <description>[14/05/2026] [Neev] - Required for data table to have a link to the case from the data table</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+    IF($Organization.Id = &quot;00DWm000001pdht&quot;, 
+       &quot;https://yadvashemtheworldholocaustremembr2--partial.sandbox.lightning.force.com/&quot; &amp; Id, 
+       &quot;/&quot; &amp; Id), 
+    Case_Name__c, 
+    &quot;_self&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hyperlink Case</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

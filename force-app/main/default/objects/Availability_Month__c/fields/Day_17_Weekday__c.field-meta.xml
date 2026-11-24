@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_17_Weekday__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Weekday of day 17 of the record&apos;s month, Hebrew (or English when Form Language = English). Empty when the month has no day 17. For the Titan form.</description>
+    <externalId>false</externalId>
+    <formula>IF(17 &gt; Days_In_Month__c, NULL,
+  CASE(MOD(WEEKDAY(DATE(VALUE(Year__c), VALUE(Month__c), 1)) + 15, 7),
+    0, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Sunday&quot;, &quot;ראשון&quot;),
+    1, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Monday&quot;, &quot;שני&quot;),
+    2, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Tuesday&quot;, &quot;שלישי&quot;),
+    3, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Wednesday&quot;, &quot;רביעי&quot;),
+    4, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Thursday&quot;, &quot;חמישי&quot;),
+    5, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Friday&quot;, &quot;שישי&quot;),
+    6, IF(ISPICKVAL(Form_Language__c, &quot;English&quot;), &quot;Saturday&quot;, &quot;שבת&quot;),
+    NULL))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>היום בשבוע של יום 17</inlineHelpText>
+    <label>Day 17 Weekday</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

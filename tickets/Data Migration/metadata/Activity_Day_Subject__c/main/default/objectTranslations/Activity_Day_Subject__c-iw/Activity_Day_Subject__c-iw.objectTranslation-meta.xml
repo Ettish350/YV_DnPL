@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>נושא יום העיון</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>נושאי יום העיון</value>
+    </caseValues>
+    <fields>
+        <label>תקציר</label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label>מזהה מערכת ישנה</label>
+        <name>Legacy_ID__c</name>
+    </fields>
+    <fields>
+        <label>מטרות פדגוגיות</label>
+        <name>Pedagogical_Objectives__c</name>
+    </fields>
+    <fields>
+        <label>סיכומים לגבי הכנת התלמידים</label>
+        <name>Student_Preparation__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>נושא יום העיון</nameFieldLabel>
+</CustomObjectTranslation>

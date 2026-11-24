@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A01-11 | Clone product: starts the A1_Product_Clone flow on the current product.</description>
+    <flowDefinition>A1_Product_Clone</flowDefinition>
+    <label>Clone Product</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

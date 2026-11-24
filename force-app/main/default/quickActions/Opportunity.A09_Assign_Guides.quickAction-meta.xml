@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PROTOTYPE | A09-02 | Opens the guide assignment flow for this order.</description>
+    <flowDefinition>A09_Opportunity_Assign_Guides</flowDefinition>
+    <label>שיבוץ מדריכים</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

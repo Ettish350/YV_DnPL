@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>סוג מחירון</label>
+        <name>Pricelist_Type__c</name>
+    </fields>
+    <fields>
+        <label>בתוקף מתאריך</label>
+        <name>Valid_From__c</name>
+    </fields>
+    <fields>
+        <label>בתוקף עד תאריך</label>
+        <name>Valid_To__c</name>
+    </fields>
+</CustomObjectTranslation>

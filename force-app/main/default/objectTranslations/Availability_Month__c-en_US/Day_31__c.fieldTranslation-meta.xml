@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סטטוס הזמינות של המדריך ביום 31 בחודש --></help>
+    <label><!-- Day 31 --></label>
+    <name>Day_31__c</name>
+</CustomFieldTranslation>

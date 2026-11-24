@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>שפת שמות הימים בטופס. ריק = עברית</help>
+    <label>שפת הטופס</label>
+    <name>Form_Language__c</name>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation>אנגלית</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hebrew</masterLabel>
+        <translation>עברית</translation>
+    </picklistValues>
+</CustomFieldTranslation>

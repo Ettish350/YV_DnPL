@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Zero_Price__c</fullName>
+    <label>Paid product priced at zero</label>
+    <description>DM-Product2 | DD V01-03 | A paid product knowingly priced at zero; shown as an indication, no block. Set by an automation (later).</description>
+    <inlineHelpText>מוצר בתשלום שתומחר באפס ביודעין. מתעדכן אוטומטית</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

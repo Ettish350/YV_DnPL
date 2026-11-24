@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsConfirmationEmailSent__c</fullName>
+    <label>Confirmation email sent</label>
+    <description>DM-Opportunity | legacy new_is_sent_email_confirmation | Confirmation email sent.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

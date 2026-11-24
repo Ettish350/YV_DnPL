@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentStatus__c</fullName>
+    <label>Payment status</label>
+    <description>DM-Opportunity | legacy new_payment_status | Payment status.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ללא</fullName>
+                <default>false</default>
+                <label>ללא</label>
+            </value>
+            <value>
+                <fullName>שולם</fullName>
+                <default>false</default>
+                <label>שולם</label>
+            </value>
+            <value>
+                <fullName>טרם שולם</fullName>
+                <default>false</default>
+                <label>טרם שולם</label>
+            </value>
+            <value>
+                <fullName>שולם ובוצע זיכוי מלא</fullName>
+                <default>false</default>
+                <label>שולם ובוצע זיכוי מלא</label>
+            </value>
+            <value>
+                <fullName>שולם ובוצע זיכוי חלקי</fullName>
+                <default>false</default>
+                <label>שולם ובוצע זיכוי חלקי</label>
+            </value>
+            <value>
+                <fullName>שולם (התחשבנות פנימית)</fullName>
+                <default>false</default>
+                <label>שולם (התחשבנות פנימית)</label>
+            </value>
+            <value>
+                <fullName>טרם שולם (התחשבנות פנימית)</fullName>
+                <default>false</default>
+                <label>טרם שולם (התחשבנות פנימית)</label>
+            </value>
+            <value>
+                <fullName>שמירת מקום - אין צורך בתשלום</fullName>
+                <default>false</default>
+                <label>שמירת מקום - אין צורך בתשלום</label>
+            </value>
+            <value>
+                <fullName>ממתין לתשלום</fullName>
+                <default>false</default>
+                <label>ממתין לתשלום</label>
+            </value>
+            <value>
+                <fullName>אין צורך בתשלום</fullName>
+                <default>false</default>
+                <label>אין צורך בתשלום</label>
+            </value>
+            <value>
+                <fullName>התחייבות לתשלום</fullName>
+                <default>false</default>
+                <label>התחייבות לתשלום</label>
+            </value>
+            <value>
+                <fullName>התקבל וואוצ'ר</fullName>
+                <default>false</default>
+                <label>התקבל וואוצ'ר</label>
+            </value>
+            <value>
+                <fullName>תשלום נכשל</fullName>
+                <default>false</default>
+                <label>תשלום נכשל</label>
+            </value>
+            <value>
+                <fullName>הופק חשבון</fullName>
+                <default>false</default>
+                <label>הופק חשבון</label>
+            </value>
+            <value>
+                <fullName>שולם חלקית</fullName>
+                <default>false</default>
+                <label>שולם חלקית</label>
+            </value>
+            <value>
+                <fullName>חשבון בוטל</fullName>
+                <default>false</default>
+                <label>חשבון בוטל</label>
+            </value>
+            <value>
+                <fullName>הופק חשבון חלקית</fullName>
+                <default>false</default>
+                <label>הופק חשבון חלקית</label>
+            </value>
+            <value>
+                <fullName>הועבר לטיפול כספים</fullName>
+                <default>false</default>
+                <label>הועבר לטיפול כספים</label>
+            </value>
+            <value>
+                <fullName>לחיוב בחבילה</fullName>
+                <default>false</default>
+                <label>לחיוב בחבילה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

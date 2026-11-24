@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג ההתחייבות</label>
+    <name>Commitment_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bequest</masterLabel>
+        <translation><!-- Bequest --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grant</masterLabel>
+        <translation><!-- Grant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investment Fund</masterLabel>
+        <translation><!-- Investment Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Donor</masterLabel>
+        <translation><!-- Private Donor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

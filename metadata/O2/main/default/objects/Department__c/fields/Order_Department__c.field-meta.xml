@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Department__c</fullName>
+    <description>YV20-227 | A04-04 | D-042 | Marks the department record with its value in the Order Department list, so a user's department (User.Order_Department__c) finds this record.</description>
+    <label>מחלקה (הזמנות)</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Order_Department</valueSetName>
+    </valueSet>
+</CustomField>

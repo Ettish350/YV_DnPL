@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recognition Level --></label>
+    <name>Recognition_Level__c</name>
+    <picklistValues>
+        <masterLabel>Anonymous</masterLabel>
+        <translation><!-- Anonymous --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Named Recognition</masterLabel>
+        <translation><!-- Named Recognition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private</masterLabel>
+        <translation><!-- Private --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public</masterLabel>
+        <translation><!-- Public --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

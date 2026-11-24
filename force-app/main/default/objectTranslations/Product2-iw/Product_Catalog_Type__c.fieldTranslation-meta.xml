@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Product Catalog Type --></label>
+    <name>Product_Catalog_Type__c</name>
+    <picklistValues>
+        <masterLabel>ארוחה</masterLabel>
+        <translation><!-- ארוחה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הדרכה</masterLabel>
+        <translation><!-- הדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הסעה</masterLabel>
+        <translation><!-- הסעה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הצגה</masterLabel>
+        <translation><!-- הצגה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר</masterLabel>
+        <translation><!-- חדר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיסה</masterLabel>
+        <translation><!-- טיסה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כיבוד</masterLabel>
+        <translation><!-- כיבוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מלון</masterLabel>
+        <translation><!-- מלון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סיור</masterLabel>
+        <translation><!-- סיור --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

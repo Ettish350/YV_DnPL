@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>HebcalHolidays</label>
+    <namedCredentialReference>NCHebcalAPI</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>getholidays</name>
+    </operations>
+    <registrationProviderType>SchemaInferred</registrationProviderType>
+    <schema>{&quot;openapi&quot;:&quot;3.0.1&quot;,&quot;info&quot;:{&quot;title&quot;:&quot;HebcalHolidays&quot;,&quot;description&quot;:&quot;Israeli Jewish holidays from hebcal.com&quot;},&quot;paths&quot;:{&quot;/hebcal&quot;:{&quot;get&quot;:{&quot;description&quot;:&quot;Fetch major Israeli Jewish holidays for a given year&quot;,&quot;operationId&quot;:&quot;getHolidays&quot;,&quot;parameters&quot;:[{&quot;name&quot;:&quot;v&quot;,&quot;in&quot;:&quot;query&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}},{&quot;name&quot;:&quot;cfg&quot;,&quot;in&quot;:&quot;query&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}},{&quot;name&quot;:&quot;maj&quot;,&quot;in&quot;:&quot;query&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}},{&quot;name&quot;:&quot;i&quot;,&quot;in&quot;:&quot;query&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}},{&quot;name&quot;:&quot;year&quot;,&quot;in&quot;:&quot;query&quot;,&quot;required&quot;:true,&quot;schema&quot;:{&quot;type&quot;:&quot;string&quot;}}],&quot;responses&quot;:{&quot;2XX&quot;:{&quot;description&quot;:&quot;Successful response&quot;,&quot;content&quot;:{&quot;application/json&quot;:{&quot;schema&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;properties&quot;:{&quot;title&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;items&quot;:{&quot;type&quot;:&quot;array&quot;,&quot;items&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;properties&quot;:{&quot;title&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;date&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;category&quot;:{&quot;type&quot;:&quot;string&quot;},&quot;hebrew&quot;:{&quot;type&quot;:&quot;string&quot;}}}}}}}}}}}}}}</schema>
+    <schemaType>OpenApi3</schemaType>
+    <serviceBinding>{&quot;host&quot;:&quot;&quot;,&quot;basePath&quot;:&quot;/&quot;,&quot;allowedSchemes&quot;:[],&quot;requestMediaTypes&quot;:[],&quot;responseMediaTypes&quot;:[],&quot;compatibleMediaTypes&quot;:{},&quot;integrationFlags&quot;:null,&quot;extensions&quot;:{}}</serviceBinding>
+    <status>Complete</status>
+    <systemVersion>6</systemVersion>
+</ExternalServiceRegistration>

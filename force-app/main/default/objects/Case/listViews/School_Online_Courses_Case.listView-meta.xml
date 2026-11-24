@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>School_Online_Courses_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>School - Online Courses</label>
+    <queue>School_Online_Courses</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DiscountBudgetSource__c</fullName>
+    <label>Discount budget source</label>
+    <description>DM-Opportunity | legacy new_discount_support | Discount budget source.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Budget_Framework__c</referenceTo>
+    <relationshipLabel>Discount budget source (Orders)</relationshipLabel>
+    <relationshipName>DiscountBudgetSource</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricelist_Type__c</fullName>
+    <label>Pricelist type</label>
+    <description>DM-Pricebook2 | legacy new_yv_pricelist.new_pricelist_type | Lior 11.11.2026 | Price list type; one price book per type per activity year.</description>
+    <inlineHelpText>סוג המחירון. מחירון אחד לכל סוג לכל שנת פעילות</inlineHelpText>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Pricelist_Type</valueSetName>
+    </valueSet>
+</CustomField>

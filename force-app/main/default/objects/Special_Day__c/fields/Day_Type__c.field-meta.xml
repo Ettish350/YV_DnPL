@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_Type__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | V13-02 | Blocked: the guide cannot mark the day. Note: the day is open and shows a message.</description>
+    <inlineHelpText>חסום: המדריך לא יכול לסמן זמינות. הערה: היום פתוח ומוצגת הודעה</inlineHelpText>
+    <label>Day Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>חסום</fullName>
+                <default>false</default>
+                <label>חסום</label>
+            </value>
+            <value>
+                <fullName>הערה</fullName>
+                <default>false</default>
+                <label>הערה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

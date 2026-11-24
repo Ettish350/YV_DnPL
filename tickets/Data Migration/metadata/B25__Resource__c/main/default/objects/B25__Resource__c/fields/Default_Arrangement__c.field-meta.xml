@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default_Arrangement__c</fullName>
+    <label>Default arrangement</label>
+    <description>DM-Resource | legacy new_arrangement | DD 11 | Default seating arrangement of the room.</description>
+    <inlineHelpText>צורת הישיבה בחדר כברירת מחדל</inlineHelpText>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>שורות</fullName>
+                <default>false</default>
+                <label>שורות</label>
+            </value>
+            <value>
+                <fullName>סביב שולחן</fullName>
+                <default>false</default>
+                <label>סביב שולחן</label>
+            </value>
+            <value>
+                <fullName>צורת ח'</fullName>
+                <default>false</default>
+                <label>צורת ח'</label>
+            </value>
+            <value>
+                <fullName>שורות קבוע</fullName>
+                <default>false</default>
+                <label>שורות קבוע</label>
+            </value>
+            <value>
+                <fullName>צורת ח' עם שולחנות</fullName>
+                <default>false</default>
+                <label>צורת ח' עם שולחנות</label>
+            </value>
+            <value>
+                <fullName>צורת ח' עם משענת יד</fullName>
+                <default>false</default>
+                <label>צורת ח' עם משענת יד</label>
+            </value>
+            <value>
+                <fullName>שורות עם משענת יד</fullName>
+                <default>false</default>
+                <label>שורות עם משענת יד</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

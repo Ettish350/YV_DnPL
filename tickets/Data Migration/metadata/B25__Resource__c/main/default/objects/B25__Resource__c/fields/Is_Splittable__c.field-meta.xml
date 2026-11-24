@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Splittable__c</fullName>
+    <label>Splittable</label>
+    <description>DM-Resource | legacy new_is_can_be_split | DD 11 step 1, A11-07 | The resource can be split into sub-rooms.</description>
+    <inlineHelpText>המשאב ניתן לפיצול לחדרי משנה</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>YV20-227 | A04-04 | D-042 | The departments of the orders module. One value per Department__c record. Shared by User.Order_Department__c and Department__c.Order_Department__c.</description>
+    <masterLabel>Order Department</masterLabel>
+    <sorted>false</sorted>
+    <customValue>
+        <fullName>Official_Visits_Commemoration</fullName>
+        <default>false</default>
+        <label>ביקורים רשמיים - הנצחה</label>
+    </customValue>
+    <customValue>
+        <fullName>Pavilion_27</fullName>
+        <default>false</default>
+        <label>ביתן 27</label>
+    </customValue>
+    <customValue>
+        <fullName>Guidance_General_Public</fullName>
+        <default>false</default>
+        <label>הדרכה וקהל רחב</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational_Tours</fullName>
+        <default>false</default>
+        <label>הדרכות חינוכיות</label>
+    </customValue>
+    <customValue>
+        <fullName>Teacher_Training_Israel</fullName>
+        <default>false</default>
+        <label>הכשרת מורים מישראל</label>
+    </customValue>
+    <customValue>
+        <fullName>Counseling_and_Information</fullName>
+        <default>false</default>
+        <label>יעץ ומידע</label>
+    </customValue>
+    <customValue>
+        <fullName>Overseas_Department</fullName>
+        <default>false</default>
+        <label>מחלקת חו"ל</label>
+    </customValue>
+    <customValue>
+        <fullName>Culture_Commemoration_Department</fullName>
+        <default>false</default>
+        <label>מחלקת תרבות – הנצחה</label>
+    </customValue>
+    <customValue>
+        <fullName>Reservations_Center</fullName>
+        <default>false</default>
+        <label>מרכז הזמנות</label>
+    </customValue>
+    <customValue>
+        <fullName>Viewing_Center</fullName>
+        <default>false</default>
+        <label>מרכז הצפייה</label>
+    </customValue>
+    <customValue>
+        <fullName>Testimonies</fullName>
+        <default>false</default>
+        <label>עדויות</label>
+    </customValue>
+    <customValue>
+        <fullName>Content_Projects</fullName>
+        <default>false</default>
+        <label>פרוייקטורית תוכן</label>
+    </customValue>
+    <customValue>
+        <fullName>IDF_and_Security_Forces</fullName>
+        <default>false</default>
+        <label>צה"ל וכוחות הביטחון</label>
+    </customValue>
+</GlobalValueSet>

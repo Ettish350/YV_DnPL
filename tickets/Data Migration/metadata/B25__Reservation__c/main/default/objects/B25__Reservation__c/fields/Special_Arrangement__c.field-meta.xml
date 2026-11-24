@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Arrangement__c</fullName>
+    <label>Special arrangement</label>
+    <description>DM-Reservation | DD 11 entities, A11-14 | Special arrangement; highlighted in the operations report.</description>
+    <inlineHelpText>סידור מיוחד. מובלט בדוח לצוות התפעול</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

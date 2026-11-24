@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <label>Department</label>
+    <description>DM-Opportunity | legacy new_responsible_agent | Department.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Department__c</referenceTo>
+    <relationshipLabel>Department (Orders)</relationshipLabel>
+    <relationshipName>Department</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

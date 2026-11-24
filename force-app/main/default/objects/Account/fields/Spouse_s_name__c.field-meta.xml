@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spouse_s_name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Spouse&apos;s name</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Spouse&apos;s name - female)</relationshipLabel>
+    <relationshipName>Accounts3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

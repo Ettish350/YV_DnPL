@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Sync_Sub_Rooms</name>
+        <label>Sync sub-rooms</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>P11_SplitRoomReservations</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Sub_Room_Taken</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>reservationId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>P11_SplitRoomReservations</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <customErrors>
+        <name>Stop_Save</name>
+        <label>Stop save</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>{!Sync_Sub_Rooms.errorMessage}</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Sub_Room_Taken</name>
+        <label>Sub-room taken</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Taken</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Sync_Sub_Rooms.errorMessage</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stop_Save</targetReference>
+            </connector>
+            <label>Taken</label>
+        </rules>
+    </decisions>
+    <description>P11 | A11-07 | After save on a reservation that is not itself a sub-room copy, when the room is splittable or the room changed, and on create or a change of start, end, status or room: books, updates or cancels the parallel reservations of the sub-rooms (Apex P11_SplitRoomReservations). If a sub-room is taken, the save is stopped with a message.</description>
+    <environments>Default</environments>
+    <interviewLabel>P11 Reservation Split Sync {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>P11 חדר מפוצל - שיבוץ חדרי משנה</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Sync_Sub_Rooms</targetReference>
+        </connector>
+        <filterFormula>ISBLANK({!$Record.Split_Parent__c})
+&amp;&amp; ({!$Record.B25__Resource__r.Is_Splittable__c} || ISCHANGED({!$Record.B25__Resource__c}))
+&amp;&amp; (ISNEW() || ISCHANGED({!$Record.B25__Start__c}) || ISCHANGED({!$Record.B25__End__c}) || ISCHANGED({!$Record.B25__Status__c}) || ISCHANGED({!$Record.B25__Resource__c}))</filterFormula>
+        <object>B25__Reservation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

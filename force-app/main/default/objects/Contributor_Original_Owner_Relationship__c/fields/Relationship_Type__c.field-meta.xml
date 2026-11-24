@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_Type__c</fullName>
+    <label>Relationship Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בת/ ן של בעל הפריטים</fullName>
+                <default>false</default>
+                <label>בת/ ן של בעל הפריטים</label>
+            </value>
+            <value>
+                <fullName>נכד/ה של בעל הפריטים</fullName>
+                <default>false</default>
+                <label>נכד/ה של בעל הפריטים</label>
+            </value>
+            <value>
+                <fullName>אחיינ/נית של</fullName>
+                <default>false</default>
+                <label>אחיינ/נית של</label>
+            </value>
+            <value>
+                <fullName>אח/אחות של בעל הפריט</fullName>
+                <default>false</default>
+                <label>אח/אחות של בעל הפריט</label>
+            </value>
+            <value>
+                <fullName>אח למחצה</fullName>
+                <default>false</default>
+                <label>אח למחצה</label>
+            </value>
+            <value>
+                <fullName>שכן של בעל הפריטים</fullName>
+                <default>false</default>
+                <label>שכן של בעל הפריטים</label>
+            </value>
+            <value>
+                <fullName>קרוב משפחה</fullName>
+                <default>false</default>
+                <label>קרוב משפחה</label>
+            </value>
+            <value>
+                <fullName>מכר</fullName>
+                <default>false</default>
+                <label>מכר</label>
+            </value>
+            <value>
+                <fullName>בן/ת זוג של בעל הפריטים</fullName>
+                <default>false</default>
+                <label>בן/ת זוג של בעל הפריטים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AgeGroup__c</fullName>
+    <label>Age group</label>
+    <description>DM-Opportunity | legacy new_age_group, Lior answer B13 (PR #27) | Age group, same value set as the Bundle.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Age_Group</valueSetName>
+    </valueSet>
+</CustomField>

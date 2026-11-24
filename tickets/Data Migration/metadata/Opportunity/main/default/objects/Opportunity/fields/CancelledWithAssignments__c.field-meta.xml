@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelledWithAssignments__c</fullName>
+    <label>Cancelled with assignments</label>
+    <description>DM-Opportunity | legacy new_cancelled_with_event_item | Cancelled with assignments.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

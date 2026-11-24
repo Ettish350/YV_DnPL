@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס ביקור</label>
+    <name>VisitStatus__c</name>
+    <picklistValues>
+        <masterLabel>ביקור חוזר</masterLabel>
+        <translation><!-- ביקור חוזר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביקור ראשון</masterLabel>
+        <translation><!-- ביקור ראשון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

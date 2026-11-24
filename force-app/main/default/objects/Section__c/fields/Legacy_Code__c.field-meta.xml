@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_Code__c</fullName>
+    <description>DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | Legacy new_section option value; the same code can exist under several departments.</description>
+    <externalId>false</externalId>
+    <label>Legacy Section Code</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

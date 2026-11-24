@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderSubSource__c</fullName>
+    <label>Order sub-source</label>
+    <description>DM-Opportunity | legacy new_sub_source_reservation | Order sub-source.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מערכת הזמנות מקוונת</fullName>
+                <default>false</default>
+                <label>מערכת הזמנות מקוונת</label>
+            </value>
+            <value>
+                <fullName>מובייל</fullName>
+                <default>false</default>
+                <label>מובייל</label>
+            </value>
+            <value>
+                <fullName>טריפ אדוויזור</fullName>
+                <default>false</default>
+                <label>טריפ אדוויזור</label>
+            </value>
+            <value>
+                <fullName>בית הספר</fullName>
+                <default>false</default>
+                <label>בית הספר</label>
+            </value>
+            <value>
+                <fullName>כניסה מהירה</fullName>
+                <default>false</default>
+                <label>כניסה מהירה</label>
+            </value>
+            <value>
+                <fullName>הנצחה הזמנה ידנית</fullName>
+                <default>false</default>
+                <label>הנצחה הזמנה ידנית</label>
+            </value>
+            <value>
+                <fullName>קיוסק</fullName>
+                <default>false</default>
+                <label>קיוסק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
