@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsConcentratedInvoiceCreated__c</fullName>
+    <label>Concentrated invoice created</label>
+    <description>DM-Opportunity | legacy new_is_created_concentrated_invoice | Concentrated invoice created.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

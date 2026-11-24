@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Usage_Mode__c</fullName>
+    <label>Usage mode</label>
+    <description>DM-Reservation | DD 11 step 5, V11-08 | Usage mode of a two-mode resource: exclusive as a classroom, or museum-style entry.</description>
+    <inlineHelpText>במשאב דו-מצבי: שימוש ככיתה בתפיסה בלעדית, או כניסה למוזיאון עם קבוצות במקביל</inlineHelpText>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>כיתה</fullName>
+                <default>false</default>
+                <label>כיתה</label>
+            </value>
+            <value>
+                <fullName>כניסה למוזיאון</fullName>
+                <default>false</default>
+                <label>כניסה למוזיאון</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

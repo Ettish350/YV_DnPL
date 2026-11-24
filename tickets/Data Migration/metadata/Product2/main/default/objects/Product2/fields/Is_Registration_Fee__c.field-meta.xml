@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Registration_Fee__c</fullName>
+    <label>Registration fee product</label>
+    <description>DM-Product2 | DD A02-05, A08-04, A08-05 | The registration fee product: priced by entry hour and discounted per the order.</description>
+    <inlineHelpText>מוצר דמי ההרשמה. מחירו נקבע לפי שעת הכניסה וההנחות על ההזמנה</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

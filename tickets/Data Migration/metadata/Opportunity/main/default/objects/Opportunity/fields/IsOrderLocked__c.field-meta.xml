@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsOrderLocked__c</fullName>
+    <label>Order locked</label>
+    <description>DM-Opportunity | legacy new_is_reservation_locked | Order locked.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

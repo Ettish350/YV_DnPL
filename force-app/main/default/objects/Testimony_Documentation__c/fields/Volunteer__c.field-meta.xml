@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Volunteer</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Vendor</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.VendorType__c</field>
+            <operation>equals</operation>
+            <value>Volunteer</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Testimony Documentation (Volunteer)</relationshipLabel>
+    <relationshipName>Testimony_Documentation4</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

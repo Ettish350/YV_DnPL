@@ -1,0 +1,73 @@
+<template>
+    <lightning-card title={label.title} icon-name="standard:product_item">
+        <div class="slds-var-p-horizontal_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text={label.loading} size="small"></lightning-spinner>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error slds-var-m-bottom_small" role="alert">{error}</div>
+            </template>
+            <p class="slds-text-color_weak slds-var-m-bottom_small">{label.help}</p>
+
+            <template if:false={hasBooks}>
+                <p class="slds-text-color_weak">{label.noBooks}</p>
+            </template>
+
+            <template if:true={hasBooks}>
+                <template if:false={hasRows}>
+                    <p class="slds-text-color_weak slds-var-m-bottom_small">{label.noItems}</p>
+                </template>
+                <template if:true={hasRows}>
+                    <div class="slds-scrollable_x">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th scope="col">{label.productHeader}</th>
+                                    <th scope="col">{label.quantityHeader}</th>
+                                    <template for:each={books} for:item="b">
+                                        <th key={b.key} scope="col">
+                                            <div>{b.name}</div>
+                                            <div class="slds-text-body_small slds-text-color_weak slds-text-font_normal">{b.meta}</div>
+                                        </th>
+                                    </template>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={visibleRows} for:item="r">
+                                    <tr key={r.key}>
+                                        <th scope="row">
+                                            {r.productName}
+                                        </th>
+                                        <td>{r.quantity}</td>
+                                        <template for:each={r.cells} for:item="c">
+                                            <td key={c.key} style="min-width: 8rem">
+                                                <lightning-input type="number" label={label.price} variant="label-hidden" step="0.01" min="0" value={c.price} data-row={r.key} data-book={c.pricebookId} onchange={handlePrice}></lightning-input>
+                                            </td>
+                                        </template>
+                                        <td>
+                                            <lightning-button-icon icon-name="utility:delete" variant="bare" alternative-text={label.remove} title={label.remove} data-row={r.key} onclick={handleRemove}></lightning-button-icon>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                            <tfoot>
+                                <tr class="slds-theme_shade">
+                                    <th scope="row" colspan="2">{label.total}</th>
+                                    <template for:each={totals} for:item="t">
+                                        <th key={t.key} scope="col" class="slds-text-heading_small">{t.value}</th>
+                                    </template>
+                                    <th scope="col"></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </template>
+
+            </template>
+        </div>
+        <div slot="footer" class="slds-grid slds-grid_align-end">
+            <lightning-button variant="brand" label={label.save} onclick={handleSave} disabled={saveDisabled}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

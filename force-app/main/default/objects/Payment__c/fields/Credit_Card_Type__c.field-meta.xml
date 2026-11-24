@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Card_Type__c</fullName>
+    <label>Credit Card Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Express</fullName>
+                <default>false</default>
+                <label>American Express</label>
+            </value>
+            <value>
+                <fullName>Diners Club</fullName>
+                <default>false</default>
+                <label>Diners Club</label>
+            </value>
+            <value>
+                <fullName>Isracard</fullName>
+                <default>false</default>
+                <label>Isracard</label>
+            </value>
+            <value>
+                <fullName>Leumi Card</fullName>
+                <default>false</default>
+                <label>Leumi Card</label>
+            </value>
+            <value>
+                <fullName>Master Card</fullName>
+                <default>false</default>
+                <label>Master Card</label>
+            </value>
+            <value>
+                <fullName>MAX-Leumi Card</fullName>
+                <default>false</default>
+                <label>MAX-Leumi Card</label>
+            </value>
+            <value>
+                <fullName>Visa</fullName>
+                <default>false</default>
+                <label>Visa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

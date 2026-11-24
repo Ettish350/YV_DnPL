@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג משאב</label>
+    <name>ResourceType__c</name>
+    <picklistValues>
+        <masterLabel>אולם</masterLabel>
+        <translation><!-- אולם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>החיים שלפני</masterLabel>
+        <translation><!-- החיים שלפני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר השאלות הגדולות</masterLabel>
+        <translation><!-- חדר השאלות הגדולות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדר ישיבות</masterLabel>
+        <translation><!-- חדר ישיבות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חזרה לחיים</masterLabel>
+        <translation><!-- חזרה לחיים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כיתה/אולם</masterLabel>
+        <translation><!-- כיתה/אולם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מוזיאון</masterLabel>
+        <translation><!-- מוזיאון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיצג</masterLabel>
+        <translation><!-- מיצג --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים</masterLabel>
+        <translation><!-- עיר הבה&quot;דים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קמפוס</masterLabel>
+        <translation><!-- קמפוס --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

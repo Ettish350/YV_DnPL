@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>DM-Bundle_Item_Entry | Lior 11.11.2026 | One price per bundle item per price book (bundle item Id plus price book Id); filled by an automation later.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>מפתח ייחודי: מחיר אחד לכל פריט חבילה בכל מחירון. מתמלא אוטומטית</inlineHelpText>
+    <label>Unique key</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

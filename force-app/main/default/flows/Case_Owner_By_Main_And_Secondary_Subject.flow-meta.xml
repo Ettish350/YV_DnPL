@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Collect_Fragments</name>
+        <label>Assign Queue - Collect Fragments</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Collect Fragments</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Communications_Division</name>
+        <label>Assign Queue - Communications Division</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Communications Division</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Hall_Of_Names</name>
+        <label>Assign Queue - Hall Of Names</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Hall Of Names</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Information_Technologies</name>
+        <label>Assign Queue - Information Technologies</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Information Technologies</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_International_Institute_for_Holocaust_Re</name>
+        <label>Assign Queue - International Institute for Holocaust Re</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>International Institute for Holocaust Re</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_International_Programs_and_Seminars</name>
+        <label>Assign Queue - International Programs and Seminars</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>International Programs and Seminars</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Library</name>
+        <label>Assign Queue - Library</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Library</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Mobile_Exhibitions</name>
+        <label>Assign Queue - Mobile Exhibitions</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Mobile Exhibitions</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Museums</name>
+        <label>Assign Queue - Museums</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Museums</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Online_Store</name>
+        <label>Assign Queue - Online Store</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Online Store</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Public_Relations</name>
+        <label>Assign Queue - Public Relations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Public Relations</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Righteous_Among_Nations</name>
+        <label>Assign Queue - Righteous Among Nations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Righteous Among Nations</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School</name>
+        <label>Assign Queue - School</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Administration</name>
+        <label>Assign Queue - School - Administration</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Administration</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Consulting_and_Guidance_for_Edu</name>
+        <label>Assign Queue - School - Consulting and Guidance for Edu</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Consulting and Guidance for Edu</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_International_Seminars</name>
+        <label>Assign Queue - School - International Seminars</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - International Seminars</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Online_Courses</name>
+        <label>Assign Queue - School - Online Courses</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Online Courses	</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Preparation_for_Trips_to_Poland</name>
+        <label>Assign Queue - School - Preparation for Trips to Poland</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Preparation for Trips to Poland</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Security_Forces</name>
+        <label>Assign Queue - School - Security Forces</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Security Forces</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Teacher_Trainings</name>
+        <label>Assign Queue - School - Teacher Trainings</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Teacher Trainings	</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Trainings</name>
+        <label>Assign Queue - School - Trainings</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Trainings</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_School_Trainings_and_Tours_for_the_Gen</name>
+        <label>Assign Queue - School - Trainings and Tours for the Gen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>School - Trainings and Tours for the Gen</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Testimonies</name>
+        <label>Assign Queue - Testimonies</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Testimonies</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>Return by Main and Secondary Subject  the Queue That Assign to Case Owner</description>
+        <name>Assign_Queue_Yaatz_Info</name>
+        <label>Assign Queue - Yaatz Info</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>QueueName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Yaatz Info</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>What_Is_The_Main_Subject</name>
+        <label>What Is The Main Subject</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>General_Information</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>General Information</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject</targetReference>
+            </connector>
+            <label>General Information</label>
+        </rules>
+        <rules>
+            <name>Academic_Research_and_Publications</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Academic Research and Publications</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_1</targetReference>
+            </connector>
+            <label>Academic Research and Publications</label>
+        </rules>
+        <rules>
+            <name>Education</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Education</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_3</targetReference>
+            </connector>
+            <label>Education</label>
+        </rules>
+        <rules>
+            <name>Internet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Internet</stringValue>
+                </rightValue>
+            </conditions>
+            <label>Internet</label>
+        </rules>
+        <rules>
+            <name>Collections_Archives_Name_Search_Commemoration_Museum_and_Library</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Collections (Archives, Name Search/Commemoration, Museum and Library)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_5</targetReference>
+            </connector>
+            <label>Collections (Archives, Name Search/Commemoration, Museum and Library)</label>
+        </rules>
+        <rules>
+            <name>Advice_and_information</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Advice and information</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_6</targetReference>
+            </connector>
+            <label>Advice and information</label>
+        </rules>
+        <rules>
+            <name>Righteous_Among_the_Nations</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Righteous Among the Nations</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_2</targetReference>
+            </connector>
+            <label>Righteous Among the Nations</label>
+        </rules>
+        <rules>
+            <name>Media_and_Internet</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.MainSubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Media and Internet</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>What_Is_The_Secondary_Subject_4</targetReference>
+            </connector>
+            <label>Media and Internet</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ready2print</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>תערוכות ניידות ready2print</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Mobile_Exhibitions</targetReference>
+            </connector>
+            <label>תערוכות ניידות ready2print</label>
+        </rules>
+        <rules>
+            <name>Online_Store</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Online Store</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Online_Store</targetReference>
+            </connector>
+            <label>Online Store</label>
+        </rules>
+        <rules>
+            <name>About_the_Holocaust_About_Yad_Vashem_Feedback_Visiting_Other</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>About the Holocaust</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>About Yad Vashem</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Feedback</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Visiting</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Public_Relations</targetReference>
+            </connector>
+            <label>About the Holocaust,About Yad Vashem,Feedback,Visiting,Other</label>
+        </rules>
+        <rules>
+            <name>Museum</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Museum</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Museums</targetReference>
+            </connector>
+            <label>Museum</label>
+        </rules>
+        <rules>
+            <name>Yaatz_Info_General</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Yaatz Info General</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Yaatz_Info</targetReference>
+            </connector>
+            <label>Yaatz Info General</label>
+        </rules>
+        <rules>
+            <name>Suggestion_for_a_Cluster</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Suggestion for a Cluster</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_Queue_Hall_Of_Names</targetReference>
+            </connector>
+            <label>Suggestion for a Cluster</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_1</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Research_Scholars_Information_Publications_Conferences_Other</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Research</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Scholars Information</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Publications</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Conferences</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_International_Institute_for_Holocaust_Re</targetReference>
+            </connector>
+            <label>Research,Scholars Information,Publications,Conferences,Other</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_2</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_request_for_recognition_and_or_inquiry_about_application_status</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New request for recognition and/or inquiry about application status</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Righteous_Among_Nations</targetReference>
+            </connector>
+            <label>New request for recognition and/or inquiry about application status</label>
+        </rules>
+        <rules>
+            <name>Information_about_the_Righteous_among_the_Nations</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Information about the Righteous among the Nations</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Yaatz_Info</targetReference>
+            </connector>
+            <label>Information about the Righteous among the Nations</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_3</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Guided_tours_for_students</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Guided tours for students</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Trainings</targetReference>
+            </connector>
+            <label>Guided tours for students</label>
+        </rules>
+        <rules>
+            <name>Preparatory_courses_for_students_visiting_Poland</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Preparatory courses for students visiting Poland</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Preparation_for_Trips_to_Poland</targetReference>
+            </connector>
+            <label>Preparatory courses for students visiting Poland</label>
+        </rules>
+        <rules>
+            <name>Permissions_and_Partnership_Inquiries</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Permissions and Partnership Inquiries</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Administration</targetReference>
+            </connector>
+            <label>Permissions and Partnership Inquiries</label>
+        </rules>
+        <rules>
+            <name>Israel_teacher_training_programs</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Israel teacher training programs</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Teacher_Trainings</targetReference>
+            </connector>
+            <label>Israel teacher training programs</label>
+        </rules>
+        <rules>
+            <name>Educational_consultation_resources_school_projects_and_educational_activities</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Educational consultation: resources, school projects and educational activities</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Consulting_and_Guidance_for_Edu</targetReference>
+            </connector>
+            <label>Educational consultation: resources, school projects and educational activities</label>
+        </rules>
+        <rules>
+            <name>International_programs_and_seminars</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>International programs and seminars</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_International_Programs_and_Seminars</targetReference>
+            </connector>
+            <label>International programs and seminars</label>
+        </rules>
+        <rules>
+            <name>IDF_and_Israeli_security_forces</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IDF and Israeli security forces)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Security_Forces</targetReference>
+            </connector>
+            <label>IDF and Israeli security forces)</label>
+        </rules>
+        <rules>
+            <name>Jewish_education</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Jewish education</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_International_Seminars</targetReference>
+            </connector>
+            <label>Jewish education</label>
+        </rules>
+        <rules>
+            <name>Guided_Tours</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Guided Tours</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Trainings_and_Tours_for_the_Gen</targetReference>
+            </connector>
+            <label>Guided Tours</label>
+        </rules>
+        <rules>
+            <name>Other</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School</targetReference>
+            </connector>
+            <label>Other</label>
+        </rules>
+        <rules>
+            <name>Online_courses</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Online courses</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_School_Online_Courses</targetReference>
+            </connector>
+            <label>Online courses</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_4</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Press_Releases_Information_for_Journalists_Magazine_Other</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Press Releases</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Information for Journalists</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Magazine</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Other</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Communications_Division</targetReference>
+            </connector>
+            <label>Press Releases,Information for Journalists,Magazine,Other</label>
+        </rules>
+        <rules>
+            <name>Technical_support</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technical support</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Information_Technologies</targetReference>
+            </connector>
+            <label>Technical support</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_5</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Submitting_Materials_to_Yad_Vashem_Library</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Submitting Materials to Yad Vashem</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Library</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Library</targetReference>
+            </connector>
+            <label>Submitting Materials to Yad Vashem,Library</label>
+        </rules>
+        <rules>
+            <name>Shoah_victims_commemoration_Names_database</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Shoah victims commemoration (Names database)</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Hall_Of_Names</targetReference>
+            </connector>
+            <label>Shoah victims commemoration (Names database)</label>
+        </rules>
+        <rules>
+            <name>Schedule_a_survivor_testimony_recording</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Schedule a survivor testimony recording</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Testimonies</targetReference>
+            </connector>
+            <label>Schedule a survivor testimony recording</label>
+        </rules>
+        <rules>
+            <name>Documents_and_written_testimonies_Search_for_information_on_Shoah_victims_Photog</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Documents and written testimonies</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Search for information on Shoah victims</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Photographs</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Films and video/audio testimonies</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Yaatz_Info</targetReference>
+            </connector>
+            <label>Documents and written testimonies,Search for information on Shoah victims,Photographs,Films and video/audio testimonies</label>
+        </rules>
+        <rules>
+            <name>Donating_Personal_Items</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Donating Personal Items</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Collect_Fragments</targetReference>
+            </connector>
+            <label>Donating Personal Items</label>
+        </rules>
+        <rules>
+            <name>Collection_Day_Registration_Form</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Collection Day Registration Form</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <isGoTo>true</isGoTo>
+                <targetReference>Assign_Queue_Collect_Fragments</targetReference>
+            </connector>
+            <label>Collection Day Registration Form</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Is_The_Secondary_Subject_6</name>
+        <label>What Is The Secondary Subject?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Delivery_of_materials</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Case.SecondarySubject__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Delivery of materials</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Queue_Yaatz_Info</targetReference>
+            </connector>
+            <label>Delivery of materials</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Case Owner By Main And Secondary Subject {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Owner By Main And Secondary Subject</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Case</name>
+        <label>Get Case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>What_Is_The_Main_Subject</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>case_id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>case_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QueueName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

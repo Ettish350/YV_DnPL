@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ruleset Rule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Règles du jeu Règles</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Ensemble de règles Nom de la règle</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

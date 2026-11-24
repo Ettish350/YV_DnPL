@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Tier__c</fullName>
+    <description>Summarize all open commitments and paid transaction</description>
+    <label>Donor Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Donor_Tier_Override__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Patron of the Mount</fullName>
+                <default>false</default>
+                <label>Patron of the Mount</label>
+            </value>
+            <value>
+                <fullName>Torchbearer</fullName>
+                <default>false</default>
+                <label>Torchbearer</label>
+            </value>
+            <value>
+                <fullName>Visionary</fullName>
+                <default>false</default>
+                <label>Visionary</label>
+            </value>
+            <value>
+                <fullName>Pillar</fullName>
+                <default>false</default>
+                <label>Pillar</label>
+            </value>
+            <value>
+                <fullName>Benefactor</fullName>
+                <default>false</default>
+                <label>Benefactor</label>
+            </value>
+            <value>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+                <label>Trustee</label>
+            </value>
+            <value>
+                <fullName>Guardian</fullName>
+                <default>false</default>
+                <label>Guardian</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Sponsor</fullName>
+                <default>false</default>
+                <label>Sponsor</label>
+            </value>
+            <value>
+                <fullName>Supporter &amp; Associates</fullName>
+                <default>false</default>
+                <label>Supporter &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>Circle of Friends</fullName>
+                <default>false</default>
+                <label>Circle of Friends</label>
+            </value>
+            <value>
+                <fullName>“Zachor” Member</fullName>
+                <default>false</default>
+                <label>“Zachor” Member</label>
+            </value>
+            <value>
+                <fullName>“Chai” Member</fullName>
+                <default>false</default>
+                <label>“Chai” Member</label>
+            </value>
+            <value>
+                <fullName>Jerusalem Member</fullName>
+                <default>false</default>
+                <label>Jerusalem Member</label>
+            </value>
+            <value>
+                <fullName>Advocate Member</fullName>
+                <default>false</default>
+                <label>Advocate Member</label>
+            </value>
+            <value>
+                <fullName>Sustaining Member</fullName>
+                <default>false</default>
+                <label>Sustaining Member</label>
+            </value>
+            <value>
+                <fullName>Supporting Member</fullName>
+                <default>false</default>
+                <label>Supporting Member</label>
+            </value>
+            <value>
+                <fullName>Member</fullName>
+                <default>false</default>
+                <label>Member</label>
+            </value>
+            <value>
+                <fullName>Associate Member</fullName>
+                <default>false</default>
+                <label>Associate Member</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Patron of the Mount</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Torchbearer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Visionary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Pillar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Benefactor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Trustee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Guardian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sponsor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Supporter &amp; Associates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Circle of Friends</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>“Zachor” Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>“Chai” Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Jerusalem Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Advocate Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Sustaining Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Supporting Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Member</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Associate Member</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

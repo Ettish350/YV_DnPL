@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GefenType__c</fullName>
+    <label>Gefen type</label>
+    <description>DM-Opportunity | legacy new_gefen_type | Gefen type.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>תכנית גפן 14605 - פרוייקט י"א משרד החינוך</fullName>
+                <default>false</default>
+                <label>תכנית גפן 14605 - פרוייקט י"א משרד החינוך</label>
+            </value>
+            <value>
+                <fullName>תכנית גפן 14640- ניידות חינוכיות עד תשפ"ה</fullName>
+                <default>false</default>
+                <label>תכנית גפן 14640- ניידות חינוכיות עד תשפ"ה</label>
+            </value>
+            <value>
+                <fullName>תכנית גפן 14556- ימי עיון לתלמידים</fullName>
+                <default>false</default>
+                <label>תכנית גפן 14556- ימי עיון לתלמידים</label>
+            </value>
+            <value>
+                <fullName>תכנית גפן 2774- בשבילי הזיכרון- תכנית למורים</fullName>
+                <default>false</default>
+                <label>תכנית גפן 2774- בשבילי הזיכרון- תכנית למורים</label>
+            </value>
+            <value>
+                <fullName>מבצעים פדגוגים- משולם ע"י משרד החינוך</fullName>
+                <default>false</default>
+                <label>מבצעים פדגוגים- משולם ע"י משרד החינוך</label>
+            </value>
+            <value>
+                <fullName>מבצעים פדגוגים- משולם ע"י המזמין</fullName>
+                <default>false</default>
+                <label>מבצעים פדגוגים- משולם ע"י המזמין</label>
+            </value>
+            <value>
+                <fullName>תכנית גפן 56743 - ניידות חינוכיות</fullName>
+                <default>false</default>
+                <label>תכנית גפן 56743 - ניידות חינוכיות</label>
+            </value>
+            <value>
+                <fullName>תכנית גפן- השת' חדר מורים</fullName>
+                <default>false</default>
+                <label>תכנית גפן- השת' חדר מורים</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

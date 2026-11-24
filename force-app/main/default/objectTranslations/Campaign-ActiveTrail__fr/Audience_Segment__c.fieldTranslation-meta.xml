@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Audience Segment --></label>
+    <name>Audience_Segment__c</name>
+    <picklistValues>
+        <masterLabel>Donor segment</masterLabel>
+        <translation><!-- Donor segment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>general</masterLabel>
+        <translation><!-- general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>new</masterLabel>
+        <translation><!-- new --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

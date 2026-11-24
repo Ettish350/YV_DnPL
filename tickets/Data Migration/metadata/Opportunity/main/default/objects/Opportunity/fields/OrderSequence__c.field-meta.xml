@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderSequence__c</fullName>
+    <label>Order sequence</label>
+    <description>DM-Opportunity | DD, Lior answers PR #27 | Order sequence.</description>
+    <displayFormat>{0000000}</displayFormat>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

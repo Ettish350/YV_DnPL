@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Edit_When_Awaiting_Payment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   OR( RecordType.DeveloperName = &quot;Yaatz_Info&quot; , AND(   ISPICKVAL( SecondarySubject__c , &quot;Artworks and artifacts in Yad Vashem&apos;s collections&quot;),       RecordType.DeveloperName = &quot;General&quot;)),
+
+    ISPICKVAL(PRIORVALUE(PaymentStatus__c), &quot;Awaiting payment&quot;),
+    NOT(
+        OR(
+            ISPICKVAL(PaymentStatus__c, &quot;Paid&quot;),
+            ISPICKVAL(PaymentStatus__c, &quot;Payment failed&quot;),
+            ISPICKVAL(Status, &quot;Closed&quot;),
+            ISPICKVAL(Status, &quot;Cancelled&quot;)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>לא ניתן לערוך פנייה בסטטוס: ממתין לתשלום
+יש להסדיר תשלום בהזמנה או לפנות למשתמש מורשה.</errorMessage>
+</ValidationRule>

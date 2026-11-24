@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VisitorDescription__c</fullName>
+    <label>Visitor description</label>
+    <description>DM-Opportunity | DD, Lior answers PR #27 | Visitor description.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>שגריר</fullName>
+                <default>false</default>
+                <label>שגריר</label>
+            </value>
+            <value>
+                <fullName>שגריר חדש</fullName>
+                <default>false</default>
+                <label>שגריר חדש</label>
+            </value>
+            <value>
+                <fullName>נשיא</fullName>
+                <default>false</default>
+                <label>נשיא</label>
+            </value>
+            <value>
+                <fullName>מלך/נסיך/קיסר</fullName>
+                <default>false</default>
+                <label>מלך/נסיך/קיסר</label>
+            </value>
+            <value>
+                <fullName>ראש ממשלה</fullName>
+                <default>false</default>
+                <label>ראש ממשלה</label>
+            </value>
+            <value>
+                <fullName>קנצלר</fullName>
+                <default>false</default>
+                <label>קנצלר</label>
+            </value>
+            <value>
+                <fullName>משרד החוץ</fullName>
+                <default>false</default>
+                <label>משרד החוץ</label>
+            </value>
+            <value>
+                <fullName>תורם</fullName>
+                <default>false</default>
+                <label>תורם</label>
+            </value>
+            <value>
+                <fullName>תורם פוטנציאלי</fullName>
+                <default>false</default>
+                <label>תורם פוטנציאלי</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

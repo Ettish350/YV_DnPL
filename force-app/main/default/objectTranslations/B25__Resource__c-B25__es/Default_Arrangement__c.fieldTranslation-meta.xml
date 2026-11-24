@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- צורת הישיבה בחדר כברירת מחדל --></help>
+    <label><!-- Default arrangement --></label>
+    <name>Default_Arrangement__c</name>
+    <picklistValues>
+        <masterLabel>סביב שולחן</masterLabel>
+        <translation><!-- סביב שולחן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צורת ח&apos;</masterLabel>
+        <translation><!-- צורת ח&apos; --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צורת ח&apos; עם משענת יד</masterLabel>
+        <translation><!-- צורת ח&apos; עם משענת יד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צורת ח&apos; עם שולחנות</masterLabel>
+        <translation><!-- צורת ח&apos; עם שולחנות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שורות</masterLabel>
+        <translation><!-- שורות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שורות עם משענת יד</masterLabel>
+        <translation><!-- שורות עם משענת יד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שורות קבוע</masterLabel>
+        <translation><!-- שורות קבוע --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

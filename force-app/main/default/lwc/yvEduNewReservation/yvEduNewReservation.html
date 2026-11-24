@@ -1,0 +1,119 @@
+<template>
+    <section class="yvedu-res yvedu-res-flow" dir={langDir}>
+        <template if:true={isSaving}>
+            <div class="yvedu-res-overlay" role="status" aria-label={text.saving}>
+                <span class="yvedu-res-spinner"></span>
+            </div>
+        </template>
+
+        <ol class="yvedu-res-stepper">
+            <template for:each={stepperItems} for:item="item">
+                <li key={item.key} class={item.className} aria-current={item.ariaCurrent}>
+                    <button type="button" class="yvedu-res-step-btn" data-key={item.key} disabled={item.disabled} onclick={handleStepClick}>
+                        <span class="yvedu-res-step-icon">{item.icon}</span>
+                        <span class="yvedu-res-step-label">{item.label}</span>
+                    </button>
+                </li>
+            </template>
+        </ol>
+
+        <template if:true={saveError}>
+            <p class="yvedu-res-status yvedu-res-status_error" role="alert">{saveError}</p>
+        </template>
+
+        <template if:true={isActivity}>
+            <c-yv-edu-new-reservation-activity
+                audience={audience}
+                selection={selection}
+                subject={subject}
+                onsubjectchange={handleSubjectChange}
+                onaudiencechange={handleAudienceChange}
+                onselectionchange={handleSelectionChange}
+                onnext={handleNext}
+            ></c-yv-edu-new-reservation-activity>
+        </template>
+        <template if:true={isWho}>
+            <c-yv-edu-new-reservation-who
+                bundles={whoBundles}
+                groups={groups}
+                instruction-language={instructionLanguage}
+                onlanguagechange={handleLanguageChange}
+                ongroupschange={handleGroupsChange}
+                onchangeactivity={handleChangeActivity}
+                onnext={handleNext}
+            ></c-yv-edu-new-reservation-who>
+        </template>
+        <template if:true={isWhen}>
+            <c-yv-edu-new-reservation-when
+                bundle-item-ids={allItemIds}
+                participants={totalParticipants}
+                selected-date={visitDate}
+                selected-time={visitTime}
+                groups={groups}
+                museum-times={museumTimes}
+                ondateselected={handleDateSelected}
+                ontimeselected={handleTimeSelected}
+                onmuseumloaded={handleMuseumLoaded}
+                onmuseumselected={handleMuseumSelected}
+                onordersubmit={handleSubmit}
+            ></c-yv-edu-new-reservation-when>
+        </template>
+
+        <template if:true={isDone}>
+            <div class="yvedu-res-done">
+                <div class="yvedu-res-done-icon" aria-hidden="true">&#10003;</div>
+                <h2 class="yvedu-res-title">{text.doneTitle}</h2>
+                <p class="yvedu-res-status">{doneOrderText}</p>
+
+                <template if:true={showArriveEarly}>
+                    <p class="yvedu-res-notice" role="note">{text.doneArriveEarly}</p>
+                </template>
+
+                <dl class="yvedu-res-summary">
+                    <div class="yvedu-res-summary-row">
+                        <dt>{text.doneDate}</dt>
+                        <dd>{doneDateText}</dd>
+                    </div>
+                    <div class="yvedu-res-summary-row">
+                        <dt>{text.instructionLanguageTitle}</dt>
+                        <dd>{instructionLanguageLabel}</dd>
+                    </div>
+                    <div class="yvedu-res-summary-row">
+                        <dt>{text.doneStart}</dt>
+                        <dd>{doneStartTime}</dd>
+                    </div>
+                    <div class="yvedu-res-summary-row">
+                        <dt>{text.doneActivities}</dt>
+                        <dd>
+                            <template for:each={whoBundles} for:item="bundle">
+                                <div key={bundle.id} class="yvedu-res-summary-bundle">
+                                    <span class="yvedu-res-summary-name">{bundle.name}</span>
+                                    <ul class="yvedu-res-summary-items">
+                                        <template for:each={bundle.includedItems} for:item="item">
+                                            <li key={item.key}>{item.text}</li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </template>
+                        </dd>
+                    </div>
+                    <div class="yvedu-res-summary-row">
+                        <dt>{text.doneGroups}</dt>
+                        <dd>
+                            <template for:each={doneGroups} for:item="group">
+                                <div key={group.key} class="yvedu-res-summary-group">
+                                    <span class="yvedu-res-summary-name">{group.name}</span>
+                                    <span class="yvedu-res-summary-meta">{group.participantsText}</span>
+                                    <template if:true={group.hasEntry}>
+                                        <span class="yvedu-res-summary-chip">{group.entryText}</span>
+                                    </template>
+                                </div>
+                            </template>
+                        </dd>
+                    </div>
+                </dl>
+                <p class="yvedu-res-summary-total">{doneTotalText}</p>
+            </div>
+        </template>
+    </section>
+</template>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Plaque Type --></label>
+    <name>Plaque_Type__c</name>
+    <picklistValues>
+        <masterLabel>אבן</masterLabel>
+        <translation><!-- אבן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלומיניום</masterLabel>
+        <translation><!-- אלומיניום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זכוכית</masterLabel>
+        <translation><!-- זכוכית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זכוכית מותזת חול</masterLabel>
+        <translation><!-- זכוכית מותזת חול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חריטה</masterLabel>
+        <translation><!-- חריטה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעורב</masterLabel>
+        <translation><!-- מעורב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתכת מוזהבת</masterLabel>
+        <translation><!-- מתכת מוזהבת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מתכת מוזהבת על עץ</masterLabel>
+        <translation><!-- מתכת מוזהבת על עץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נירוסטה</masterLabel>
+        <translation><!-- נירוסטה --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

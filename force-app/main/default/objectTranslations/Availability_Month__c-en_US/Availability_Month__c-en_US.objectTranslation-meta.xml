@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Availability Month</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Availability Months</value>
+    </caseValues>
+    <layouts>
+        <layout>Availability Month Layout</layout>
+        <sections>
+            <label><!-- Day 1 --></label>
+            <section>Day 1</section>
+        </sections>
+        <sections>
+            <label><!-- Day 10 --></label>
+            <section>Day 10</section>
+        </sections>
+        <sections>
+            <label><!-- Day 11 --></label>
+            <section>Day 11</section>
+        </sections>
+        <sections>
+            <label><!-- Day 12 --></label>
+            <section>Day 12</section>
+        </sections>
+        <sections>
+            <label><!-- Day 13 --></label>
+            <section>Day 13</section>
+        </sections>
+        <sections>
+            <label><!-- Day 14 --></label>
+            <section>Day 14</section>
+        </sections>
+        <sections>
+            <label><!-- Day 15 --></label>
+            <section>Day 15</section>
+        </sections>
+        <sections>
+            <label><!-- Day 16 --></label>
+            <section>Day 16</section>
+        </sections>
+        <sections>
+            <label><!-- Day 17 --></label>
+            <section>Day 17</section>
+        </sections>
+        <sections>
+            <label><!-- Day 18 --></label>
+            <section>Day 18</section>
+        </sections>
+        <sections>
+            <label><!-- Day 19 --></label>
+            <section>Day 19</section>
+        </sections>
+        <sections>
+            <label><!-- Day 2 --></label>
+            <section>Day 2</section>
+        </sections>
+        <sections>
+            <label><!-- Day 20 --></label>
+            <section>Day 20</section>
+        </sections>
+        <sections>
+            <label><!-- Day 21 --></label>
+            <section>Day 21</section>
+        </sections>
+        <sections>
+            <label><!-- Day 22 --></label>
+            <section>Day 22</section>
+        </sections>
+        <sections>
+            <label><!-- Day 23 --></label>
+            <section>Day 23</section>
+        </sections>
+        <sections>
+            <label><!-- Day 24 --></label>
+            <section>Day 24</section>
+        </sections>
+        <sections>
+            <label><!-- Day 25 --></label>
+            <section>Day 25</section>
+        </sections>
+        <sections>
+            <label><!-- Day 26 --></label>
+            <section>Day 26</section>
+        </sections>
+        <sections>
+            <label><!-- Day 27 --></label>
+            <section>Day 27</section>
+        </sections>
+        <sections>
+            <label><!-- Day 28 --></label>
+            <section>Day 28</section>
+        </sections>
+        <sections>
+            <label><!-- Day 29 --></label>
+            <section>Day 29</section>
+        </sections>
+        <sections>
+            <label><!-- Day 3 --></label>
+            <section>Day 3</section>
+        </sections>
+        <sections>
+            <label><!-- Day 30 --></label>
+            <section>Day 30</section>
+        </sections>
+        <sections>
+            <label><!-- Day 31 --></label>
+            <section>Day 31</section>
+        </sections>
+        <sections>
+            <label><!-- Day 4 --></label>
+            <section>Day 4</section>
+        </sections>
+        <sections>
+            <label><!-- Day 5 --></label>
+            <section>Day 5</section>
+        </sections>
+        <sections>
+            <label><!-- Day 6 --></label>
+            <section>Day 6</section>
+        </sections>
+        <sections>
+            <label><!-- Day 7 --></label>
+            <section>Day 7</section>
+        </sections>
+        <sections>
+            <label><!-- Day 8 --></label>
+            <section>Day 8</section>
+        </sections>
+        <sections>
+            <label><!-- Day 9 --></label>
+            <section>Day 9</section>
+        </sections>
+        <sections>
+            <label><!-- General Info --></label>
+            <section>General Info</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Build_Months --></label>
+        <name>Build_Months</name>
+    </webLinks>
+</CustomObjectTranslation>

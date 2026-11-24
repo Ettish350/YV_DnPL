@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tot. GTD. related to new GC - Develop --></label>
+    <name>Tot_GTD_related_to_new_GC_Develop__c</name>
+</CustomFieldTranslation>

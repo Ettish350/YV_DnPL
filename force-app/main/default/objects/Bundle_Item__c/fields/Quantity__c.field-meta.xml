@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity__c</fullName>
+    <description>[27/07/2026] [Neev] - 
+Let users decide how many of the bundles they want to include</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Up to 4 figures number</inlineHelpText>
+    <label>Quantity</label>
+    <precision>4</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>הערה ליום 8: שם החג, היום המיוחד או שבת</help>
+    <label>הערה יום 8</label>
+    <name>Day_08_Note__c</name>
+</CustomFieldTranslation>

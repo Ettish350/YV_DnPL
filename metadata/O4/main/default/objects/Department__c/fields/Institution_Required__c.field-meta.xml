@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Institution_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>YV20-229 | V04-02, V03-03, A04-03 | Marks a department (the school department) whose orders cannot be saved without an institution (Account). Set per department record, so no department name or Id is hard-coded in the rule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Orders in this department cannot be saved without an institution (account).</inlineHelpText>
+    <label>Institution required</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

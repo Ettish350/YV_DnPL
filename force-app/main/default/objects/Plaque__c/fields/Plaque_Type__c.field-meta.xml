@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Plaque_Type__c</fullName>
+    <label>Plaque Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>אבן</fullName>
+                <default>false</default>
+                <label>אבן</label>
+            </value>
+            <value>
+                <fullName>אלומיניום</fullName>
+                <default>false</default>
+                <label>אלומיניום</label>
+            </value>
+            <value>
+                <fullName>זכוכית</fullName>
+                <default>false</default>
+                <label>זכוכית</label>
+            </value>
+            <value>
+                <fullName>זכוכית מותזת חול</fullName>
+                <default>false</default>
+                <label>זכוכית מותזת חול</label>
+            </value>
+            <value>
+                <fullName>חריטה</fullName>
+                <default>false</default>
+                <label>חריטה</label>
+            </value>
+            <value>
+                <fullName>מעורב</fullName>
+                <default>false</default>
+                <label>מעורב</label>
+            </value>
+            <value>
+                <fullName>מתכת מוזהבת</fullName>
+                <default>false</default>
+                <label>מתכת מוזהבת</label>
+            </value>
+            <value>
+                <fullName>מתכת מוזהבת על עץ</fullName>
+                <default>false</default>
+                <label>מתכת מוזהבת על עץ</label>
+            </value>
+            <value>
+                <fullName>נירוסטה</fullName>
+                <default>false</default>
+                <label>נירוסטה</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

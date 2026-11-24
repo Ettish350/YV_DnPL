@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detailed_Subject__c</fullName>
+    <label>Detailed Subject</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SecondarySubject__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Additions/Corrections</fullName>
+                <default>false</default>
+                <label>Additions/Corrections</label>
+            </value>
+            <value>
+                <fullName>Add Photo</fullName>
+                <default>false</default>
+                <label>Add Photo</label>
+            </value>
+            <value>
+                <fullName>Auctions</fullName>
+                <default>false</default>
+                <label>Auctions</label>
+            </value>
+            <value>
+                <fullName>Cluster Questions</fullName>
+                <default>false</default>
+                <label>Cluster Questions</label>
+            </value>
+            <value>
+                <fullName>Cluster Suggestion</fullName>
+                <default>false</default>
+                <label>Cluster Suggestion</label>
+            </value>
+            <value>
+                <fullName>Confirm Online Page of Testimony</fullName>
+                <default>false</default>
+                <label>Confirm Online Page of Testimony</label>
+            </value>
+            <value>
+                <fullName>Confirm Online Survivors Registration Form</fullName>
+                <default>false</default>
+                <label>Confirm Online Survivors Registration Form</label>
+            </value>
+            <value>
+                <fullName>Copyright Permissions - Art</fullName>
+                <default>false</default>
+                <label>Copyright Permissions - Art</label>
+            </value>
+            <value>
+                <fullName>Corrections and Comments</fullName>
+                <default>false</default>
+                <label>Corrections and Comments</label>
+            </value>
+            <value>
+                <fullName>Donate a Book</fullName>
+                <default>false</default>
+                <label>Donate a Book</label>
+            </value>
+            <value>
+                <fullName>Feedback from Photos</fullName>
+                <default>false</default>
+                <label>Feedback from Photos</label>
+            </value>
+            <value>
+                <fullName>Feedback from YVNG</fullName>
+                <default>false</default>
+                <label>Feedback from YVNG</label>
+            </value>
+            <value>
+                <fullName>Feedback from YVNG Righteous</fullName>
+                <default>false</default>
+                <label>Feedback from YVNG Righteous</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Info Request</fullName>
+                <default>false</default>
+                <label>Info Request</label>
+            </value>
+            <value>
+                <fullName>Online Page of Testimony</fullName>
+                <default>false</default>
+                <label>Online Page of Testimony</label>
+            </value>
+            <value>
+                <fullName>Online questionnaire for survivor</fullName>
+                <default>false</default>
+                <label>Online questionnaire for survivor</label>
+            </value>
+            <value>
+                <fullName>Public Appeals</fullName>
+                <default>false</default>
+                <label>Public Appeals</label>
+            </value>
+            <value>
+                <fullName>Request for Advertising</fullName>
+                <default>false</default>
+                <label>Request for Advertising</label>
+            </value>
+            <value>
+                <fullName>Request for Copies</fullName>
+                <default>false</default>
+                <label>Request for Copies</label>
+            </value>
+            <value>
+                <fullName>Request for Information</fullName>
+                <default>false</default>
+                <label>Request for Information</label>
+            </value>
+            <value>
+                <fullName>Request for Official Approval</fullName>
+                <default>false</default>
+                <label>Request for Official Approval</label>
+            </value>
+            <value>
+                <fullName>Traveling Exhibitions</fullName>
+                <default>false</default>
+                <label>Traveling Exhibitions</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Documents and written testimonies</controllingFieldValue>
+            <controllingFieldValue>Search for information on Shoah victims</controllingFieldValue>
+            <controllingFieldValue>Photographs</controllingFieldValue>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <controllingFieldValue>Films and video/audio testimonies</controllingFieldValue>
+            <valueName>Additions/Corrections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Auctions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>About the Holocaust</controllingFieldValue>
+            <controllingFieldValue>Feedback</controllingFieldValue>
+            <controllingFieldValue>Visiting</controllingFieldValue>
+            <controllingFieldValue>Museum</controllingFieldValue>
+            <valueName>General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Public Appeals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Documents and written testimonies</controllingFieldValue>
+            <controllingFieldValue>Search for information on Shoah victims</controllingFieldValue>
+            <controllingFieldValue>Photographs</controllingFieldValue>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <controllingFieldValue>Films and video/audio testimonies</controllingFieldValue>
+            <valueName>Request for Advertising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Documents and written testimonies</controllingFieldValue>
+            <controllingFieldValue>Search for information on Shoah victims</controllingFieldValue>
+            <controllingFieldValue>Photographs</controllingFieldValue>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <controllingFieldValue>Films and video/audio testimonies</controllingFieldValue>
+            <valueName>Request for Copies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Documents and written testimonies</controllingFieldValue>
+            <controllingFieldValue>Search for information on Shoah victims</controllingFieldValue>
+            <controllingFieldValue>Photographs</controllingFieldValue>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <controllingFieldValue>Films and video/audio testimonies</controllingFieldValue>
+            <valueName>Request for Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Documents and written testimonies</controllingFieldValue>
+            <controllingFieldValue>Search for information on Shoah victims</controllingFieldValue>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <controllingFieldValue>Films and video/audio testimonies</controllingFieldValue>
+            <valueName>Request for Official Approval</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Add Photo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Cluster Questions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Cluster Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Confirm Online Page of Testimony</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Confirm Online Survivors Registration Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Corrections and Comments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Feedback from YVNG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Online Page of Testimony</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shoah victims commemoration (Names database)</controllingFieldValue>
+            <valueName>Online questionnaire for survivor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New request for recognition and/or inquiry about application status</controllingFieldValue>
+            <valueName>Feedback from YVNG Righteous</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Photographs</controllingFieldValue>
+            <valueName>Feedback from Photos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Library</controllingFieldValue>
+            <valueName>Donate a Book</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artworks and artifacts in Yad Vashem&apos;s collections</controllingFieldValue>
+            <valueName>Copyright Permissions - Art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Artworks and artifacts in Yad Vashem&apos;s collections</controllingFieldValue>
+            <controllingFieldValue>Museum</controllingFieldValue>
+            <valueName>Info Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Museum</controllingFieldValue>
+            <valueName>Traveling Exhibitions</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

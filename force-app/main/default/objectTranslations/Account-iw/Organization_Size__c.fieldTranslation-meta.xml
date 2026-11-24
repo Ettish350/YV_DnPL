@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Organization Size --></label>
+    <name>Organization_Size__c</name>
+    <picklistValues>
+        <masterLabel>Enterprise (1000+)</masterLabel>
+        <translation><!-- Enterprise (1000+) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Large (201-1000)</masterLabel>
+        <translation><!-- Large (201-1000) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medium (51-200)</masterLabel>
+        <translation><!-- Medium (51-200) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Small (1-50)</masterLabel>
+        <translation><!-- Small (1-50) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

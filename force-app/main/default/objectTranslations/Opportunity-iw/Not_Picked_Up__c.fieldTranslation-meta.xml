@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>מסומן כל עוד הבעלים הוא מי שיצר את ההזמנה, כלומר אף אחד במחלקה עוד לא לקח אותה לטיפול.</help>
+    <label>טרם נלקחה לטיפול</label>
+    <name>Not_Picked_Up__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>DonorGiftSummary</baseObject>
+    <category>accounts</category>
+    <deployed>true</deployed>
+    <description>For reporting on annual donations</description>
+    <label>Donor gift summaries</label>
+    <sections>
+        <masterLabel>Donor Gift Summaries</masterLabel>
+    </sections>
+</ReportType>

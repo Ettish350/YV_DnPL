@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>School_Trainings_and_Tours_for_the_Gen_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>School - Trainings and Tours for the Gen</label>
+    <queue>School_Trainings_and_Tours_for_the_Gen</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מקור התרומה</label>
+    <name>Gift_Source__c</name>
+    <picklistValues>
+        <masterLabel>CauseMatch</masterLabel>
+        <translation><!-- CauseMatch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Company</masterLabel>
+        <translation><!-- Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct Donor</masterLabel>
+        <translation><!-- Direct Donor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Donor via Association</masterLabel>
+        <translation><!-- Donor via Association --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Estate Fund From Israel -Large Donations</masterLabel>
+        <translation><!-- Estate Fund From Israel -Large Donations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fund</masterLabel>
+        <translation><!-- Fund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet</masterLabel>
+        <translation><!-- Internet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Israel mailing campaign - large donations</masterLabel>
+        <translation><!-- Israel mailing campaign - large donations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jewish Agency</masterLabel>
+        <translation><!-- Jewish Agency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Keren Hayesod</masterLabel>
+        <translation><!-- Keren Hayesod --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memory Cave Israel - Large Donations</masterLabel>
+        <translation><!-- Memory Cave Israel - Large Donations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile / Tablet / Smartphone</masterLabel>
+        <translation><!-- Mobile / Tablet / Smartphone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Donor</masterLabel>
+        <translation><!-- Private Donor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate - Israel</masterLabel>
+        <translation><!-- Real Estate - Israel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Framework_Required</fullName>
+    <active>true</active>
+    <description>YV20-226 | V04-04 | An order (Order record type) cannot move to Closed Won without a budget framework, in every channel.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = "Order",
+    ISPICKVAL(StageName, "Closed Won"),
+    ISBLANK(Budget_Framework__c)
+)</errorConditionFormula>
+    <errorDisplayField>Budget_Framework__c</errorDisplayField>
+    <errorMessage>יש לשייך מסגרת תקציבית להזמנה</errorMessage>
+</ValidationRule>

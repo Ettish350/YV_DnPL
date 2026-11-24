@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>CAD</masterLabel>
+        <translation>דולר קנדי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHF</masterLabel>
+        <translation>פרנק שוויצרי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EUR</masterLabel>
+        <translation>יורו</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GBP</masterLabel>
+        <translation>ליש&quot;ט (פאונד בריטי)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>JPY</masterLabel>
+        <translation>ין יפני</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NIS</masterLabel>
+        <translation>שקל חדש</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>USD</masterLabel>
+        <translation>דולר אמריקאי</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

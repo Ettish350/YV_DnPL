@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Prefix__c</fullName>
+    <description>YV20-228 | A04-06 | Required (Anna, 18.11.2026): the order number prefix. DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | Legacy new_prefix (קוד לרצף); Doc 2 process 04.</description>
+    <externalId>false</externalId>
+    <label>Order Number Prefix</label>
+    <length>3</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

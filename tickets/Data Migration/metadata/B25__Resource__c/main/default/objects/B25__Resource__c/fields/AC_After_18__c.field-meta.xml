@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AC_After_18__c</fullName>
+    <label>AC after 18:00</label>
+    <description>DM-Resource | legacy new_airconditioner_after_18_00 | DD 11 | Air conditioning works after 18:00.</description>
+    <inlineHelpText>המזגן בחדר פועל אחרי השעה 18:00</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

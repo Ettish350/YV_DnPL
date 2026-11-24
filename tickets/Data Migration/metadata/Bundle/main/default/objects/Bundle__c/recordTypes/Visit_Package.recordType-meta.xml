@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visit_Package</fullName>
+    <active>true</active>
+    <label>Visit package</label>
+    <picklistValues>
+        <picklist>Audience_Category__c</picklist>
+        <values>
+            <fullName>Preschool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elementary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle_School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High_School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Army_Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General_Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special_Education</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bundle_Type__c</picklist>
+        <values>
+            <fullName>בר מצווה</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>חבילת ביקור</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>כנס</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>השתלמות</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

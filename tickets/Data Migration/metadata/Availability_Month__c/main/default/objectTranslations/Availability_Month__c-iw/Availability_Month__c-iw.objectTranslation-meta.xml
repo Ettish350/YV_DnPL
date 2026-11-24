@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>חודש זמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>חודשי זמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>חודש הזמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>חודשי הזמינות</value>
+    </caseValues>
+    <fields>
+        <help>נותן השירות שהחודש שייך לו</help>
+        <label>נותן שירות</label>
+        <name>Staff__c</name>
+        <relationshipLabel>חודשי זמינות</relationshipLabel>
+    </fields>
+    <fields>
+        <help>מספר החודש (1 עד 12), מתמלא אוטומטית</help>
+        <label>חודש</label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <help>השנה, למשל 2026. מתמלא אוטומטית</help>
+        <label>שנה</label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <help>מתמלא אוטומטית: נותן שירות + חודש. מונע שתי רשומות לאותו מדריך באותו חודש</help>
+        <label>מפתח חודש</label>
+        <name>Month_Key__c</name>
+    </fields>
+    <fields>
+        <help>מתי המדריך עדכן לאחרונה את הזמינות שלו</help>
+        <label>עדכון אחרון של המדריך</label>
+        <name>Last_Guide_Update__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 1 בחודש</help>
+        <label>יום 1</label>
+        <name>Day_01__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 1</help>
+        <label>יום 1 שעת התחלה</label>
+        <name>Day_01_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 1 (3 עד 9)</help>
+        <label>יום 1 משך</label>
+        <name>Day_01_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 2 בחודש</help>
+        <label>יום 2</label>
+        <name>Day_02__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 2</help>
+        <label>יום 2 שעת התחלה</label>
+        <name>Day_02_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 2 (3 עד 9)</help>
+        <label>יום 2 משך</label>
+        <name>Day_02_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 3 בחודש</help>
+        <label>יום 3</label>
+        <name>Day_03__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 3</help>
+        <label>יום 3 שעת התחלה</label>
+        <name>Day_03_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 3 (3 עד 9)</help>
+        <label>יום 3 משך</label>
+        <name>Day_03_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 4 בחודש</help>
+        <label>יום 4</label>
+        <name>Day_04__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 4</help>
+        <label>יום 4 שעת התחלה</label>
+        <name>Day_04_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 4 (3 עד 9)</help>
+        <label>יום 4 משך</label>
+        <name>Day_04_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 5 בחודש</help>
+        <label>יום 5</label>
+        <name>Day_05__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 5</help>
+        <label>יום 5 שעת התחלה</label>
+        <name>Day_05_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 5 (3 עד 9)</help>
+        <label>יום 5 משך</label>
+        <name>Day_05_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 6 בחודש</help>
+        <label>יום 6</label>
+        <name>Day_06__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 6</help>
+        <label>יום 6 שעת התחלה</label>
+        <name>Day_06_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 6 (3 עד 9)</help>
+        <label>יום 6 משך</label>
+        <name>Day_06_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 7 בחודש</help>
+        <label>יום 7</label>
+        <name>Day_07__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 7</help>
+        <label>יום 7 שעת התחלה</label>
+        <name>Day_07_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 7 (3 עד 9)</help>
+        <label>יום 7 משך</label>
+        <name>Day_07_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 8 בחודש</help>
+        <label>יום 8</label>
+        <name>Day_08__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 8</help>
+        <label>יום 8 שעת התחלה</label>
+        <name>Day_08_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 8 (3 עד 9)</help>
+        <label>יום 8 משך</label>
+        <name>Day_08_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 9 בחודש</help>
+        <label>יום 9</label>
+        <name>Day_09__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 9</help>
+        <label>יום 9 שעת התחלה</label>
+        <name>Day_09_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 9 (3 עד 9)</help>
+        <label>יום 9 משך</label>
+        <name>Day_09_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 10 בחודש</help>
+        <label>יום 10</label>
+        <name>Day_10__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 10</help>
+        <label>יום 10 שעת התחלה</label>
+        <name>Day_10_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 10 (3 עד 9)</help>
+        <label>יום 10 משך</label>
+        <name>Day_10_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 11 בחודש</help>
+        <label>יום 11</label>
+        <name>Day_11__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 11</help>
+        <label>יום 11 שעת התחלה</label>
+        <name>Day_11_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 11 (3 עד 9)</help>
+        <label>יום 11 משך</label>
+        <name>Day_11_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 12 בחודש</help>
+        <label>יום 12</label>
+        <name>Day_12__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 12</help>
+        <label>יום 12 שעת התחלה</label>
+        <name>Day_12_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 12 (3 עד 9)</help>
+        <label>יום 12 משך</label>
+        <name>Day_12_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 13 בחודש</help>
+        <label>יום 13</label>
+        <name>Day_13__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 13</help>
+        <label>יום 13 שעת התחלה</label>
+        <name>Day_13_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 13 (3 עד 9)</help>
+        <label>יום 13 משך</label>
+        <name>Day_13_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 14 בחודש</help>
+        <label>יום 14</label>
+        <name>Day_14__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 14</help>
+        <label>יום 14 שעת התחלה</label>
+        <name>Day_14_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 14 (3 עד 9)</help>
+        <label>יום 14 משך</label>
+        <name>Day_14_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 15 בחודש</help>
+        <label>יום 15</label>
+        <name>Day_15__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 15</help>
+        <label>יום 15 שעת התחלה</label>
+        <name>Day_15_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 15 (3 עד 9)</help>
+        <label>יום 15 משך</label>
+        <name>Day_15_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 16 בחודש</help>
+        <label>יום 16</label>
+        <name>Day_16__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 16</help>
+        <label>יום 16 שעת התחלה</label>
+        <name>Day_16_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 16 (3 עד 9)</help>
+        <label>יום 16 משך</label>
+        <name>Day_16_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 17 בחודש</help>
+        <label>יום 17</label>
+        <name>Day_17__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 17</help>
+        <label>יום 17 שעת התחלה</label>
+        <name>Day_17_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 17 (3 עד 9)</help>
+        <label>יום 17 משך</label>
+        <name>Day_17_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 18 בחודש</help>
+        <label>יום 18</label>
+        <name>Day_18__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 18</help>
+        <label>יום 18 שעת התחלה</label>
+        <name>Day_18_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 18 (3 עד 9)</help>
+        <label>יום 18 משך</label>
+        <name>Day_18_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 19 בחודש</help>
+        <label>יום 19</label>
+        <name>Day_19__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 19</help>
+        <label>יום 19 שעת התחלה</label>
+        <name>Day_19_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 19 (3 עד 9)</help>
+        <label>יום 19 משך</label>
+        <name>Day_19_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 20 בחודש</help>
+        <label>יום 20</label>
+        <name>Day_20__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 20</help>
+        <label>יום 20 שעת התחלה</label>
+        <name>Day_20_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 20 (3 עד 9)</help>
+        <label>יום 20 משך</label>
+        <name>Day_20_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 21 בחודש</help>
+        <label>יום 21</label>
+        <name>Day_21__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 21</help>
+        <label>יום 21 שעת התחלה</label>
+        <name>Day_21_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 21 (3 עד 9)</help>
+        <label>יום 21 משך</label>
+        <name>Day_21_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 22 בחודש</help>
+        <label>יום 22</label>
+        <name>Day_22__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 22</help>
+        <label>יום 22 שעת התחלה</label>
+        <name>Day_22_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 22 (3 עד 9)</help>
+        <label>יום 22 משך</label>
+        <name>Day_22_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 23 בחודש</help>
+        <label>יום 23</label>
+        <name>Day_23__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 23</help>
+        <label>יום 23 שעת התחלה</label>
+        <name>Day_23_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 23 (3 עד 9)</help>
+        <label>יום 23 משך</label>
+        <name>Day_23_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 24 בחודש</help>
+        <label>יום 24</label>
+        <name>Day_24__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 24</help>
+        <label>יום 24 שעת התחלה</label>
+        <name>Day_24_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 24 (3 עד 9)</help>
+        <label>יום 24 משך</label>
+        <name>Day_24_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 25 בחודש</help>
+        <label>יום 25</label>
+        <name>Day_25__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 25</help>
+        <label>יום 25 שעת התחלה</label>
+        <name>Day_25_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 25 (3 עד 9)</help>
+        <label>יום 25 משך</label>
+        <name>Day_25_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 26 בחודש</help>
+        <label>יום 26</label>
+        <name>Day_26__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 26</help>
+        <label>יום 26 שעת התחלה</label>
+        <name>Day_26_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 26 (3 עד 9)</help>
+        <label>יום 26 משך</label>
+        <name>Day_26_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 27 בחודש</help>
+        <label>יום 27</label>
+        <name>Day_27__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 27</help>
+        <label>יום 27 שעת התחלה</label>
+        <name>Day_27_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 27 (3 עד 9)</help>
+        <label>יום 27 משך</label>
+        <name>Day_27_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 28 בחודש</help>
+        <label>יום 28</label>
+        <name>Day_28__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 28</help>
+        <label>יום 28 שעת התחלה</label>
+        <name>Day_28_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 28 (3 עד 9)</help>
+        <label>יום 28 משך</label>
+        <name>Day_28_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 29 בחודש</help>
+        <label>יום 29</label>
+        <name>Day_29__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 29</help>
+        <label>יום 29 שעת התחלה</label>
+        <name>Day_29_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 29 (3 עד 9)</help>
+        <label>יום 29 משך</label>
+        <name>Day_29_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 30 בחודש</help>
+        <label>יום 30</label>
+        <name>Day_30__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 30</help>
+        <label>יום 30 שעת התחלה</label>
+        <name>Day_30_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 30 (3 עד 9)</help>
+        <label>יום 30 משך</label>
+        <name>Day_30_Duration__c</name>
+    </fields>
+    <fields>
+        <help>סטטוס הזמינות של המדריך ביום 31 בחודש</help>
+        <label>יום 31</label>
+        <name>Day_31__c</name>
+    </fields>
+    <fields>
+        <help>שעת ההתחלה ביום 31</help>
+        <label>יום 31 שעת התחלה</label>
+        <name>Day_31_Start__c</name>
+    </fields>
+    <fields>
+        <help>משך בשעות ביום 31 (3 עד 9)</help>
+        <label>יום 31 משך</label>
+        <name>Day_31_Duration__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 1: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 1</label>
+        <name>Day_01_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 2: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 2</label>
+        <name>Day_02_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 3: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 3</label>
+        <name>Day_03_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 4: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 4</label>
+        <name>Day_04_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 5: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 5</label>
+        <name>Day_05_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 6: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 6</label>
+        <name>Day_06_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 7: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 7</label>
+        <name>Day_07_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 8: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 8</label>
+        <name>Day_08_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 9: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 9</label>
+        <name>Day_09_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 10: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 10</label>
+        <name>Day_10_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 11: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 11</label>
+        <name>Day_11_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 12: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 12</label>
+        <name>Day_12_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 13: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 13</label>
+        <name>Day_13_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 14: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 14</label>
+        <name>Day_14_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 15: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 15</label>
+        <name>Day_15_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 16: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 16</label>
+        <name>Day_16_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 17: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 17</label>
+        <name>Day_17_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 18: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 18</label>
+        <name>Day_18_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 19: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 19</label>
+        <name>Day_19_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 20: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 20</label>
+        <name>Day_20_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 21: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 21</label>
+        <name>Day_21_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 22: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 22</label>
+        <name>Day_22_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 23: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 23</label>
+        <name>Day_23_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 24: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 24</label>
+        <name>Day_24_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 25: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 25</label>
+        <name>Day_25_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 26: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 26</label>
+        <name>Day_26_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 27: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 27</label>
+        <name>Day_27_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 28: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 28</label>
+        <name>Day_28_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 29: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 29</label>
+        <name>Day_29_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 30: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 30</label>
+        <name>Day_30_Note__c</name>
+    </fields>
+    <fields>
+        <help>הערה ליום 31: שם החג, היום המיוחד או שבת</help>
+        <label>הערה יום 31</label>
+        <name>Day_31_Note__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>מספר חודש זמינות</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סיבה --></help>
+    <label><!-- Reason --></label>
+    <name>Reason__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טיול שנתי</masterLabel>
+        <translation><!-- טיול שנתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יום גיבוש</masterLabel>
+        <translation><!-- יום גיבוש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יום צום</masterLabel>
+        <translation><!-- יום צום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגירת אתר</masterLabel>
+        <translation><!-- סגירת אתר --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

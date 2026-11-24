@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>קבוצה ישראל</fullName>
+        <default>false</default>
+        <label>קבוצה ישראל</label>
+    </customValue>
+    <customValue>
+        <fullName>קבוצה חו&quot;ל</fullName>
+        <default>false</default>
+        <label>קבוצה חו&quot;ל</label>
+    </customValue>
+    <customValue>
+        <fullName>כוחות הבטחון</fullName>
+        <default>false</default>
+        <label>כוחות הבטחון</label>
+    </customValue>
+    <customValue>
+        <fullName>גמלאים</fullName>
+        <default>false</default>
+        <label>גמלאים</label>
+    </customValue>
+    <customValue>
+        <fullName>ציבורי</fullName>
+        <default>false</default>
+        <label>ציבורי</label>
+    </customValue>
+    <customValue>
+        <fullName>פנימי - יד ושם</fullName>
+        <default>false</default>
+        <label>פנימי - יד ושם</label>
+    </customValue>
+    <customValue>
+        <fullName>פרטי</fullName>
+        <default>false</default>
+        <label>פרטי</label>
+    </customValue>
+    <customValue>
+        <fullName>ג&apos;נסיס</fullName>
+        <default>false</default>
+        <label>ג&apos;נסיס</label>
+    </customValue>
+    <customValue>
+        <fullName>פנימי - הנצחה</fullName>
+        <default>false</default>
+        <label>פנימי - הנצחה</label>
+    </customValue>
+    <customValue>
+        <fullName>ביקורים רשמיים</fullName>
+        <default>false</default>
+        <label>ביקורים רשמיים</label>
+    </customValue>
+    <description>DM-Pricebook2 | legacy new_pricelist_type | Lior 11.11.2026 | Price list types. Shared by Pricebook2.Pricelist_Type__c and, when built, Bundle__c.PricelistType__c.</description>
+    <masterLabel>Pricelist Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

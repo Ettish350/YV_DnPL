@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Campaigns_Partnerships</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PC_PHONE3</columns>
+    <columns>PC_EMAIL</columns>
+    <columns>Desk__c</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Desk__c</field>
+        <operation>contains</operation>
+        <value>Global</value>
+    </filters>
+    <label>Global Campaigns &amp; Partnerships</label>
+    <sharedTo>
+        <group>Partnerships_and_GC_Desk_Team</group>
+    </sharedTo>
+</ListView>

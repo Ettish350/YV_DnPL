@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title={label.title} icon-name="standard:pricebook">
+        <div class="slds-var-p-horizontal_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text={label.loading} size="small"></lightning-spinner>
+            </template>
+            <template if:true={error}>
+                <div class="slds-text-color_error slds-var-m-bottom_small" role="alert">{error}</div>
+            </template>
+            <lightning-input type="checkbox" label={label.freeProduct} checked={isFree} onchange={handleFree} class="slds-var-m-bottom_small"></lightning-input>
+            <template if:false={hasPrices}>
+                <p class="slds-text-color_weak">{label.noBooks}</p>
+            </template>
+            <template for:each={prices} for:item="p">
+                <div key={p.key} class="slds-grid slds-grid_vertical-align-end slds-gutters_small slds-var-m-bottom_x-small">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div class="slds-text-body_regular">{p.label}</div>
+                        <div class="slds-text-body_small slds-text-color_weak">{p.meta}</div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" label={label.price} variant="label-hidden" step="0.01" min="0" data-id={p.pricebookId} value={p.price} disabled={isFree} onchange={handlePrice}></lightning-input>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div slot="footer" class="slds-grid slds-grid_align-end">
+            <lightning-button variant="brand" label={label.save} onclick={handleSave} disabled={saveDisabled}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

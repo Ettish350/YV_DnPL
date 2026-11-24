@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentStatus__c</fullName>
+    <label>Payment Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>No payment required</fullName>
+                <default>false</default>
+                <label>No payment required</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Commitment to payment</fullName>
+                <default>false</default>
+                <label>Commitment to payment</label>
+            </value>
+            <value>
+                <fullName>Paid and full credit made</fullName>
+                <default>false</default>
+                <label>Paid and full credit made</label>
+            </value>
+            <value>
+                <fullName>Paid and partial credit made</fullName>
+                <default>false</default>
+                <label>Paid and partial credit made</label>
+            </value>
+            <value>
+                <fullName>Voucher received</fullName>
+                <default>false</default>
+                <label>Voucher received</label>
+            </value>
+            <value>
+                <fullName>Paid (internal settlement)</fullName>
+                <default>false</default>
+                <label>Paid (internal settlement)</label>
+            </value>
+            <value>
+                <fullName>Reservation - no payment required</fullName>
+                <default>false</default>
+                <label>Reservation - no payment required</label>
+            </value>
+            <value>
+                <fullName>Awaiting payment</fullName>
+                <default>false</default>
+                <label>Awaiting payment</label>
+            </value>
+            <value>
+                <fullName>Payment failed</fullName>
+                <default>false</default>
+                <label>Payment failed</label>
+            </value>
+            <value>
+                <fullName>Transferred to financial processing</fullName>
+                <default>false</default>
+                <label>Transferred to financial processing</label>
+            </value>
+            <value>
+                <fullName>Invoice issued</fullName>
+                <default>false</default>
+                <label>Invoice issued</label>
+            </value>
+            <value>
+                <fullName>Invoice issued partially</fullName>
+                <default>false</default>
+                <label>Invoice issued partially</label>
+            </value>
+            <value>
+                <fullName>Paid partially</fullName>
+                <default>false</default>
+                <label>Paid partially</label>
+            </value>
+            <value>
+                <fullName>Invoice canceled</fullName>
+                <default>false</default>
+                <label>Invoice canceled</label>
+            </value>
+            <value>
+                <fullName>To be charged in package</fullName>
+                <default>false</default>
+                <label>To be charged in package</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

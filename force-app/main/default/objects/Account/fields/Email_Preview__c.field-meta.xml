@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Preview__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(CONTAINS( $UserRole.Name ,&quot;Desk&quot;))
+|| (CONTAINS($UserRole.Name,&quot;Desk&quot;) 
+&amp;&amp; CONTAINS($UserRole.Name,Desk__r.Name )),
+ PersonEmail ,&quot; &quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Email Preview</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

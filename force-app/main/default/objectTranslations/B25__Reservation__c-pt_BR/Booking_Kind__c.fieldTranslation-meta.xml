@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סוג השיבוץ: שיבוץ, שריון, שיבוץ ליום שלם, שמירת מקום ללא הזמנה, איחוד משאבים או סגירה לפעילות פרטית --></help>
+    <label><!-- Booking kind --></label>
+    <name>Booking_Kind__c</name>
+    <picklistValues>
+        <masterLabel>איחוד משאבים</masterLabel>
+        <translation><!-- איחוד משאבים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סגירה לפעילות פרטית</masterLabel>
+        <translation><!-- סגירה לפעילות פרטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיבוץ</masterLabel>
+        <translation><!-- שיבוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שיבוץ ליום שלם</masterLabel>
+        <translation><!-- שיבוץ ליום שלם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שמירת מקום ללא הזמנה</masterLabel>
+        <translation><!-- שמירת מקום ללא הזמנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שריון</masterLabel>
+        <translation><!-- שריון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

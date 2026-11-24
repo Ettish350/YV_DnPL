@@ -1,0 +1,463 @@
+<template>
+    <div class="yv" dir={dir}>
+
+        <!-- ============ Activity selection ============ -->
+        <template lwc:if={isViewAct}>
+            <div class="wrap">
+                <h1>{label.newOrder}</h1>
+                <div class="idbar">
+                    <div class="who">
+                        <b>{welcomeText}</b>
+                        <span class="muted">{institutionName}</span>
+                    </div>
+                    <label class="field">
+                        <span class="flabel">{label.ageLayer}</span>
+                        <select onchange={handleLayer}>
+                            <template for:each={layerOptions} for:item="o">
+                                <option key={o.value} value={o.value} selected={o.selected}>{o.label}</option>
+                            </template>
+                        </select>
+                    </label>
+                    <label class="chk nomargin" title={label.gefenHelp}>
+                        <input type="checkbox" checked={gefen} onchange={handleGefen} />
+                        <span>{label.gefen}</span>
+                    </label>
+                </div>
+
+                <h2 class="mt">{label.chooseActivity}</h2>
+                <div class="filters">
+                    <template for:each={filterChips} for:item="f">
+                        <button key={f.id} class={f.cls} data-f={f.id} onclick={handleFilter}>{f.label}</button>
+                    </template>
+                </div>
+
+                <div class="cards">
+                    <template for:each={cards} for:item="c">
+                        <div key={c.id} class={c.cls}>
+                            <div class="ph" style={c.imgStyle}></div>
+                            <div class="body">
+                                <h3>{c.title}</h3>
+                                <div class="sub">{c.sub}</div>
+                                <div>
+                                    <span class="tag">{c.hoursLabel}</span>
+                                    <span class="tag">{c.langsLabel}</span>
+                                </div>
+                                <ul>
+                                    <template for:each={c.includes} for:item="inc">
+                                        <li key={inc.key}>{inc.text}</li>
+                                    </template>
+                                </ul>
+                                <div class="price">
+                                    {c.priceCaption}
+                                    <b>{c.priceText}</b>
+                                </div>
+
+                                <template lwc:if={c.isOpen}>
+                                    <div class="opts" role="radiogroup" aria-label={label.museumEntry}>
+                                        <div class="opts-t">{label.howToOrder}</div>
+                                        <label class={c.withCls}>
+                                            <input type="radio" name={c.radioName} value="1" checked={c.withChecked} onchange={handleMuseumChoice} />
+                                            <span>
+                                                <b>{label.withMuseum}</b>
+                                                <small>{c.withNote}</small>
+                                            </span>
+                                        </label>
+                                        <label class={c.withoutCls}>
+                                            <input type="radio" name={c.radioName} value="0" checked={c.withoutChecked} onchange={handleMuseumChoice} />
+                                            <span>
+                                                <b>{label.withoutMuseum}</b>
+                                                <small>{label.withoutMuseumNote}</small>
+                                            </span>
+                                        </label>
+                                        <button class="btn solid" data-id={c.id} onclick={handleGo}>{label.continueToOrder}</button>
+                                        <button class="lnk" onclick={handleCloseCard}>{label.close}</button>
+                                    </div>
+                                </template>
+                                <template lwc:else>
+                                    <button class="btn solid" data-id={c.id} onclick={handleOpenCard}>{label.orderNow}</button>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </template>
+
+        <!-- ============ Order wizard ============ -->
+        <template lwc:if={isViewWiz}>
+            <div class="wrap">
+                <div class="topline">
+                    <div class="ph thumb"></div>
+                    <div>
+                        <h3>{actTitle}</h3>
+                        <div>
+                            <span class="tag">{actHoursTag}</span>
+                            <span class={museumTagCls}>{museumTagText}</span>
+                            <button class="lnk" onclick={handleToggleMuseum}>{label.toggleMuseum}</button>
+                        </div>
+                    </div>
+                    <button class="lnk" onclick={handleChangeAct}>{label.changeActivity}</button>
+                </div>
+
+                <div class="stepper">
+                    <template for:each={stepperItems} for:item="it">
+                        <div key={it.key} class={it.wrapCls}>
+                            <template lwc:if={it.isStep}>
+                                <button class={it.cls} data-n={it.n} disabled={it.disabled} onclick={handleStepClick}>
+                                    <i>{it.icon}</i>
+                                    <span>{it.label}</span>
+                                </button>
+                            </template>
+                            <template lwc:else>
+                                <div class={it.cls}></div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+
+                <template lwc:if={showHoldbar}>
+                    <div class={holdClass}>
+                        <span>{label.holdTitle}</span>
+                        <span class="t">{holdText}</span>
+                        <div class="bar"><i style={holdBarStyle}></i></div>
+                        <template lwc:if={canExtend}>
+                            <button onclick={handleExtend}>{label.addFiveMinutes}</button>
+                        </template>
+                    </div>
+                </template>
+
+                <div class="main">
+                    <div class="steps">
+
+                        <!-- Step 1 -->
+                        <template lwc:if={isStep1}>
+                            <div class="stepwrap">
+                                <div class="sec">
+                                    <h2>{label.groupsTitle}</h2>
+                                    <p class="sub">{groupsSubText}</p>
+                                    <template for:each={groupRows} for:item="g">
+                                        <div key={g.id} class="grow">
+                                            <div class="gh">
+                                                <b>{g.title}</b>
+                                                <span>
+                                                    <button class="lnk" data-id={g.id} onclick={handleDupGroup}>{label.duplicate}</button>
+                                                    <template lwc:if={g.canRemove}>
+                                                        <button class="lnk" data-id={g.id} onclick={handleRemoveGroup}>{label.remove}</button>
+                                                    </template>
+                                                </span>
+                                            </div>
+                                            <div class="row3">
+                                                <label class="field">
+                                                    <span class="flabel">{label.className}</span>
+                                                    <input type="text" value={g.name} data-id={g.id} data-k="name" oninput={handleGroupInput} />
+                                                </label>
+                                                <label class={g.nCls}>
+                                                    <span class="flabel">{label.participants}</span>
+                                                    <input type="number" min="1" max="35" value={g.n} data-id={g.id} data-k="n" oninput={handleGroupInput} />
+                                                    <span class="inl">{g.nErr}</span>
+                                                </label>
+                                                <label class="field">
+                                                    <span class="flabel">{label.groupProfile}</span>
+                                                    <select data-id={g.id} data-k="profile" onchange={handleGroupInput}>
+                                                        <option value="">{label.select}</option>
+                                                        <template for:each={g.profileOptions} for:item="p">
+                                                            <option key={p.value} value={p.value} selected={p.selected}>{p.label}</option>
+                                                        </template>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <label class="chk">
+                                                <input type="checkbox" checked={g.access} data-id={g.id} data-k="access" onchange={handleGroupInput} />
+                                                <span>{label.accessibility}</span>
+                                            </label>
+                                            <details class="more">
+                                                <summary>{label.noteToGuide}</summary>
+                                                <label class="field mt-s">
+                                                    <span class="flabel">{label.note}</span>
+                                                    <textarea value={g.notes} data-id={g.id} data-k="notes" oninput={handleGroupInput}></textarea>
+                                                </label>
+                                            </details>
+                                        </div>
+                                    </template>
+                                    <div class="gsum">
+                                        <template lwc:if={canAddGroup}>
+                                            <button class="btn" onclick={handleAddGroup}>{label.addClass}</button>
+                                        </template>
+                                        <span>{groupsSummaryText}</span>
+                                    </div>
+                                </div>
+
+                                <div class="sec">
+                                    <h2>{label.questionsTitle}</h2>
+                                    <template for:each={questionRows} for:item="q">
+                                        <div key={q.id} class="q">
+                                            <div class="qt">{q.text} *</div>
+                                            <template for:each={q.options} for:item="o">
+                                                <label key={o.key}>
+                                                    <input type="radio" name={q.id} value={o.value} checked={o.checked} data-q={q.id} data-v={o.value} onchange={handleAnswer} />
+                                                    {o.label}
+                                                </label>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- Step 2 -->
+                        <template lwc:if={isStep2}>
+                            <div class="stepwrap">
+                                <div class="sec">
+                                    <h2>{label.languageTitle}</h2>
+                                    <div class="langs">
+                                        <template for:each={langButtons} for:item="l">
+                                            <button key={l.code} class={l.cls} data-l={l.code} onclick={handleLang}>{l.label}</button>
+                                        </template>
+                                    </div>
+                                    <div class={langNoteCls}>{langNoteText}</div>
+                                    <p class="hint">{label.langHint}</p>
+                                </div>
+
+                                <div class="sec">
+                                    <h2>{label.dateTitle}</h2>
+                                    <div class="cals">
+                                        <template for:each={months} for:item="mo">
+                                            <div key={mo.key} class="cal">
+                                                <div class="cal-h">
+                                                    <template lwc:if={mo.showPrev}>
+                                                        <button aria-label={label.prevMonth} data-nav="-1" disabled={mo.prevDisabled} onclick={handleNav}>{prevChar}</button>
+                                                    </template>
+                                                    <template lwc:else><span></span></template>
+                                                    <span>{mo.title}</span>
+                                                    <template lwc:if={mo.showNext}>
+                                                        <button aria-label={label.nextMonth} data-nav="1" disabled={mo.nextDisabled} onclick={handleNav}>{nextChar}</button>
+                                                    </template>
+                                                    <template lwc:else><span></span></template>
+                                                </div>
+                                                <div class="grid7" onmouseleave={handleDayLeave}>
+                                                    <template for:each={dowLabels} for:item="d">
+                                                        <div key={d.key} class="dow">{d.label}</div>
+                                                    </template>
+                                                    <template for:each={mo.cells} for:item="c">
+                                                        <button
+                                                            key={c.key}
+                                                            class={c.cls}
+                                                            disabled={c.disabled}
+                                                            data-key={c.dateKey}
+                                                            title={c.title}
+                                                            aria-label={c.aria}
+                                                            onclick={handleDay}
+                                                            onmouseenter={handleDayHover}
+                                                            onfocus={handleDayHover}
+                                                        >{c.label}</button>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="legend">
+                                        <span class="a">{label.legendAvailable}</span>
+                                        <span class="f">{label.legendFew}</span>
+                                        <span class="x">{label.legendFull}</span>
+                                        <span class="c">{label.legendClosed}</span>
+                                    </div>
+                                    <div class={dayInfoCls}>{dayInfoText}</div>
+                                </div>
+
+                                <template lwc:if={showTime}>
+                                    <div class="sec">
+                                        <h2>{timeHeading}</h2>
+                                        <p class="sub">{timeSub}</p>
+                                        <div class="slots">
+                                            <template for:each={slots} for:item="s">
+                                                <button key={s.key} class={s.cls} disabled={s.disabled} data-t={s.time} onclick={handleSlot}>
+                                                    {s.time}
+                                                    <small>{s.label}</small>
+                                                    <template lwc:if={s.hasFee}><small>{s.feeText}</small></template>
+                                                </button>
+                                            </template>
+                                        </div>
+                                        <template lwc:if={hasPick}>
+                                            <div class="pick">
+                                                <template for:each={pickSegments} for:item="p">
+                                                    <span key={p.key} class="seg">{p.label}: <b>{p.value}</b></span>
+                                                </template>
+                                            </div>
+                                        </template>
+                                        <template lwc:if={showHoldBtn}>
+                                            <button class="btn solid holdbtn" disabled={holdBtnDisabled} onclick={handleHold}>{label.holdButton}</button>
+                                            <div class="hint">{label.holdHint}</div>
+                                        </template>
+                                        <template lwc:else>
+                                            <div class="heldok">{label.heldOk}</div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+
+                        <!-- Step 3 -->
+                        <template lwc:if={isStep3}>
+                            <div class="stepwrap">
+                                <div class="sec">
+                                    <h2>{label.detailsTitle}</h2>
+                                    <template lwc:if={showLogged}>
+                                        <div class="contactcard">
+                                            <div>
+                                                <b>{contactName}</b><br />
+                                                <span class="muted ltr">{contactDisplayLine}</span>
+                                            </div>
+                                            <button class="lnk" onclick={handleEditContact}>{label.editDetails}</button>
+                                        </div>
+                                    </template>
+                                    <template lwc:if={showForm}>
+                                        <div class="formgrid">
+                                            <label class="field">
+                                                <span class="flabel">{label.firstName}</span>
+                                                <input type="text" value={fn} data-f="fn" oninput={handleField} />
+                                            </label>
+                                            <label class="field">
+                                                <span class="flabel">{label.lastName}</span>
+                                                <input type="text" value={ln} data-f="ln" oninput={handleField} />
+                                            </label>
+                                            <label class="field">
+                                                <span class="flabel">{label.email}</span>
+                                                <input type="email" class="ltr-in" value={em} data-f="em" oninput={handleField} />
+                                            </label>
+                                            <template lwc:if={isPrivate}>
+                                                <label class="field">
+                                                    <span class="flabel">{label.confirmEmail}</span>
+                                                    <input type="email" class="ltr-in" value={em2} data-f="em2" oninput={handleField} />
+                                                </label>
+                                            </template>
+                                            <label class="field">
+                                                <span class="flabel">{label.phone}</span>
+                                                <input type="tel" class="ltr-in" value={ph} data-f="ph" oninput={handleField} />
+                                            </label>
+                                            <template lwc:if={isPrivate}>
+                                                <label class="field">
+                                                    <span class="flabel">{label.country}</span>
+                                                    <input type="text" value={country} data-f="country" oninput={handleField} />
+                                                </label>
+                                            </template>
+                                        </div>
+                                    </template>
+                                    <div class="formgrid mt">
+                                        <label class="field">
+                                            <span class="flabel">{label.orderName}</span>
+                                            <input type="text" value={orderName} data-f="orderName" oninput={handleField} />
+                                        </label>
+                                        <label class="field">
+                                            <span class="flabel">{label.specialRequests}</span>
+                                            <textarea value={notes} data-f="notes" oninput={handleField}></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="consent">
+                                    <label class="chk first">
+                                        <input type="checkbox" checked={c1} data-f="c1" onchange={handleCheck} />
+                                        <span>{label.consentPre}<a href="#" onclick={handleNoop}>{label.consentLink1}</a>{label.consentMid}<a href="#" onclick={handleNoop}>{label.consentLink2}</a>{label.consentPost} <b class="req">*</b></span>
+                                    </label>
+                                    <details>
+                                        <summary>{label.consentDetailsSummary}</summary>
+                                        <p>{label.consentP1}</p>
+                                        <p>{label.consentP2}</p>
+                                    </details>
+                                    <label class="chk">
+                                        <input type="checkbox" checked={c3} data-f="c3" onchange={handleCheck} />
+                                        <span>{label.consentUpdates}</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- Step 4 -->
+                        <template lwc:if={isStep4}>
+                            <div class="stepwrap">
+                                <div class="sec">
+                                    <h2>{finalHeading}</h2>
+                                    <div class="final-info">{finalText}</div>
+                                </div>
+                                <div class="polbox">
+                                    <b>{label.policyTitle}</b>
+                                    <ul>
+                                        <li>{label.policy1}</li>
+                                        <li>{label.policy2}</li>
+                                        <li>{label.policy3}</li>
+                                        <li>{label.policy4}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- Summary -->
+                    <aside class={sumCls}>
+                        <button class="sum-toggle" onclick={handleSumToggle}>
+                            <span>{label.summaryTitle}</span>
+                            <span>{totalText}</span>
+                        </button>
+                        <div class="detail">
+                            <h2>{label.summaryTitle}</h2>
+                            <div class="act">{actTitle}</div>
+                            <div class="when">
+                                <template for:each={summaryWhen} for:item="w">
+                                    <span key={w.key} class={w.cls}>{w.text}</span>
+                                </template>
+                            </div>
+                            <template for:each={summaryLines} for:item="l">
+                                <div key={l.key} class={l.cls}>
+                                    <span class="l">{l.label}<small>{l.small}</small></span>
+                                    <span class={l.vcls}>{l.value}</span>
+                                </div>
+                            </template>
+                            <hr />
+                            <div class="tot"><span>{label.total}</span><span>{totalText}</span></div>
+                            <div class="totnote">{totalNote}</div>
+                        </div>
+                        <div class="missing">{missingText}</div>
+                        <button class="btn solid full" disabled={nextDisabled} onclick={handleNext}>{ctaLabel}</button>
+                        <button class="btn full" onclick={handlePrev}>{prevLabel}</button>
+                    </aside>
+                </div>
+            </div>
+        </template>
+
+        <!-- ============ Done ============ -->
+        <template lwc:if={isViewDone}>
+            <div class="wrap">
+                <div class="done-box">
+                    <div class="tick">✓</div>
+                    <h1>{doneHeading}</h1>
+                    <div class="muted">{doneSub}</div>
+                    <div class="ordno">{orderNumber}</div>
+                    <div class="muted donelines">
+                        <template for:each={doneLines} for:item="l">
+                            <div key={l.key}>{l.text}</div>
+                        </template>
+                    </div>
+                    <div class="btns">
+                        <button class="btn solid" onclick={handleNewOrder}>{label.newOrderBtn}</button>
+                        <button class="btn" onclick={handleManage}>{label.manageOrder}</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Hold expired dialog -->
+        <template lwc:if={modalOpen}>
+            <div class="modal">
+                <div class="box">
+                    <h2>{label.modalTitle}</h2>
+                    <p class="muted">{label.modalText}</p>
+                    <button class="btn solid full" onclick={handleModalOk}>{label.modalButton}</button>
+                </div>
+            </div>
+        </template>
+
+        <template lwc:if={hasToast}>
+            <div class="toast" role="status">{toastMsg}</div>
+        </template>
+    </div>
+</template>

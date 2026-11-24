@@ -1,0 +1,3 @@
+<aura:component implements="lightning:actionOverride" description="YV20-226 | A03-01 | Override of New on Opportunity, in the Orders app only.">
+    <c:o1NewOrder />
+</aura:component>

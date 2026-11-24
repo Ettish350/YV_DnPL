@@ -1,0 +1,71 @@
+<template>
+    <section class="yvedu-res" dir={langDir}>
+        <div class="yvedu-res-grid yvedu-res-selected-grid">
+            <template for:each={bundles} for:item="bundle">
+                <article key={bundle.id} class="yvedu-res-card yvedu-res-selected">
+                    <div class="yvedu-res-card-body">
+                        <h3 class="yvedu-res-card-title">{bundle.name}</h3>
+                        <template if:true={bundle.hasHours}>
+                            <div class="yvedu-res-chips">
+                                <span class="yvedu-res-chip">{bundle.hoursLabel}</span>
+                            </div>
+                        </template>
+                        <template if:true={bundle.hasItems}>
+                            <ul class="yvedu-res-list">
+                                <template for:each={bundle.includedItems} for:item="item">
+                                    <li key={item.key}>{item.text}</li>
+                                </template>
+                            </ul>
+                        </template>
+                    </div>
+                </article>
+            </template>
+        </div>
+        <button type="button" class="yvedu-res-link" onclick={handleChangeActivity}>{text.changeActivity}</button>
+
+        <h2 class="yvedu-res-title yvedu-res-section-title">{text.instructionLanguageTitle}</h2>
+        <div class="yvedu-res-language" role="group" aria-label={text.instructionLanguageTitle}>
+            <template for:each={languageOptions} for:item="option">
+                <button key={option.value} type="button" class={option.className} data-value={option.value} aria-pressed={option.ariaPressed} onclick={handleLanguageClick}>{option.label}</button>
+            </template>
+        </div>
+
+        <h2 class="yvedu-res-title yvedu-res-section-title">{text.groupsTitle}</h2>
+
+        <template for:each={rows} for:item="row">
+            <div key={row.id} class="yvedu-res-group">
+                <div class="yvedu-res-group-head">
+                    <b>{row.title}</b>
+                    <span>
+                        <button type="button" class="yvedu-res-icon-btn" data-id={row.id} title={text.duplicate} aria-label={text.duplicate} onclick={handleDuplicate}>
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"></path></svg>
+                        </button>
+                        <template if:true={row.canRemove}>
+                            <button type="button" class="yvedu-res-icon-btn yvedu-res-icon-btn_danger" data-id={row.id} title={text.remove} aria-label={text.remove} onclick={handleRemove}>
+                                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg>
+                            </button>
+                        </template>
+                    </span>
+                </div>
+                <div class="yvedu-res-group-fields">
+                    <label class="yvedu-res-field">
+                        <span class="yvedu-res-label">{text.className} *</span>
+                        <input type="text" value={row.name} data-id={row.id} data-field="name" oninput={handleInput} />
+                    </label>
+                    <label class={row.countClass}>
+                        <span class="yvedu-res-label">{text.participants} *</span>
+                        <input type="number" min="1" max={maxParticipants} value={row.n} data-id={row.id} data-field="n" oninput={handleInput} />
+                        <span class="yvedu-res-error">{row.countError}</span>
+                    </label>
+                </div>
+            </div>
+        </template>
+
+        <div class="yvedu-res-group-actions">
+            <button type="button" class="yvedu-res-secondary" onclick={handleAddGroup}>{text.addGroup}</button>
+            <span class="yvedu-res-summary">{summaryText}</span>
+        </div>
+
+        <button type="button" class="yvedu-res-order yvedu-res-next" disabled={nextDisabled} onclick={handleNext}>{text.next}</button>
+    </section>
+</template>

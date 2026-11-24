@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main_Resource__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>[27/07/2026] [Neev] - 
+The main resource the group will use</description>
+    <inlineHelpText>Choose the homebase for this specific group</inlineHelpText>
+    <label>Main Resource</label>
+    <referenceTo>B25__Resource__c</referenceTo>
+    <relationshipLabel>Connected Bundles</relationshipLabel>
+    <relationshipName>Connected_Bundles</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

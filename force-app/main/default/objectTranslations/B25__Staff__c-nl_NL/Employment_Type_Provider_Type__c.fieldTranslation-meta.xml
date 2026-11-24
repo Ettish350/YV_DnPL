@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Employment Type / Provider Type --></label>
+    <name>Employment_Type_Provider_Type__c</name>
+    <picklistValues>
+        <masterLabel>Salaried Employee - Malam (שכיר מלם)</masterLabel>
+        <translation><!-- Salaried Employee - Malam (שכיר מלם) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Provider / External Supplier against invoice (נותן שירות / ספק חוץ / חשבונית)</masterLabel>
+        <translation><!-- Service Provider / External Supplier against invoice (נותן שירות / ספק חוץ / חשבונית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Volunteer (מתנדב)</masterLabel>
+        <translation><!-- Volunteer (מתנדב) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yad Vashem Employee (עובד יד ושם)</masterLabel>
+        <translation><!-- Yad Vashem Employee (עובד יד ושם) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

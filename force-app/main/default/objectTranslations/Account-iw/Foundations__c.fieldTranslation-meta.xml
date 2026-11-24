@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Foundations --></label>
+    <name>Foundations__c</name>
+    <picklistValues>
+        <masterLabel>Amigos Yad Vashem Brasil</masterLabel>
+        <translation><!-- Amigos Yad Vashem Brasil --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amigos Yad Vashem, Argentina</masterLabel>
+        <translation><!-- Amigos Yad Vashem, Argentina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asociacion Yad Vashem Costa Rica</masterLabel>
+        <translation><!-- Asociacion Yad Vashem Costa Rica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asociacion Yad Vashem Venezuela</masterLabel>
+        <translation><!-- Asociacion Yad Vashem Venezuela --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asociación Yad Vashem España</masterLabel>
+        <translation><!-- Asociación Yad Vashem España --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Australian Friends of Yad Vashem Inc</masterLabel>
+        <translation><!-- Australian Friends of Yad Vashem Inc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canadian Society for Yad Vashem</masterLabel>
+        <translation><!-- Canadian Society for Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Comité Français pour Yad Vashem</masterLabel>
+        <translation><!-- Comité Français pour Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Freundeskreis Yad Vashem e.V.</masterLabel>
+        <translation><!-- Freundeskreis Yad Vashem e.V. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Les Amis Suisses de Yad Vashem</masterLabel>
+        <translation><!-- Les Amis Suisses de Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stichting Vrienden van Yad Vashem</masterLabel>
+        <translation><!-- Stichting Vrienden van Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Verein der Liechtensteiner Freunde von Yad Vashem</masterLabel>
+        <translation><!-- Verein der Liechtensteiner Freunde von Yad Vashem --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YV USA Foundation</masterLabel>
+        <translation><!-- YV USA Foundation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yad Vashem UK Foundation</masterLabel>
+        <translation><!-- Yad Vashem UK Foundation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

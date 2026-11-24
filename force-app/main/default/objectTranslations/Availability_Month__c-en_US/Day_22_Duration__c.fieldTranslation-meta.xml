@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- משך בשעות ביום 22 (3 עד 9) --></help>
+    <label><!-- Day 22 Duration --></label>
+    <name>Day_22_Duration__c</name>
+</CustomFieldTranslation>

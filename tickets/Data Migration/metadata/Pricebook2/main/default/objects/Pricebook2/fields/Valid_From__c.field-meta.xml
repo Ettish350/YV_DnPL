@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_From__c</fullName>
+    <label>Valid from</label>
+    <description>DM-Pricebook2 | Lior 11.11.2026 | First date the price book is valid.</description>
+    <inlineHelpText>התאריך הראשון שבו המחירון בתוקף</inlineHelpText>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

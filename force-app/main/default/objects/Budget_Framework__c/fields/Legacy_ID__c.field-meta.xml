@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legacy_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | GUID of the legacy budget framework record (new_budget_frameworkId). External ID for upsert.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>מזהה הרשומה במערכת הישנה</inlineHelpText>
+    <label>Legacy ID</label>
+    <length>36</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

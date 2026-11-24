@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Spouse&apos;s name --></label>
+    <name>Spouse_s_name__c</name>
+    <relationshipLabel><!-- Accounts (Spouse&apos;s name - female) --></relationshipLabel>
+</CustomFieldTranslation>

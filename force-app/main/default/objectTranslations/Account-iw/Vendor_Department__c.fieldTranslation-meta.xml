@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vendor Department --></label>
+    <name>Vendor_Department__c</name>
+    <picklistValues>
+        <masterLabel>חרדי</masterLabel>
+        <translation><!-- חרדי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ישראלי</masterLabel>
+        <translation><!-- ישראלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לדורות</masterLabel>
+        <translation><!-- לדורות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוסי</masterLabel>
+        <translation><!-- רוסי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

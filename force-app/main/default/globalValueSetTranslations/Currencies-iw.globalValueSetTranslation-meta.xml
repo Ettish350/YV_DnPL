@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>AUD</masterLabel>
+        <translation><!-- AUD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CAD</masterLabel>
+        <translation><!-- CAD --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CHF</masterLabel>
+        <translation><!-- CHF --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>CZK</masterLabel>
+        <translation><!-- CZK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>DKK</masterLabel>
+        <translation><!-- DKK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>EUR</masterLabel>
+        <translation>יורו</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>GBP</masterLabel>
+        <translation>ליש&quot;ט (פאונד בריטי)</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ILS</masterLabel>
+        <translation>שקל חדש</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>NOK</masterLabel>
+        <translation><!-- NOK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>PLN</masterLabel>
+        <translation><!-- PLN --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>SEK</masterLabel>
+        <translation><!-- SEK --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>USD</masterLabel>
+        <translation>דולר אמריקאי</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>ZAR</masterLabel>
+        <translation><!-- ZAR --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

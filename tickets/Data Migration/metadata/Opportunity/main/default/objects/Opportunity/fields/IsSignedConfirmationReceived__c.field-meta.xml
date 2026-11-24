@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSignedConfirmationReceived__c</fullName>
+    <label>Signed confirmation received</label>
+    <description>DM-Opportunity | legacy new_is_order_confirmed | Signed confirmation received.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

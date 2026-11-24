@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desk_Assignment__c</fullName>
+    <label>Desk Assignment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>European</fullName>
+                <default>false</default>
+                <label>European</label>
+            </value>
+            <value>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+                <label>Spanish</label>
+            </value>
+            <value>
+                <fullName>USA</fullName>
+                <default>false</default>
+                <label>USA</label>
+            </value>
+            <value>
+                <fullName>English</fullName>
+                <default>false</default>
+                <label>English</label>
+            </value>
+            <value>
+                <fullName>Partnerships and Global Campaigns</fullName>
+                <default>false</default>
+                <label>Partnerships and Global Campaigns</label>
+            </value>
+            <value>
+                <fullName>Israel</fullName>
+                <default>false</default>
+                <label>Israel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

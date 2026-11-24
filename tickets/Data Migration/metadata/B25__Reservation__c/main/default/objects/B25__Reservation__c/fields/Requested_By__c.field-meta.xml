@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_By__c</fullName>
+    <label>Requested by</label>
+    <description>DM-Reservation | legacy new_requesting_the_save | DD 11 step 8, V11-06 | Who asked for the hold or place saved without an order.</description>
+    <inlineHelpText>מי ביקש את השריון או את שמירת המקום</inlineHelpText>
+    <externalId>false</externalId>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

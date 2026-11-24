@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MainSubject__c</fullName>
+    <label>Main Subject</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Information</fullName>
+                <default>false</default>
+                <label>General Information</label>
+            </value>
+            <value>
+                <fullName>Academic Research and Publications</fullName>
+                <default>false</default>
+                <label>Academic Research and Publications</label>
+            </value>
+            <value>
+                <fullName>Righteous Among the Nations</fullName>
+                <default>false</default>
+                <label>Righteous Among the Nations</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Media and Internet</fullName>
+                <default>false</default>
+                <label>Media and Internet</label>
+            </value>
+            <value>
+                <fullName>Collections (Archives, Name Search/Commemoration, Museum and Library)</fullName>
+                <default>false</default>
+                <label>Collections (Archives, Name Search/Commemoration, Museum and Library)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

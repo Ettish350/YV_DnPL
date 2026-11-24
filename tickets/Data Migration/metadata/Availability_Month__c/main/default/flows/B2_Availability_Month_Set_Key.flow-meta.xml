@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <assignments>
+        <name>Set_Month_Key</name>
+        <label>Set Month Key</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Month_Key__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>MonthKeyFormula</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>DM-Availability | DD 13, A13-01 | Before save on Availability Month: fills Month Key (Staff Id + Year + MM from the text fields; was the commitment Id until 18.11.2026), so a guide cannot have two records for the same month.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>MonthKeyFormula</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Staff__c} &amp; &quot;-&quot; &amp; {!$Record.Year__c} &amp; &quot;-&quot; &amp; LPAD(TRIM({!$Record.Month__c}), 2, &quot;0&quot;)</expression>
+    </formulas>
+    <interviewLabel>B2 Availability Month Set Key {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>חודש זמינות: מילוי מפתח חודש</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Month_Key</targetReference>
+        </connector>
+        <object>Availability_Month__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

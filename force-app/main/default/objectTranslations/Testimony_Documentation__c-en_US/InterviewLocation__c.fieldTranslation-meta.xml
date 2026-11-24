@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Interview Location --></label>
+    <name>InterviewLocation__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בבית הניצול</masterLabel>
+        <translation><!-- בבית הניצול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית ווהלין</masterLabel>
+        <translation><!-- בית ווהלין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יד ושם</masterLabel>
+        <translation><!-- יד ושם --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

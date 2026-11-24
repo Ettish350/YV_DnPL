@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>אפיון נוסף להזמנה</label>
+    <name>AdditionalCharacterization__c</name>
+    <picklistValues>
+        <masterLabel>Awareness (for teachers)</masterLabel>
+        <translation><!-- Awareness (for teachers) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Development (for teachers)</masterLabel>
+        <translation><!-- Professional Development (for teachers) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webinars for Students</masterLabel>
+        <translation><!-- Webinars for Students --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Webinars for Teachers</masterLabel>
+        <translation><!-- Webinars for Teachers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workshop for Students</masterLabel>
+        <translation><!-- Workshop for Students --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח גבעתי</masterLabel>
+        <translation><!-- בא&quot;ח גבעתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח גולני</masterLabel>
+        <translation><!-- בא&quot;ח גולני --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח העורף</masterLabel>
+        <translation><!-- בא&quot;ח העורף --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח חיל האוויר</masterLabel>
+        <translation><!-- בא&quot;ח חיל האוויר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח כפיר</masterLabel>
+        <translation><!-- בא&quot;ח כפיר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח נחל</masterLabel>
+        <translation><!-- בא&quot;ח נחל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח צנחנים</masterLabel>
+        <translation><!-- בא&quot;ח צנחנים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח שריון</masterLabel>
+        <translation><!-- בא&quot;ח שריון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בא&quot;ח תותחנים</masterLabel>
+        <translation><!-- בא&quot;ח תותחנים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בה&quot;ד חיל הים</masterLabel>
+        <translation><!-- בה&quot;ד חיל הים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בה&quot;ד מגב</masterLabel>
+        <translation><!-- בה&quot;ד מגב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בה&quot;ד מודיעין</masterLabel>
+        <translation><!-- בה&quot;ד מודיעין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בהל&quot;ץ</masterLabel>
+        <translation><!-- בהל&quot;ץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביה&quot;ס לאיסוף קרבי</masterLabel>
+        <translation><!-- ביה&quot;ס לאיסוף קרבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ביסל&quot;א</masterLabel>
+        <translation><!-- ביסל&quot;א --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הכנה לפולין</masterLabel>
+        <translation><!-- הכנה לפולין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זיכרון מתחדש- פרוייקט באינסטגרם</masterLabel>
+        <translation><!-- זיכרון מתחדש- פרוייקט באינסטגרם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חוות השומר</masterLabel>
+        <translation><!-- חוות השומר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליל הבדולח</masterLabel>
+        <translation><!-- ליל הבדולח --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לימודים</masterLabel>
+        <translation><!-- לימודים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מגזר חרדי</masterLabel>
+        <translation><!-- מגזר חרדי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחווה אלון</masterLabel>
+        <translation><!-- מחווה אלון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מחנה קיץ</masterLabel>
+        <translation><!-- מחנה קיץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנהיגות צעירה</masterLabel>
+        <translation><!-- מנהיגות צעירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסע</masterLabel>
+        <translation><!-- מסע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסע תלמידים בארץ</masterLabel>
+        <translation><!-- מסע תלמידים בארץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מרכז הובלה</masterLabel>
+        <translation><!-- מרכז הובלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נתיב</masterLabel>
+        <translation><!-- נתיב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-אזרחים</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-אזרחים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 10</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 10 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 11</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 13</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 13 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 20</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 20 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 6</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 6 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד 7</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד 7 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-בה&quot;ד חינוך</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-בה&quot;ד חינוך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-ביה&quot;ס לפיקוד והדרכה</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-ביה&quot;ס לפיקוד והדרכה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-כוחות הביטחון</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-כוחות הביטחון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-מפקדה</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-מפקדה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עיר הבה&quot;דים-צה&quot;ל חוץ</masterLabel>
+        <translation><!-- עיר הבה&quot;דים-צה&quot;ל חוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פעילות רכז חו&quot;ל</masterLabel>
+        <translation><!-- פעילות רכז חו&quot;ל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרוייקט קולנוע</masterLabel>
+        <translation><!-- פרוייקט קולנוע --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קולכם שמעתי</masterLabel>
+        <translation><!-- קולכם שמעתי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תגלית</masterLabel>
+        <translation><!-- תגלית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

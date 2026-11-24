@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vendor language --></label>
+    <name>Vendor_language__c</name>
+    <picklistValues>
+        <masterLabel>אוקראינית</masterLabel>
+        <translation><!-- אוקראינית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>איטלקית</masterLabel>
+        <translation><!-- איטלקית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אינדונזית</masterLabel>
+        <translation><!-- אינדונזית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אלבנית</masterLabel>
+        <translation><!-- אלבנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אנגלית</masterLabel>
+        <translation><!-- אנגלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אסטונית</masterLabel>
+        <translation><!-- אסטונית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בולגרית</masterLabel>
+        <translation><!-- בולגרית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גרמנית</masterLabel>
+        <translation><!-- גרמנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דו לשוני: עברית / אנגלית</masterLabel>
+        <translation><!-- דו לשוני: עברית / אנגלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דו לשוני: קוריאנית / אנגלית</masterLabel>
+        <translation><!-- דו לשוני: קוריאנית / אנגלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דו לשוני: רוסית / עברית</masterLabel>
+        <translation><!-- דו לשוני: רוסית / עברית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דנית</masterLabel>
+        <translation><!-- דנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הולנדית</masterLabel>
+        <translation><!-- הולנדית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הונגרית</masterLabel>
+        <translation><!-- הונגרית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הינדי</masterLabel>
+        <translation><!-- הינדי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חמרית</masterLabel>
+        <translation><!-- חמרית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טורקית</masterLabel>
+        <translation><!-- טורקית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יוונית</masterLabel>
+        <translation><!-- יוונית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יידיש</masterLabel>
+        <translation><!-- יידיש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יפנית</masterLabel>
+        <translation><!-- יפנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כל השפות</masterLabel>
+        <translation><!-- כל השפות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לטבית</masterLabel>
+        <translation><!-- לטבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ליטאית</masterLabel>
+        <translation><!-- ליטאית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מנדרינית</masterLabel>
+        <translation><!-- מנדרינית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקדונית</masterLabel>
+        <translation><!-- מקדונית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מראטהית</masterLabel>
+        <translation><!-- מראטהית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נורווגית</masterLabel>
+        <translation><!-- נורווגית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סינית</masterLabel>
+        <translation><!-- סינית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סלובנית</masterLabel>
+        <translation><!-- סלובנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סלובקית</masterLabel>
+        <translation><!-- סלובקית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספרדית</masterLabel>
+        <translation><!-- ספרדית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרבית</masterLabel>
+        <translation><!-- סרבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עברית</masterLabel>
+        <translation><!-- עברית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ערבית</masterLabel>
+        <translation><!-- ערבית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פולנית</masterLabel>
+        <translation><!-- פולנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פורטוגזית</masterLabel>
+        <translation><!-- פורטוגזית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פינית</masterLabel>
+        <translation><!-- פינית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פלמית</masterLabel>
+        <translation><!-- פלמית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צ&apos;כית</masterLabel>
+        <translation><!-- צ&apos;כית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צרפתית</masterLabel>
+        <translation><!-- צרפתית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קרואטית</masterLabel>
+        <translation><!-- קרואטית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רומנית</masterLabel>
+        <translation><!-- רומנית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רוסית</masterLabel>
+        <translation><!-- רוסית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שוודית</masterLabel>
+        <translation><!-- שוודית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שפת סימנים אמריקאית</masterLabel>
+        <translation><!-- שפת סימנים אמריקאית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שפת סימנים ישראלית</masterLabel>
+        <translation><!-- שפת סימנים ישראלית --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

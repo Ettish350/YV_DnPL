@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>hen a case is created with an associated order and products, users are not allowed to edit the case until the payment status is marked as &quot;Paid&quot;.
+Only users with the appropriate permission set can bypass this restriction and edit the case.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Allow Edit Without Payment</label>
+</PermissionSet>

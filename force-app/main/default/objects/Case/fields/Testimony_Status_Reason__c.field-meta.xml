@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Testimony_Status_Reason__c</fullName>
+    <label>Testimony Status Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>ממתין לקביעת ראיון</fullName>
+                <default>false</default>
+                <label>ממתין לקביעת ראיון</label>
+            </value>
+            <value>
+                <fullName>ממתין לשיבוץ מראיין</fullName>
+                <default>false</default>
+                <label>ממתין לשיבוץ מראיין</label>
+            </value>
+            <value>
+                <fullName>ממתין לשיבוץ צלם</fullName>
+                <default>false</default>
+                <label>ממתין לשיבוץ צלם</label>
+            </value>
+            <value>
+                <fullName>ממתין למספר פריט</fullName>
+                <default>false</default>
+                <label>ממתין למספר פריט</label>
+            </value>
+            <value>
+                <fullName>ממתין לקביעת ראיון המשך</fullName>
+                <default>false</default>
+                <label>ממתין לקביעת ראיון המשך</label>
+            </value>
+            <value>
+                <fullName>ממתין לקליטת קבצים</fullName>
+                <default>false</default>
+                <label>ממתין לקליטת קבצים</label>
+            </value>
+            <value>
+                <fullName>עדות נמסרה</fullName>
+                <default>false</default>
+                <label>עדות נמסרה</label>
+            </value>
+            <value>
+                <fullName>נפטר</fullName>
+                <default>false</default>
+                <label>נפטר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

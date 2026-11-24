@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Operator --></label>
+    <name>Operator__c</name>
+    <picklistValues>
+        <masterLabel>א. שילוט</masterLabel>
+        <translation><!-- א. שילוט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אות ושלט</masterLabel>
+        <translation><!-- אות ושלט --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אחזקה יד ושם</masterLabel>
+        <translation><!-- אחזקה יד ושם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בריז קרייאטיב</masterLabel>
+        <translation><!-- בריז קרייאטיב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גרפיקה יד ושם</masterLabel>
+        <translation><!-- גרפיקה יד ושם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גרפיקס</masterLabel>
+        <translation><!-- גרפיקס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ורדימון</masterLabel>
+        <translation><!-- ורדימון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כדורי</masterLabel>
+        <translation><!-- כדורי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מיקס</masterLabel>
+        <translation><!-- מיקס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שלטי המעצבע</masterLabel>
+        <translation><!-- שלטי המעצבע --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

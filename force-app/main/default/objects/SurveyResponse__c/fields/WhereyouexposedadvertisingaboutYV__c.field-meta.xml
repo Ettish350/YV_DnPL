@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WhereyouexposedadvertisingaboutYV__c</fullName>
+    <label>Where you exposed advertising about YV?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yad Vashem website</fullName>
+                <default>false</default>
+                <label>Yad Vashem website</label>
+            </value>
+            <value>
+                <fullName>Social networks</fullName>
+                <default>false</default>
+                <label>Social networks</label>
+            </value>
+            <value>
+                <fullName>Google/Internet search</fullName>
+                <default>false</default>
+                <label>Google/Internet search</label>
+            </value>
+            <value>
+                <fullName>Recommendation from another organization/institution</fullName>
+                <default>false</default>
+                <label>Recommendation from another organization/institution</label>
+            </value>
+            <value>
+                <fullName>Press/Media</fullName>
+                <default>false</default>
+                <label>Press/Media</label>
+            </value>
+            <value>
+                <fullName>Friends/Colleagues</fullName>
+                <default>false</default>
+                <label>Friends/Colleagues</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

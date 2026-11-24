@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>GiftCommitment</baseObject>
+    <category>forecasts</category>
+    <deployed>true</deployed>
+    <description>Report Type: Custom report type (Gift Commitments with Gift Transactions, Gift Designation/Project, Account/Contact)</description>
+    <join>
+        <join>
+            <outerJoin>true</outerJoin>
+            <relationship>GiftTransactionDesignation</relationship>
+        </join>
+        <outerJoin>true</outerJoin>
+        <relationship>GiftTransaction</relationship>
+    </join>
+    <label>Gift Commitments &amp; Donations</label>
+    <sections>
+        <masterLabel>Gift Commitments</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Gift Transactions</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Gift Transaction Designations</masterLabel>
+    </sections>
+</ReportType>

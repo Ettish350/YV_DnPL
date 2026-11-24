@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Artist_Meeting_Summary__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;https://yvsandbox.formtitan.com/ftproject/ft1b49d8e441b4435d8f94c682297d2f33&quot;, &quot;Open Form&quot;, &quot;_blank&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Click here to input your meeting summary</inlineHelpText>
+    <label>Artist Meeting Summary</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

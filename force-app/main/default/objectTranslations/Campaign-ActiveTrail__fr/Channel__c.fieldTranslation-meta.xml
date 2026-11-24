@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Channel --></label>
+    <name>Channel__c</name>
+    <picklistValues>
+        <masterLabel>Digital</masterLabel>
+        <translation><!-- Digital --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Email</masterLabel>
+        <translation><!-- Email --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facebook</masterLabel>
+        <translation><!-- Facebook --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instagram</masterLabel>
+        <translation><!-- Instagram --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mail</masterLabel>
+        <translation><!-- Mail --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personal</masterLabel>
+        <translation><!-- Personal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phone</masterLabel>
+        <translation><!-- Phone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WebSite</masterLabel>
+        <translation><!-- WebSite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>X(Twitter)</masterLabel>
+        <translation><!-- X(Twitter) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>YouTube</masterLabel>
+        <translation><!-- YouTube --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>מסגרת תקציבית</label>
+    <lookupFilter>
+        <errorMessage><!-- מסגרת תקציבית זו שייכת למחלקה אחרת. ניתן לבחור רק מסגרות של מחלקת ההזמנה. --></errorMessage>
+        <informationalMessage><!-- מוצגות רק מסגרות תקציביות של מחלקת ההזמנה. --></informationalMessage>
+    </lookupFilter>
+    <name>Budget_Framework__c</name>
+    <relationshipLabel><!-- Budget framework (Orders) --></relationshipLabel>
+</CustomFieldTranslation>

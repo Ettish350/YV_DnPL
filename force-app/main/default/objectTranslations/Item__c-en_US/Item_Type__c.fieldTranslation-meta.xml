@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Item Type --></label>
+    <name>Item_Type__c</name>
+    <picklistValues>
+        <masterLabel>אלבום</masterLabel>
+        <translation><!-- אלבום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>דף עד</masterLabel>
+        <translation><!-- דף עד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הקלטה מוזיקלית</masterLabel>
+        <translation><!-- הקלטה מוזיקלית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>זכרונות</masterLabel>
+        <translation><!-- זכרונות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חפץ</masterLabel>
+        <translation><!-- חפץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יומן</masterLabel>
+        <translation><!-- יומן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יצירת אמנות</masterLabel>
+        <translation><!-- יצירת אמנות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מידע נלווה</masterLabel>
+        <translation><!-- מידע נלווה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מכתב</masterLabel>
+        <translation><!-- מכתב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מסמך</masterLabel>
+        <translation><!-- מסמך --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ספר</masterLabel>
+        <translation><!-- ספר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרט הפקה</masterLabel>
+        <translation><!-- סרט הפקה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>סרט מקור</masterLabel>
+        <translation><!-- סרט מקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עדות</masterLabel>
+        <translation><!-- עדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שאלון ניצול</masterLabel>
+        <translation><!-- שאלון ניצול --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תצלום</masterLabel>
+        <translation><!-- תצלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תצלום היכל השמות</masterLabel>
+        <translation><!-- תצלום היכל השמות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,52 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfCreator", "PdfCreator\PdfCreator.csproj", "{D3F9BC49-8E66-4FD3-B0BF-AD022D293D73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{A59D8924-6086-4619-AA6D-E309A9C47469}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{AA5DAB90-927D-459E-86C4-8EB7E7D0A06A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3F9BC49-8E66-4FD3-B0BF-AD022D293D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F9BC49-8E66-4FD3-B0BF-AD022D293D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F9BC49-8E66-4FD3-B0BF-AD022D293D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F9BC49-8E66-4FD3-B0BF-AD022D293D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59D8924-6086-4619-AA6D-E309A9C47469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59D8924-6086-4619-AA6D-E309A9C47469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59D8924-6086-4619-AA6D-E309A9C47469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59D8924-6086-4619-AA6D-E309A9C47469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5DAB90-927D-459E-86C4-8EB7E7D0A06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5DAB90-927D-459E-86C4-8EB7E7D0A06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5DAB90-927D-459E-86C4-8EB7E7D0A06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5DAB90-927D-459E-86C4-8EB7E7D0A06A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {074FDC77-D29D-49FA-B6BE-D1D0D4ACF318}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://yadtf:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PdfCreator\\PdfCreator.csproj
+		SccProjectName1 = PdfCreator
+		SccLocalPath1 = PdfCreator
+		SccProjectUniqueName2 = Data\\Data.csproj
+		SccProjectName2 = Data
+		SccLocalPath2 = Data
+		SccProjectUniqueName3 = Service\\Service.csproj
+		SccProjectName3 = Service
+		SccLocalPath3 = Service
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- הערה ליום 20: שם החג, היום המיוחד או שבת --></help>
+    <label><!-- Day 20 Note --></label>
+    <name>Day_20_Note__c</name>
+</CustomFieldTranslation>
