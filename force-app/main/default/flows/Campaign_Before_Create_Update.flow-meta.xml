@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <assignments>
+        <name>Assign_Campaign_Year</name>
+        <label>Assign Campaign Year</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Campaign_Year__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FiscalYear</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Desk_From_Created_By</name>
+        <label>Assign Desk From Created By</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk_Event__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.CreatedBy.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_If_Fiscal_Year_Exist</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Campaign_Active</name>
+        <label>Campaign Active?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_Campaign_Desk_Event_Is_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Active</defaultConnectorLabel>
+        <rules>
+            <name>Not_Active</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Aborted</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Not Active</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_If_Campaign_Desk_Event_Is_null</name>
+        <label>Check If Campaign Desk Event Is null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Check_If_Fiscal_Year_Exist</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Desk event Is Full</defaultConnectorLabel>
+        <rules>
+            <name>Campaign_Desk_Event_Is_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Desk_Event__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Desk_From_Created_By</targetReference>
+            </connector>
+            <label>Campaign Desk Event Is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_If_Fiscal_Year_Exist</name>
+        <label>Check If Fiscal Year Exist</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Campaign_Year</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Fiscal Year Not Exist</defaultConnectorLabel>
+        <rules>
+            <name>Fiscal_Year_exist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Campaign_Year__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Fiscal Year exist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_New_Campaign</name>
+        <label>Is New Campaign</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Campaign_Active</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Is Updated Campaign</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_If_Campaign_Desk_Event_Is_null</targetReference>
+            </connector>
+            <label>Is New</label>
+        </rules>
+    </decisions>
+    <description>[07-09-2025][Nissim]-
+Assigning Desk and Campaign Year to Campaign In case it doesn&apos;t have one initially</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CurrentYear</name>
+        <dataType>Number</dataType>
+        <expression>YEAR(TODAY())</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>FiscalYear</name>
+        <dataType>String</dataType>
+        <expression>TEXT( YEAR($Flow.CurrentDate) )</expression>
+    </formulas>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Campaign Before Create &amp; Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Campaign Before Create &amp; Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_New_Campaign</targetReference>
+        </connector>
+        <object>Campaign</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

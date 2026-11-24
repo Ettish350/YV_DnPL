@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- 1. Regular - Standard guides scheduled for routine activities based on their availability
+2. Special Coordination Used for volunteers, testimony givers, etc., where the department operating the activity must coordinate directly with them
+3. External Provider Used for third-party services like freelancers or catering franchisees where purchase orders (הזמנת רכש) must be issued -->
+    </help>
+    <label><!-- Coordination Type (סוג תיאום) --></label>
+    <name>Coordination_Type__c</name>
+    <picklistValues>
+        <masterLabel>External Provider (ספק חיצוני)</masterLabel>
+        <translation><!-- External Provider (ספק חיצוני) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regular (רגיל)</masterLabel>
+        <translation><!-- Regular (רגיל) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Coordination (תיאום מיוחד)</masterLabel>
+        <translation><!-- Special Coordination (תיאום מיוחד) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

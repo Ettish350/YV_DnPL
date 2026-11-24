@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Two_Mode__c</fullName>
+    <label>Two-mode resource</label>
+    <description>DM-Resource | DD 11 step 1, V11-08 | Two-mode resource (for example the synagogue): the usage mode is chosen on the reservation.</description>
+    <inlineHelpText>משאב בעל שני אופני שימוש, כגון בית הכנסת. אופן השימוש נבחר בעת השריון</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

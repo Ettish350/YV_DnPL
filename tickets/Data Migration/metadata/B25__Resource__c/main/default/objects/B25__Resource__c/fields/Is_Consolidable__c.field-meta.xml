@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Consolidable__c</fullName>
+    <label>Consolidable</label>
+    <description>DM-Resource | legacy new_is_it_consolidable | DD 11 | The resource can be united with another resource into one space.</description>
+    <inlineHelpText>המשאב ניתן לאיחוד עם משאב אחר לחלל אחד</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

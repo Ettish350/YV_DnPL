@@ -1,0 +1,42 @@
+@import "./styles/colors.scss";
+@import "./styles/images.scss";
+@import "./styles/dialog-style.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  background-image: $background-image !important;
+  background-color: $basic-white-background !important;
+}
+
+HTML{
+  //max-width: 80%;
+  //max-height: 80%;
+  max-zoom: 0.8;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Assistant;
+  src: url('../src/assets/fonts/Assistant.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: Assistant;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printSection,
+  #printSection * {
+    visibility: visible;
+  }
+}

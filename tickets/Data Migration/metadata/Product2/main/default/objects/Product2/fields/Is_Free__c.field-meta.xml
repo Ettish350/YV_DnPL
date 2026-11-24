@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Free__c</fullName>
+    <label>Free product</label>
+    <description>DM-Product2 | DD V01-03 | Free product: priced and saved at zero only.</description>
+    <inlineHelpText>מוצר ללא תשלום. מתומחר ונשמר במחיר אפס בלבד</inlineHelpText>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Reservation --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Reservation --></value>
+    </caseValues>
+    <gender><!-- Masculine --></gender>
+    <nameFieldLabel><!-- Reservation Name --></nameFieldLabel>
+    <quickActions>
+        <label><!-- סגירה לפעילות פרטית --></label>
+        <name>P11_Close_Resource_Private</name>
+    </quickActions>
+    <startsWith><!-- Consonant --></startsWith>
+    <validationRules>
+        <errorMessage><!-- Modify arrangement not available in the resource. --></errorMessage>
+        <name>Arrangement_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Need to fill notes field --></errorMessage>
+        <name>Notes_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- שריון ללא הזמנה מחייב סיבה ומבקש --></errorMessage>
+        <name>P11_V11_06_Hold_Reason_Requester</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה לבחור סיבת ביטול --></errorMessage>
+        <name>P11_V11_07_Cancel_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- חובה לבחור אופן שימוש למשאב --></errorMessage>
+        <name>P11_V11_08_Usage_Mode</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource cant have Refreshments --></errorMessage>
+        <name>Refreshments_Validation_Rule</name>
+    </validationRules>
+</CustomObjectTranslation>

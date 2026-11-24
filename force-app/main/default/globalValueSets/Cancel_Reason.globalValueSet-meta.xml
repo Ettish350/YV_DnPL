@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>מס&apos; משתתפים מועט</fullName>
+        <default>false</default>
+        <label>מס&apos; משתתפים מועט</label>
+    </customValue>
+    <customValue>
+        <fullName>מזג אוויר</fullName>
+        <default>false</default>
+        <label>מזג אוויר</label>
+    </customValue>
+    <customValue>
+        <fullName>הקפצה</fullName>
+        <default>false</default>
+        <label>הקפצה</label>
+    </customValue>
+    <customValue>
+        <fullName>ביטול ביום הביקור</fullName>
+        <default>false</default>
+        <label>ביטול ביום הביקור</label>
+    </customValue>
+    <customValue>
+        <fullName>מצב בטחוני</fullName>
+        <default>false</default>
+        <label>מצב בטחוני</label>
+    </customValue>
+    <customValue>
+        <fullName>קורונה</fullName>
+        <default>false</default>
+        <label>קורונה</label>
+    </customValue>
+    <customValue>
+        <fullName>שביתה</fullName>
+        <default>false</default>
+        <label>שביתה</label>
+    </customValue>
+    <customValue>
+        <fullName>הזמנה כפולה</fullName>
+        <default>false</default>
+        <label>הזמנה כפולה</label>
+    </customValue>
+    <customValue>
+        <fullName>הזמנה מהאינטרנט</fullName>
+        <default>false</default>
+        <label>הזמנה מהאינטרנט</label>
+    </customValue>
+    <customValue>
+        <fullName>נדחה למועד שטרם נקבע</fullName>
+        <default>false</default>
+        <label>נדחה למועד שטרם נקבע</label>
+    </customValue>
+    <customValue>
+        <fullName>הפך להשתלמות</fullName>
+        <default>false</default>
+        <label>הפך להשתלמות</label>
+    </customValue>
+    <customValue>
+        <fullName>נסיון</fullName>
+        <default>false</default>
+        <label>נסיון</label>
+    </customValue>
+    <customValue>
+        <fullName>אחר</fullName>
+        <default>false</default>
+        <label>אחר</label>
+    </customValue>
+    <customValue>
+        <fullName>בוטל ע&quot;י המזמין</fullName>
+        <default>false</default>
+        <label>בוטל ע&quot;י המזמין</label>
+    </customValue>
+    <customValue>
+        <fullName>העברה לאגף אחר</fullName>
+        <default>false</default>
+        <label>העברה לאגף אחר</label>
+    </customValue>
+    <customValue>
+        <fullName>צהל- שינויי לוז</fullName>
+        <default>false</default>
+        <label>צהל- שינויי לוז</label>
+    </customValue>
+    <customValue>
+        <fullName>צהל- היסעים</fullName>
+        <default>false</default>
+        <label>צהל- היסעים</label>
+    </customValue>
+    <customValue>
+        <fullName>נדחה לתאריך אחר</fullName>
+        <default>false</default>
+        <label>נדחה לתאריך אחר</label>
+    </customValue>
+    <customValue>
+        <fullName>מלחמה</fullName>
+        <default>false</default>
+        <label>מלחמה</label>
+    </customValue>
+    <customValue>
+        <fullName>הפגנה</fullName>
+        <default>false</default>
+        <label>הפגנה</label>
+    </customValue>
+    <description>DM-Reservation | legacy new_cancellation_reason | DD 11, V11-07 | Cancellation reasons. Same 20 values as Opportunity.CancellationReason__c.</description>
+    <masterLabel>Cancel Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סטטוס תשלום</label>
+    <name>PaymentStatus__c</name>
+    <picklistValues>
+        <masterLabel>אין צורך בתשלום</masterLabel>
+        <translation><!-- אין צורך בתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הועבר לטיפול כספים</masterLabel>
+        <translation><!-- הועבר לטיפול כספים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הופק חשבון</masterLabel>
+        <translation><!-- הופק חשבון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הופק חשבון חלקית</masterLabel>
+        <translation><!-- הופק חשבון חלקית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התחייבות לתשלום</masterLabel>
+        <translation><!-- התחייבות לתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>התקבל וואוצ&apos;ר</masterLabel>
+        <translation><!-- התקבל וואוצ&apos;ר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חשבון בוטל</masterLabel>
+        <translation><!-- חשבון בוטל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם שולם</masterLabel>
+        <translation><!-- טרם שולם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>טרם שולם (התחשבנות פנימית)</masterLabel>
+        <translation><!-- טרם שולם (התחשבנות פנימית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לחיוב בחבילה</masterLabel>
+        <translation><!-- לחיוב בחבילה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ללא</masterLabel>
+        <translation><!-- ללא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ממתין לתשלום</masterLabel>
+        <translation><!-- ממתין לתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם</masterLabel>
+        <translation><!-- שולם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם (התחשבנות פנימית)</masterLabel>
+        <translation><!-- שולם (התחשבנות פנימית) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם ובוצע זיכוי חלקי</masterLabel>
+        <translation><!-- שולם ובוצע זיכוי חלקי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם ובוצע זיכוי מלא</masterLabel>
+        <translation><!-- שולם ובוצע זיכוי מלא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שולם חלקית</masterLabel>
+        <translation><!-- שולם חלקית --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שמירת מקום - אין צורך בתשלום</masterLabel>
+        <translation><!-- שמירת מקום - אין צורך בתשלום --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תשלום נכשל</masterLabel>
+        <translation><!-- תשלום נכשל --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

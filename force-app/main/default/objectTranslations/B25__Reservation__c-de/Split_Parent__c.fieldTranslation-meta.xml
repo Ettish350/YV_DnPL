@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- שיבוץ החדר המפוצל שבגללו נוצר שיבוץ חדר המשנה הזה. מתעדכן אוטומטית. --></help>
+    <label><!-- שיבוץ אב (חדר מפוצל) --></label>
+    <name>Split_Parent__c</name>
+    <relationshipLabel><!-- שיבוצי חדרי משנה --></relationshipLabel>
+</CustomFieldTranslation>

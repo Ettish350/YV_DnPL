@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Sharing_English</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing English</label>
+        <sharedTo>
+            <group>English_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>English</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_European</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing European</label>
+        <sharedTo>
+            <group>European_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>European</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Israel</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Israel</label>
+        <sharedTo>
+            <group>Israel_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>Israel</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Partnerships</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing Partnerships</label>
+        <sharedTo>
+            <group>Partnerships_and_GC_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>Partnerships and Global Campaigns</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_USA</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing USA</label>
+        <sharedTo>
+            <group>USA_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>USA</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Spanish_Desk</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Spanish Desk</label>
+        <sharedTo>
+            <group>Spanish_Desk_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Desk_Name__c</field>
+            <operation>equals</operation>
+            <value>Spanish</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

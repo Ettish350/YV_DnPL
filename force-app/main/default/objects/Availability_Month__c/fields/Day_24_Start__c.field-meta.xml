@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_24_Start__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Start time on day 24 of the month.</description>
+    <inlineHelpText>שעת ההתחלה ביום 24</inlineHelpText>
+    <label>Day 24 Start</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

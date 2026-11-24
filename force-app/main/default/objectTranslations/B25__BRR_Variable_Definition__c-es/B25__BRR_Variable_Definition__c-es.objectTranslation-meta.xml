@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Variable BRR Definición</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Definiciones de las variables BRR</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>BRR Variable Definición Nombre</nameFieldLabel>
+</CustomObjectTranslation>

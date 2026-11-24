@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Vendor Living Area --></label>
+    <name>Vendor_Living_Area__c</name>
+    <picklistValues>
+        <masterLabel>אילת</masterLabel>
+        <translation><!-- אילת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשדוד</masterLabel>
+        <translation><!-- אשדוד --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>אשקלון</masterLabel>
+        <translation><!-- אשקלון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>באר טוביה</masterLabel>
+        <translation><!-- באר טוביה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית לוינשטיין</masterLabel>
+        <translation><!-- בית לוינשטיין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית שאן</masterLabel>
+        <translation><!-- בית שאן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בית שמש</masterLabel>
+        <translation><!-- בית שמש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בני ברק</masterLabel>
+        <translation><!-- בני ברק --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>בת-ים</masterLabel>
+        <translation><!-- בת-ים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גוש עציון</masterLabel>
+        <translation><!-- גוש עציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גליל מערבי</masterLabel>
+        <translation><!-- גליל מערבי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>גליל עליון</masterLabel>
+        <translation><!-- גליל עליון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>הרצליה</masterLabel>
+        <translation><!-- הרצליה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חדרה</masterLabel>
+        <translation><!-- חדרה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חולון</masterLabel>
+        <translation><!-- חולון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חיפה</masterLabel>
+        <translation><!-- חיפה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>יבנה</masterLabel>
+        <translation><!-- יבנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ירושלים</masterLabel>
+        <translation><!-- ירושלים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כנרת</masterLabel>
+        <translation><!-- כנרת --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כרמיאל</masterLabel>
+        <translation><!-- כרמיאל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מודיעין</masterLabel>
+        <translation><!-- מודיעין --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעלה אדומים</masterLabel>
+        <translation><!-- מעלה אדומים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נגב</masterLabel>
+        <translation><!-- נגב --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נתניה</masterLabel>
+        <translation><!-- נתניה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>עמק יזרעאל</masterLabel>
+        <translation><!-- עמק יזרעאל --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פרדס חנה</masterLabel>
+        <translation><!-- פרדס חנה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פתח תקווה</masterLabel>
+        <translation><!-- פתח תקווה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קריות</masterLabel>
+        <translation><!-- קריות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ר&quot;ג גבעתייים</masterLabel>
+        <translation><!-- ר&quot;ג גבעתייים --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראשון לציון</masterLabel>
+        <translation><!-- ראשון לציון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רחובות</masterLabel>
+        <translation><!-- רחובות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רמת הגולן</masterLabel>
+        <translation><!-- רמת הגולן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>רעננה</masterLabel>
+        <translation><!-- רעננה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שהם</masterLabel>
+        <translation><!-- שהם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שומרון</masterLabel>
+        <translation><!-- שומרון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שפלה</masterLabel>
+        <translation><!-- שפלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שרון</masterLabel>
+        <translation><!-- שרון --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תל אביב</masterLabel>
+        <translation><!-- תל אביב --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

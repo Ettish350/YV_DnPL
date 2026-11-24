@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>סוג הזמנה מקוונת</label>
+    <name>OnlineOrderType__c</name>
+    <picklistValues>
+        <masterLabel>הזמנה בי&quot;ס</masterLabel>
+        <translation><!-- הזמנה בי&quot;ס --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבוצה פרטית - הזמנה באמצעות סוכן</masterLabel>
+        <translation><!-- קבוצה פרטית - הזמנה באמצעות סוכן --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קבוצה פרטית - הזמנה ישירה</masterLabel>
+        <translation><!-- קבוצה פרטית - הזמנה ישירה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קיוסק</masterLabel>
+        <translation><!-- קיוסק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

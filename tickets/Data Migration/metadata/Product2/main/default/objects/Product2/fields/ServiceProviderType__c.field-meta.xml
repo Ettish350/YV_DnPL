@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceProviderType__c</fullName>
+    <label>Service provider type</label>
+    <description>A1-01 | A1 mapping | Service provider type.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מדריך</fullName>
+                <default>false</default>
+                <label>מדריך</label>
+            </value>
+            <value>
+                <fullName>מרצה</fullName>
+                <default>false</default>
+                <label>מרצה</label>
+            </value>
+            <value>
+                <fullName>עדות</fullName>
+                <default>false</default>
+                <label>עדות</label>
+            </value>
+            <value>
+                <fullName>עובד</fullName>
+                <default>false</default>
+                <label>עובד</label>
+            </value>
+            <value>
+                <fullName>בת שרות</fullName>
+                <default>false</default>
+                <label>בת שרות</label>
+            </value>
+            <value>
+                <fullName>מדריך פולין</fullName>
+                <default>false</default>
+                <label>מדריך פולין</label>
+            </value>
+            <value>
+                <fullName>חזן</fullName>
+                <default>false</default>
+                <label>חזן</label>
+            </value>
+            <value>
+                <fullName>שחקן</fullName>
+                <default>false</default>
+                <label>שחקן</label>
+            </value>
+            <value>
+                <fullName>מורה דרך</fullName>
+                <default>false</default>
+                <label>מורה דרך</label>
+            </value>
+            <value>
+                <fullName>רכז</fullName>
+                <default>false</default>
+                <label>רכז</label>
+            </value>
+            <value>
+                <fullName>צלם</fullName>
+                <default>false</default>
+                <label>צלם</label>
+            </value>
+            <value>
+                <fullName>מדריך עיר הבה&quot;דים</fullName>
+                <default>false</default>
+                <label>מדריך עיר הבה&quot;דים</label>
+            </value>
+            <value>
+                <fullName>מדריך מגמת הדרכה</fullName>
+                <default>false</default>
+                <label>מדריך מגמת הדרכה</label>
+            </value>
+            <value>
+                <fullName>מדריך הכשרת מורים</fullName>
+                <default>false</default>
+                <label>מדריך הכשרת מורים</label>
+            </value>
+            <value>
+                <fullName>מדריכי ה-25</fullName>
+                <default>false</default>
+                <label>מדריכי ה-25</label>
+            </value>
+            <value>
+                <fullName>עדויות - צלם</fullName>
+                <default>false</default>
+                <label>עדויות - צלם</label>
+            </value>
+            <value>
+                <fullName>עדויות - מראיין</fullName>
+                <default>false</default>
+                <label>עדויות - מראיין</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

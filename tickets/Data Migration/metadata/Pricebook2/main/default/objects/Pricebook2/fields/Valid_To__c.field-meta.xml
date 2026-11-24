@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_To__c</fullName>
+    <label>Valid to</label>
+    <description>DM-Pricebook2 | legacy new_yv_pricelist.new_price_end_date | Lior 11.11.2026 | Last date the price book is valid.</description>
+    <inlineHelpText>התאריך האחרון שבו המחירון בתוקף</inlineHelpText>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

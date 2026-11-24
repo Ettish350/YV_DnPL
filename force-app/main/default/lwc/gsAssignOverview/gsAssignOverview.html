@@ -1,0 +1,36 @@
+<template>
+    <div class="screen" dir="rtl" lang="he">
+        <div class="pad">
+            <h2 class="title">שיבוץ מדריכים</h2>
+            <p class="sub">{orderName}</p>
+
+            <div class="tiles">
+                <div class="tile">
+                    <b>{totalCount}</b>
+                    <span>קבוצות ממתינות למדריך</span>
+                </div>
+                <div class="tile ok">
+                    <b>{fullCount}</b>
+                    <span>עם התאמה מלאה</span>
+                </div>
+                <div class="tile warn">
+                    <b>{needCount}</b>
+                    <span>דורשות את תשומת ליבך</span>
+                </div>
+            </div>
+
+            <div class="choices">
+                <template lwc:if={hasFull}>
+                    <button type="button" class={autoCls} onclick={handleAuto}>
+                        <strong>אשר את ההתאמות המלאות ובדוק רק את השאר</strong>
+                        <small>{autoSub}</small>
+                    </button>
+                </template>
+                <button type="button" class={oneCls} onclick={handleOne}>
+                    <strong>עבור על כל קבוצה בנפרד</strong>
+                    <small>תראה כל קבוצה ותבחר בעצמך</small>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

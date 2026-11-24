@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>חטיבה</label>
+    <name>Division__c</name>
+    <picklistValues>
+        <masterLabel>Admin &amp; Research Building</masterLabel>
+        <translation><!-- Admin &amp; Research Building --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aguda</masterLabel>
+        <translation><!-- Aguda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Archive</masterLabel>
+        <translation><!-- Archive --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Collections</masterLabel>
+        <translation><!-- Collections --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications</masterLabel>
+        <translation><!-- Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Community Relations</masterLabel>
+        <translation><!-- Community Relations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Designated Building</masterLabel>
+        <translation><!-- Designated Building --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Directorate</masterLabel>
+        <translation><!-- Directorate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General</masterLabel>
+        <translation><!-- General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hall Of Names</masterLabel>
+        <translation><!-- Hall Of Names --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IR</masterLabel>
+        <translation><!-- IR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International Relations</masterLabel>
+        <translation><!-- International Relations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Library</masterLabel>
+        <translation><!-- Library --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance</masterLabel>
+        <translation><!-- Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multiple</masterLabel>
+        <translation><!-- Multiple --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Museum</masterLabel>
+        <translation><!-- Museum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Naming Rights</masterLabel>
+        <translation><!-- Naming Rights --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Relations &amp; Commemoration</masterLabel>
+        <translation><!-- Public Relations &amp; Commemoration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publications</masterLabel>
+        <translation><!-- Publications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Institute</masterLabel>
+        <translation><!-- Research Institute --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Righteous Among The Nations</masterLabel>
+        <translation><!-- Righteous Among The Nations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School</masterLabel>
+        <translation><!-- School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology</masterLabel>
+        <translation><!-- Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visitor Center &amp; Tourism Marketing</masterLabel>
+        <translation><!-- Visitor Center &amp; Tourism Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual Center</masterLabel>
+        <translation><!-- Visual Center --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

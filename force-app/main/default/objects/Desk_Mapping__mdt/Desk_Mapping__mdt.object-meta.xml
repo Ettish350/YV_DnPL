@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mapping between picklist values and desk Account IDs</description>
+    <label>Desk Mapping</label>
+    <pluralLabel>Desks Mapping</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

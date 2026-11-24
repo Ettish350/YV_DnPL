@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Institution_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Institution symbol or Company ID (ח״פ) used by yvEdu portal users to sign in. Looked up by yvEduLoginController to resolve the Salesforce username for Site.login.</description>
+    <externalId>true</externalId>
+    <label>Institution ID / Company Number</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>P11_CloseResourcePrivate</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Close_Resource_Private</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Reserve_Without_Approval</name>
+    </customPermissions>
+    <description>P11 | A11-11, V11-06, A11-15, V11-10, A11-07 | Scheduling manager: reserves rooms without an order without approval, and closes resources for a private activity.</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>B25__Reservation__c.Split_Parent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>מנהלת שיבוצים</label>
+</PermissionSet>

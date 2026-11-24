@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requester_Type__c</fullName>
+    <label>Requester Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ניצול/ת שואה או בן/בת משפחה</fullName>
+                <default>false</default>
+                <label>ניצול/ת שואה או בן/בת משפחה</label>
+            </value>
+            <value>
+                <fullName>גנאולוג/ית</fullName>
+                <default>false</default>
+                <label>גנאולוג/ית</label>
+            </value>
+            <value>
+                <fullName>עו&quot;ד המייצג/ת ניצולים/דורות המשך</fullName>
+                <default>false</default>
+                <label>עו&quot;ד המייצג/ת ניצולים/דורות המשך</label>
+            </value>
+            <value>
+                <fullName>חוקר/ת אקדמ/ית</fullName>
+                <default>false</default>
+                <label>חוקר/ת אקדמ/ית</label>
+            </value>
+            <value>
+                <fullName>סטודנט/ית</fullName>
+                <default>false</default>
+                <label>סטודנט/ית</label>
+            </value>
+            <value>
+                <fullName>נציג/ת ארכיון/מוזיאון/חברה/ארגון</fullName>
+                <default>false</default>
+                <label>נציג/ת ארכיון/מוזיאון/חברה/ארגון</label>
+            </value>
+            <value>
+                <fullName>נציג/ת מוסד אקדמי</fullName>
+                <default>false</default>
+                <label>נציג/ת מוסד אקדמי</label>
+            </value>
+            <value>
+                <fullName>עיתונאי/ת נציג/ת תקשורת</fullName>
+                <default>false</default>
+                <label>עיתונאי/ת נציג/ת תקשורת</label>
+            </value>
+            <value>
+                <fullName>עובד/ת יד ושם</fullName>
+                <default>false</default>
+                <label>עובד/ת יד ושם</label>
+            </value>
+            <value>
+                <fullName>אחר</fullName>
+                <default>false</default>
+                <label>אחר</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

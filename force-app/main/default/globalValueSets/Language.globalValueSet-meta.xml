@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Hebrew</fullName>
+        <default>false</default>
+        <label>Hebrew</label>
+    </customValue>
+    <customValue>
+        <fullName>English</fullName>
+        <default>false</default>
+        <label>English</label>
+    </customValue>
+    <customValue>
+        <fullName>Russian</fullName>
+        <default>false</default>
+        <label>Russian</label>
+    </customValue>
+    <customValue>
+        <fullName>French</fullName>
+        <default>false</default>
+        <label>French</label>
+    </customValue>
+    <customValue>
+        <fullName>Spanish</fullName>
+        <default>false</default>
+        <label>Spanish</label>
+    </customValue>
+    <description>DM-Opportunity | Language value set shared by order fields (Neev, Lior PR #27).</description>
+    <masterLabel>Language</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

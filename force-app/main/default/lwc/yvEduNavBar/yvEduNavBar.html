@@ -1,0 +1,107 @@
+<template>
+    <header class="yvedu-navbar" dir={langDir}>
+        <button type="button" class="yvedu-navbar-logo-btn" data-page="Home" onclick={handleNavigate}>
+            <span class="yvedu-navbar-logo">
+                <img src={logoUrl} alt={labels.logoAlt} class="yvedu-navbar-logo-img" />
+            </span>
+        </button>
+
+        <div class="yvedu-navbar-links">
+            <button type="button" class="yvedu-nav-link" data-page="Home" onclick={handleNavigate}>
+                {labels.home}
+            </button>
+            <template if:false={isGuestUser}>
+                <button type="button" class="yvedu-nav-link" data-page="NewReservation__c" onclick={handleNavigate}>
+                    {labels.newReservation}
+                </button>
+                <button type="button" class="yvedu-nav-link" data-page="MyReservations__c" onclick={handleNavigate}>
+                    {labels.myReservations}
+                </button>
+            </template>
+        </div>
+
+        <div class="yvedu-navbar-user">
+            <template if:true={isGuestUser}>
+                <!-- data-lang values are mapped to the site's URL language path prefix (see buildLanguageUrl) -->
+                <div class="yvedu-nav-menu-languages yvedu-nav-guest-languages">
+                    <button
+                        type="button"
+                        class="yvedu-nav-menu-lang"
+                        data-lang="iw"
+                        onclick={handleGuestLanguageChange}
+                    >{labels.languageHebrew}</button>
+                    <button
+                        type="button"
+                        class="yvedu-nav-menu-lang"
+                        data-lang="en_US"
+                        onclick={handleGuestLanguageChange}
+                    >{labels.languageEnglish}</button>
+                </div>
+                <button type="button" class="yvedu-login-button" onclick={handleLogin}>
+                    {labels.login}
+                </button>
+            </template>
+
+            <template if:false={isGuestUser}>
+                <button
+                    type="button"
+                    class="yvedu-avatar-button"
+                    aria-label={labels.menuAria}
+                    aria-expanded={isMenuOpen}
+                    aria-haspopup="true"
+                    onclick={handleToggleMenu}
+                >
+                    <span class="yvedu-avatar-badge">
+                        <svg class="yvedu-avatar-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                            <defs>
+                                <clipPath id="yvedu-avatar-clip">
+                                    <circle cx="24" cy="24" r="23" />
+                                </clipPath>
+                            </defs>
+                            <circle cx="24" cy="24" r="23" class="yvedu-avatar-icon-ring"></circle>
+                            <g clip-path="url(#yvedu-avatar-clip)">
+                                <circle cx="24" cy="19" r="8" class="yvedu-avatar-icon-fill"></circle>
+                                <path d="M6 44c0-10 8-16 18-16s18 6 18 16" class="yvedu-avatar-icon-fill"></path>
+                            </g>
+                        </svg>
+                    </span>
+                    <template if:true={userName}>
+                        <span class="yvedu-avatar-name">{userName}</span>
+                    </template>
+                </button>
+
+                <div class={menuClass} role="menu">
+                    <p class="yvedu-nav-menu-institution">{displayInstitutionName}</p>
+
+                    <div class="yvedu-nav-menu-divider"></div>
+
+                    <!-- data-lang values are Salesforce LanguageLocaleKey picklist codes: Hebrew is "iw" (legacy ISO code), not "he" -->
+                    <div class="yvedu-nav-menu-languages">
+                        <button
+                            type="button"
+                            class="yvedu-nav-menu-lang"
+                            data-lang="iw"
+                            onclick={handleLanguageChange}
+                        >{labels.languageHebrew}</button>
+                        <button
+                            type="button"
+                            class="yvedu-nav-menu-lang"
+                            data-lang="en_US"
+                            onclick={handleLanguageChange}
+                        >{labels.languageEnglish}</button>
+                    </div>
+
+                    <template if:true={languageError}>
+                        <p class="yvedu-nav-menu-error" role="alert">{labels.languageError}</p>
+                    </template>
+
+                    <div class="yvedu-nav-menu-divider"></div>
+
+                    <button type="button" class="yvedu-nav-menu-logout" onclick={handleLogout}>
+                        {labels.logout}
+                    </button>
+                </div>
+            </template>
+        </div>
+    </header>
+</template>

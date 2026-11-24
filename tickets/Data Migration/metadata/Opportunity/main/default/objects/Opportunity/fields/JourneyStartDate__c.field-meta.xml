@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JourneyStartDate__c</fullName>
+    <label>Journey start date</label>
+    <description>DM-Opportunity | legacy new_journey_start_date | Journey start date.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,82 @@
+<template>
+    <div class="yvedu-login-page" dir={langDir}>
+        <div class="yvedu-login-form-pane">
+            <div class="yvedu-login-card">
+                <div class="yvedu-login-header">
+                    <img src={logoUrl} alt={labels.logoAlt} class="yvedu-login-logo" />
+                    <h1 class="yvedu-login-title">{labels.title}</h1>
+                    <p class="yvedu-login-subtitle">{labels.subtitle}</p>
+                </div>
+
+                <form class="yvedu-login-form" novalidate onsubmit={handleSubmit}>
+                    <div class="yvedu-field">
+                        <label class="yvedu-field-label" for="yvedu-institution-id">{labels.institutionIdLabel}</label>
+                        <input
+                            id="yvedu-institution-id"
+                            type="text"
+                            class="yvedu-field-input"
+                            placeholder={labels.institutionIdPlaceholder}
+                            value={institutionId}
+                            oninput={handleInstitutionIdChange}
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
+
+                    <div class="yvedu-field">
+                        <label class="yvedu-field-label" for="yvedu-email">{labels.emailLabel}</label>
+                        <input
+                            id="yvedu-email"
+                            type="email"
+                            class="yvedu-field-input"
+                            placeholder={labels.emailPlaceholder}
+                            value={email}
+                            oninput={handleEmailChange}
+                            autocomplete="username"
+                            required
+                        />
+                    </div>
+
+                    <div class="yvedu-field">
+                        <label class="yvedu-field-label" for="yvedu-password">{labels.passwordLabel}</label>
+                        <div class="yvedu-password-wrapper">
+                            <input
+                                id="yvedu-password"
+                                type={passwordInputType}
+                                class="yvedu-field-input"
+                                placeholder={labels.passwordPlaceholder}
+                                value={password}
+                                oninput={handlePasswordChange}
+                                autocomplete="current-password"
+                                required
+                            />
+                            <button
+                                type="button"
+                                class="yvedu-password-toggle"
+                                onclick={handleTogglePassword}
+                            >{passwordToggleLabel}</button>
+                        </div>
+                    </div>
+
+                    <template if:true={errorMessage}>
+                        <p class="yvedu-form-error" role="alert">{errorMessage}</p>
+                    </template>
+
+                    <button type="submit" class="yvedu-login-button" disabled={isSubmitDisabled}>
+                        <template if:true={isLoading}>
+                            <span class="yvedu-spinner" aria-hidden="true"></span>
+                        </template>
+                        <span>{labels.loginButton}</span>
+                    </button>
+
+                    <button type="button" class="yvedu-forgot-password" onclick={handleForgotPassword}>
+                        {labels.forgotPassword}
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="yvedu-login-hero">
+            <img src={heroImageUrl} alt={labels.heroAlt} class="yvedu-login-hero-image" />
+        </div>
+    </div>
+</template>

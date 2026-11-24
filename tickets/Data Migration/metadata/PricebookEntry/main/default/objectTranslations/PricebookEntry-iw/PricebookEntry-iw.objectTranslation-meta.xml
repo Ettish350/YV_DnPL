@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>הערה באנגלית</label>
+        <name>Comment_En__c</name>
+    </fields>
+    <fields>
+        <label>הערה</label>
+        <name>Comment__c</name>
+    </fields>
+</CustomObjectTranslation>

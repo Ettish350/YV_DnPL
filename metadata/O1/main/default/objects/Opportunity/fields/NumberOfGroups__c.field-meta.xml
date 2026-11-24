@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumberOfGroups__c</fullName>
+    <description>YV20-226 | A03-01 | New order opens with 1 group. DM-Opportunity | legacy new_number_of_groups | Number of groups.</description>
+    <defaultValue>1</defaultValue>
+    <externalId>false</externalId>
+    <label>Number of groups</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

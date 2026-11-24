@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- התאריך של יום 3 --></help>
+    <label><!-- Day 3 Date --></label>
+    <name>Day_03_Date__c</name>
+</CustomFieldTranslation>

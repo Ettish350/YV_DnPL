@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_Channels__c</fullName>
+    <label>Display Channels</label>
+    <description>A1-01 | A01-01 | Display channels of the product: internal, online, kiosk.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <visibleLines>3</visibleLines>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>פנימי</fullName>
+                <default>false</default>
+                <label>פנימי</label>
+            </value>
+            <value>
+                <fullName>מקוון</fullName>
+                <default>false</default>
+                <label>מקוון</label>
+            </value>
+            <value>
+                <fullName>קיוסק</fullName>
+                <default>false</default>
+                <label>קיוסק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

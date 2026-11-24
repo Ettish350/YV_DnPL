@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Guide_Update__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | When the guide last updated the month. Shows that the guide updated the availability.</description>
+    <inlineHelpText>מתי המדריך עדכן לאחרונה את הזמינות שלו</inlineHelpText>
+    <label>Last Guide Update</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

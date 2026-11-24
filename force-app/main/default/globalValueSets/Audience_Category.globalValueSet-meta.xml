@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Preschool</fullName>
+        <default>false</default>
+        <label>גן / טרום-חינוך</label>
+    </customValue>
+    <customValue>
+        <fullName>Elementary</fullName>
+        <default>false</default>
+        <label>יסודי</label>
+    </customValue>
+    <customValue>
+        <fullName>Middle_School</fullName>
+        <default>false</default>
+        <label>חטיבת ביניים</label>
+    </customValue>
+    <customValue>
+        <fullName>High_School</fullName>
+        <default>false</default>
+        <label>תיכון</label>
+    </customValue>
+    <customValue>
+        <fullName>Army_Security</fullName>
+        <default>false</default>
+        <label>צה&quot;ל וכוחות הביטחון</label>
+    </customValue>
+    <customValue>
+        <fullName>General_Public</fullName>
+        <default>false</default>
+        <label>קהל רחב</label>
+    </customValue>
+    <customValue>
+        <fullName>Special_Education</fullName>
+        <default>false</default>
+        <label>חינוך מיוחד</label>
+    </customValue>
+    <masterLabel>Audience Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

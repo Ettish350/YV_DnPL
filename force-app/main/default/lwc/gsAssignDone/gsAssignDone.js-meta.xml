@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>A09-02 Assignment result</masterLabel>
+    <description>PROTOTYPE | A09-02 | Final screen of the guide assignment flow: a table of group, guide and status, with a link to each reservation.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="results" type="apex://GS_AssignResultRow[]" role="inputOnly" label="Result rows"/>
+            <property name="orderName" type="String" role="inputOnly" label="Order name"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

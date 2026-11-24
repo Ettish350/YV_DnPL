@@ -1,0 +1,25 @@
+<template>
+    <section class="yvedu-res" dir={langDir}>
+        <h2 class="yvedu-res-title">{title}</h2>
+
+        <template if:true={isLoading}>
+            <p class="yvedu-res-status" role="status">{loadingText}</p>
+        </template>
+        <template if:true={hasError}>
+            <p class="yvedu-res-status yvedu-res-status_error" role="alert">{loadErrorText}</p>
+        </template>
+
+        <div class="yvedu-res-filters" role="group" aria-label={title}>
+            <template for:each={options} for:item="option">
+                <button
+                    key={option.value}
+                    type="button"
+                    class={option.className}
+                    data-value={option.value}
+                    aria-pressed={option.ariaPressed}
+                    onclick={handleClick}
+                >{option.label}</button>
+            </template>
+        </div>
+    </section>
+</template>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Material_type__c</fullName>
+    <label>Material type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>מקור</fullName>
+                <default>false</default>
+                <label>מקור</label>
+            </value>
+            <value>
+                <fullName>דיגיטלי</fullName>
+                <default>false</default>
+                <label>דיגיטלי</label>
+            </value>
+            <value>
+                <fullName>פיזי העתק</fullName>
+                <default>false</default>
+                <label>פיזי העתק</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Donor_Person_Account</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Donor_Person_Account</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Campaign_Record_Page4</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Campaign</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Campaign_Record_Page4</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Campaign</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Gift_Commitment_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>GiftCommitment</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Gift_Commitment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>GiftCommitment</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Admin Malam</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>Desk_Fiscal_Year__c</tabs>
+    <tabs>standard-GiftCommitment</tabs>
+    <tabs>standard-GiftDesignation</tabs>
+    <tabs>standard-GiftTransaction</tabs>
+    <tabs>standard-GiftTribute</tabs>
+    <tabs>Plaque__c</tabs>
+    <tabs>YV_Appreciation_Item__c</tabs>
+    <tabs>YV_Location__c</tabs>
+    <tabs>YV_Present__c</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Exchange_Rate__c</tabs>
+    <tabs>Pelecard_Webhook__c</tabs>
+    <tabs>PayPal_Webhook__c</tabs>
+    <tabs>Testimony_Documentation__c</tabs>
+    <tabs>Get_YV_Data__c</tabs>
+    <tabs>SurveyResponse__c</tabs>
+    <tabs>Contributor_Original_Owner_Relationship__c</tabs>
+    <tabs>Item__c</tabs>
+    <tabs>B25__Resource_Type__c</tabs>
+    <tabs>B25__Conflict__c</tabs>
+    <tabs>Bundle_Item__c</tabs>
+    <tabs>Connected_Bundle__c</tabs>
+    <tabs>Country__c</tabs>
+    <tabs>Activity_Day_Subject__c</tabs>
+    <tabs>Availability_Month__c</tabs>
+    <tabs>Special_Day__c</tabs>
+    <tabs>B25__Staff__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Admin_Malam_UtilityBar1</utilityBar>
+</CustomApplication>

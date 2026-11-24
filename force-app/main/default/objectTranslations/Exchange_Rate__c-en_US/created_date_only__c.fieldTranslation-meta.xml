@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- created date only --></label>
+    <name>created_date_only__c</name>
+</CustomFieldTranslation>

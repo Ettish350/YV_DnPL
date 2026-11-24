@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Collect_Fragments</fullName>
+        <description>SLA Email To Role Manager - Collect Fragments</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Collect_Fragments_Managers</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Hall_Of_Names</fullName>
+        <description>SLA Email To Role Manager - Hall Of Names</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inquiry_Hall_Of_Names_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Library</fullName>
+        <description>SLA Email To Role Manager - Library</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inquiry_Library_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Mobile_Exhibitions</fullName>
+        <description>SLA Email To Role Manager - Mobile Exhibitions</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Mobile_Exhibitions_Employee</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Museums</fullName>
+        <description>SLA Email To Role Manager - Museums</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inquiry_Museums_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Testimonies</fullName>
+        <description>SLA Email To Role Manager - Testimonies</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inquiry_Testimonies_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Email_To_Role_Manager_Yaatz_Info</fullName>
+        <description>SLA Email To Role Manager - Yaatz Info</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Inquiry_Yaatz_Info_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SLA_Email_To_Manager</template>
+    </alerts>
+    <alerts>
+        <fullName>SLA_Send_Email_To_Role_Manger</fullName>
+        <description>SLA Send Email To Role Manger</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Mobile_Exhibitions_Employee</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/VIP_24_Hours_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner</fullName>
+        <field>OwnerId</field>
+        <lookupValue>MobileExhibitions</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Collect_Fragments</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Collect_Fragments</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner - Collect Fragments</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Hall_Of_Names</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Hall_Of_Names</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner -  Hall Of Names</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Library</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Library</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner - Library</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Mobile_Exhibitions</fullName>
+        <field>OwnerId</field>
+        <lookupValue>MobileExhibitions</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner - Mobile Exhibitions</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_Museums</fullName>
+        <field>OwnerId</field>
+        <lookupValue>Museums</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner - Museums</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Case_Owner_To_Queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>MobileExhibitions</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Case Owner To Queue</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Priority_Yaatz_Info</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Update Priority  - Yaatz Info</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <field>OwnerId</field>
+        <lookupValue>MobileExhibitions</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update Status</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

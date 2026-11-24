@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Photographer Location For Payment --></label>
+    <name>Photographer_Location_For_Payment__c</name>
+    <picklistValues>
+        <masterLabel>צילום עדות ראשונה</masterLabel>
+        <translation><!-- צילום עדות ראשונה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>צילום עדות שניה באותו מקום</masterLabel>
+        <translation><!-- צילום עדות שניה באותו מקום --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

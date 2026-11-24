@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- סוג המחירון. מחירון אחד לכל סוג לכל שנת פעילות --></help>
+    <label>סוג מחירון</label>
+    <name>Pricelist_Type__c</name>
+</CustomFieldTranslation>

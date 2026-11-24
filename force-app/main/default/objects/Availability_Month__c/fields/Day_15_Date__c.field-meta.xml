@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_15_Date__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Date of day 15 of the record&apos;s month. Empty when the month has no day 15. For the Titan form and other systems (Mikey 19.11.2026).</description>
+    <formula>IF(15 &gt; Days_In_Month__c, NULL, DATE(VALUE(Year__c), VALUE(Month__c), 1) + 14)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>התאריך של יום 15</inlineHelpText>
+    <label>Day 15 Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

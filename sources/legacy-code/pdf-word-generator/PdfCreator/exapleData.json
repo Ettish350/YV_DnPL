@@ -1,0 +1,144 @@
+/*example  hebrew*/
+{
+  "name": "בית יעקב דרך החיים",
+  "semel": "123456",
+  "invoiceNum": "456789",
+  "tableRowDetails": [
+    {
+      "date": "2.2.2020",
+      "perut": "זה הפירוט של השורה",
+      "contact": "איש קשר 1",
+      "price": "500",
+      "amount": "1",
+      "discount": "20",
+      "total": "400"
+    },
+    {
+      "date": "4.2.2020",
+      "perut": "פירוט שורה שניה",
+      "contact": "איש קשר 2",
+      "price": "1000",
+      "amount": "2",
+      "discount": "10",
+      "total": "1800"
+    },
+    {
+      "date": "4.2.2020",
+      "perut": "3 שורה שניה",
+      "contact": "איש קשר 3",
+      "price": "1000",
+      "amount": "2",
+      "discount": "10",
+      "total": "1800"
+    },
+    {
+      "date": "4.2.2020",
+      "perut": "4 שורה שניה",
+      "contact": "איש קשר 4",
+      "price": "1000",
+      "amount": "2",
+      "discount": "10",
+      "total": "1800"
+    },
+    {
+      "date": "4.2.2020",
+      "perut": "5 שורה שניה",
+      "contact": "איש קשר 5",
+      "price": "1000",
+      "amount": "2",
+      "discount": "10",
+      "total": "1800"
+    },
+    {
+      "date": "4.2.2020",
+      "perut": "6 שורה שניה",
+      "contact": "איש קשר 6",
+      "price": "1000",
+      "amount": "2",
+      "discount": "10",
+      "total": "1800"
+    }
+
+  ],
+  "totalPrice": "2200",
+  "comments": "לאורך כל תקופת השואה, בצל רדיפת היהודים בידי המשטר הנאצי, היו יהודים שניסו להציל את אחיהם לצרה. לא תמיד בשלו התנאים להצלה ולא תמיד צלחו הניסיונות. יהודים הצילו יהודים אחרים באמצעות זיוף מסמכים, הסתרה, הברחה, אספקת מזון, ביגוד ותרופות ועוד. המצילים פעלו בקהילות, בגטאות, במחנות, בשורות הפרטיזנים, כבודדים ובמסגרת קבוצות הצלה. לעתים עשו זאת בכוחות עצמם ולעתים נעזרו בלא יהודים, שלימים הוכרו כחסידי אומות העולם.",
+  "department": "אגף מערכות מידע",
+  "createdBy": "דבורה ווייל",
+  "lang": "heb"
+
+}
+
+/*example  english*/
+
+{
+	"name":"Derech Hachaim School",
+	"semel":"123456",
+	"invoiceNum":"456789",
+	"tableRowDetails":[
+		{
+		"date":"2.2.2020",
+		"perut":"this is the first row",
+		"contact":"contact 1",
+		"price":"500",
+		"amount":"1",
+		"discount":"20",
+		"total":"400"
+		},
+			{
+		"date":"4.2.2020",
+		"perut":"this is the second row",
+		"contact":"contact 2",
+		"price":"1000",
+		"amount":"2",
+		"discount":"10",
+		"total":"1800"
+		}
+		,
+			{
+		"date":"4.2.2020",
+		"perut":"this is row number 3",
+		"contact":"contact 3",
+		"price":"1000",
+		"amount":"2",
+		"discount":"10",
+		"total":"1800"
+		}
+		,
+			{
+		"date":"4.2.2020",
+		"perut":"this is row number 4",
+		"contact":"contact 4",
+		"price":"1000",
+		"amount":"2",
+		"discount":"10",
+		"total":"1800"
+		}
+		,
+			{
+		"date":"4.2.2020",
+		"perut":"this is row number 5",
+		"contact":"contact 5",
+		"price":"1000",
+		"amount":"2",
+		"discount":"10",
+		"total":"1800"
+		}
+		,
+			{
+		"date":"4.2.2020",
+		"perut":"this is row number 6",
+		"contact":"contact 6",
+		"price":"1000",
+		"amount":"2",
+		"discount":"10",
+		"total":"1800"
+		}
+	
+		],
+		"totalPrice":"2200",
+		"comments":"here you can write comments that you would like it to appear in this section on the page let's see what happens if we write a very long description overhere",
+		"department":"IT Department",
+		"createdBy":"Devora Weyl",
+		"lang":"eng"
+	
+}

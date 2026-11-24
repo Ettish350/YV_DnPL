@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdditionalCharacterization__c</fullName>
+    <label>Additional characterization</label>
+    <description>DM-Opportunity | legacy new_additional_characterization | Additional characterization.</description>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <visibleLines>5</visibleLines>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>הכנה לפולין</fullName>
+                <default>false</default>
+                <label>הכנה לפולין</label>
+            </value>
+            <value>
+                <fullName>מגזר חרדי</fullName>
+                <default>false</default>
+                <label>מגזר חרדי</label>
+            </value>
+            <value>
+                <fullName>בא"ח גבעתי</fullName>
+                <default>false</default>
+                <label>בא"ח גבעתי</label>
+            </value>
+            <value>
+                <fullName>בא"ח גולני</fullName>
+                <default>false</default>
+                <label>בא"ח גולני</label>
+            </value>
+            <value>
+                <fullName>בא"ח העורף</fullName>
+                <default>false</default>
+                <label>בא"ח העורף</label>
+            </value>
+            <value>
+                <fullName>בא"ח חיל האוויר</fullName>
+                <default>false</default>
+                <label>בא"ח חיל האוויר</label>
+            </value>
+            <value>
+                <fullName>בא"ח כפיר</fullName>
+                <default>false</default>
+                <label>בא"ח כפיר</label>
+            </value>
+            <value>
+                <fullName>בא"ח נחל</fullName>
+                <default>false</default>
+                <label>בא"ח נחל</label>
+            </value>
+            <value>
+                <fullName>בא"ח צנחנים</fullName>
+                <default>false</default>
+                <label>בא"ח צנחנים</label>
+            </value>
+            <value>
+                <fullName>בא"ח שריון</fullName>
+                <default>false</default>
+                <label>בא"ח שריון</label>
+            </value>
+            <value>
+                <fullName>בא"ח תותחנים</fullName>
+                <default>false</default>
+                <label>בא"ח תותחנים</label>
+            </value>
+            <value>
+                <fullName>בה"ד חיל הים</fullName>
+                <default>false</default>
+                <label>בה"ד חיל הים</label>
+            </value>
+            <value>
+                <fullName>בה"ד מגב</fullName>
+                <default>false</default>
+                <label>בה"ד מגב</label>
+            </value>
+            <value>
+                <fullName>בה"ד מודיעין</fullName>
+                <default>false</default>
+                <label>בה"ד מודיעין</label>
+            </value>
+            <value>
+                <fullName>בהל"ץ</fullName>
+                <default>false</default>
+                <label>בהל"ץ</label>
+            </value>
+            <value>
+                <fullName>ביה"ס לאיסוף קרבי</fullName>
+                <default>false</default>
+                <label>ביה"ס לאיסוף קרבי</label>
+            </value>
+            <value>
+                <fullName>ביסל"א</fullName>
+                <default>false</default>
+                <label>ביסל"א</label>
+            </value>
+            <value>
+                <fullName>חוות השומר</fullName>
+                <default>false</default>
+                <label>חוות השומר</label>
+            </value>
+            <value>
+                <fullName>מחווה אלון</fullName>
+                <default>false</default>
+                <label>מחווה אלון</label>
+            </value>
+            <value>
+                <fullName>מרכז הובלה</fullName>
+                <default>false</default>
+                <label>מרכז הובלה</label>
+            </value>
+            <value>
+                <fullName>נתיב</fullName>
+                <default>false</default>
+                <label>נתיב</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-אזרחים</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-אזרחים</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 10</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 10</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 11</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 11</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 13</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 13</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 20</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 20</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 6</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 6</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד 7</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד 7</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-בה"ד חינוך</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-בה"ד חינוך</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-ביה"ס לפיקוד והדרכה</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-ביה"ס לפיקוד והדרכה</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-כוחות הביטחון</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-כוחות הביטחון</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-מפקדה</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-מפקדה</label>
+            </value>
+            <value>
+                <fullName>עיר הבה"דים-צה"ל חוץ</fullName>
+                <default>false</default>
+                <label>עיר הבה"דים-צה"ל חוץ</label>
+            </value>
+            <value>
+                <fullName>Webinars for Teachers</fullName>
+                <default>false</default>
+                <label>Webinars for Teachers</label>
+            </value>
+            <value>
+                <fullName>Webinars for Students</fullName>
+                <default>false</default>
+                <label>Webinars for Students</label>
+            </value>
+            <value>
+                <fullName>Professional Development (for teachers)</fullName>
+                <default>false</default>
+                <label>Professional Development (for teachers)</label>
+            </value>
+            <value>
+                <fullName>Awareness (for teachers)</fullName>
+                <default>false</default>
+                <label>Awareness (for teachers)</label>
+            </value>
+            <value>
+                <fullName>פעילות רכז חו"ל</fullName>
+                <default>false</default>
+                <label>פעילות רכז חו"ל</label>
+            </value>
+            <value>
+                <fullName>קולכם שמעתי</fullName>
+                <default>false</default>
+                <label>קולכם שמעתי</label>
+            </value>
+            <value>
+                <fullName>מסע תלמידים בארץ</fullName>
+                <default>false</default>
+                <label>מסע תלמידים בארץ</label>
+            </value>
+            <value>
+                <fullName>פרוייקט קולנוע</fullName>
+                <default>false</default>
+                <label>פרוייקט קולנוע</label>
+            </value>
+            <value>
+                <fullName>זיכרון מתחדש- פרוייקט באינסטגרם</fullName>
+                <default>false</default>
+                <label>זיכרון מתחדש- פרוייקט באינסטגרם</label>
+            </value>
+            <value>
+                <fullName>ליל הבדולח</fullName>
+                <default>false</default>
+                <label>ליל הבדולח</label>
+            </value>
+            <value>
+                <fullName>תגלית</fullName>
+                <default>false</default>
+                <label>תגלית</label>
+            </value>
+            <value>
+                <fullName>מסע</fullName>
+                <default>false</default>
+                <label>מסע</label>
+            </value>
+            <value>
+                <fullName>מחנה קיץ</fullName>
+                <default>false</default>
+                <label>מחנה קיץ</label>
+            </value>
+            <value>
+                <fullName>מנהיגות צעירה</fullName>
+                <default>false</default>
+                <label>מנהיגות צעירה</label>
+            </value>
+            <value>
+                <fullName>לימודים</fullName>
+                <default>false</default>
+                <label>לימודים</label>
+            </value>
+            <value>
+                <fullName>Workshop for Students</fullName>
+                <default>false</default>
+                <label>Workshop for Students</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

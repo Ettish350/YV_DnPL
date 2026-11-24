@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>מספר מבקרים מקסימלי לקבוצה</label>
+        <name>GroupRegistrationMaxAmount__c</name>
+    </fields>
+    <fields>
+        <label>האם דרוש אוזניות</label>
+        <name>IsNeedHeadset__c</name>
+    </fields>
+    <fields>
+        <label>מקסימום קבוצות להזמנה</label>
+        <name>MaxGroups__c</name>
+    </fields>
+    <fields>
+        <label>מקסימום הזמנות ליום</label>
+        <name>MaxReservationsPerDay__c</name>
+    </fields>
+    <fields>
+        <label>תיאור מוצר באנגלית</label>
+        <name>DescriptionEn__c</name>
+    </fields>
+    <fields>
+        <label>משך פעילות (בשעות)</label>
+        <name>DurationOfHours__c</name>
+    </fields>
+    <fields>
+        <label>הזמנות מקוונות באינטרנט - אפשר הנחת משרד החינוך</label>
+        <name>IsPossibleDiscountFromMoe__c</name>
+    </fields>
+    <fields>
+        <label>האם נדרש ללו&quot;ז</label>
+        <name>IsRequiredForItinerary__c</name>
+    </fields>
+    <fields>
+        <label>האם נדרש משאב</label>
+        <name>IsRequiredResource__c</name>
+    </fields>
+    <fields>
+        <label>האם נדרש נותן שירות</label>
+        <name>IsRequiredServiceProvider__c</name>
+    </fields>
+    <fields>
+        <label>האם נדרש מונית</label>
+        <name>IsRequiredTaxi__c</name>
+    </fields>
+    <fields>
+        <label>מספר משתתפים מקסימלי</label>
+        <name>MaxNumberOfParticipants__c</name>
+    </fields>
+    <fields>
+        <label>מקסימום פריטים ליום</label>
+        <name>MaxProductsPerDay__c</name>
+    </fields>
+    <fields>
+        <label>מספר משתתפים מינימלי</label>
+        <name>MinNumberOfParticipants__c</name>
+    </fields>
+    <fields>
+        <label>מינימום ימי עסקים להזמנה</label>
+        <name>MinimumDays__c</name>
+    </fields>
+    <fields>
+        <label>שם המוצר באנגלית</label>
+        <name>NameEn__c</name>
+    </fields>
+    <fields>
+        <label>שם מקוצר באנגלית</label>
+        <name>PaymentTitleEn__c</name>
+    </fields>
+    <fields>
+        <label>שם מקוצר בעברית</label>
+        <name>PaymentTitleHe__c</name>
+    </fields>
+    <fields>
+        <label>צורת תמחור</label>
+        <name>PricingMethod__c</name>
+    </fields>
+    <fields>
+        <label>ימים רלוונטיים</label>
+        <name>Relevant_Days__c</name>
+    </fields>
+    <fields>
+        <label>סוג נותן שירות</label>
+        <name>ServiceProviderType__c</name>
+    </fields>
+    <fields>
+        <label>ערוצי תצוגה</label>
+        <name>Display_Channels__c</name>
+    </fields>
+    <fields>
+        <label>משקל למיון</label>
+        <name>SortWeight__c</name>
+    </fields>
+    <fields>
+        <label>סוג נושא</label>
+        <name>SubjectType__c</name>
+    </fields>
+    <fields>
+        <label>סוג משאב</label>
+        <name>ResourceType__c</name>
+    </fields>
+    <fields>
+        <label>מקום פעילות</label>
+        <name>Activity_Location__c</name>
+    </fields>
+    <fields>
+        <label>זמן התראה מזערי</label>
+        <name>Minimum_Notice_Time__c</name>
+    </fields>
+    <fields>
+        <label>מגבלת הזמנה מראש</label>
+        <name>Advance_Booking_Limit__c</name>
+    </fields>
+    <fields>
+        <label>סטטוס</label>
+        <name>Product_Status__c</name>
+    </fields>
+    <fields>
+        <label>מוצר חוזר או חד פעמי</label>
+        <name>Is_Recurring_Product__c</name>
+    </fields>
+    <fields>
+        <label>מוצר בתשלום שתומחר באפס</label>
+        <name>Has_Zero_Price__c</name>
+    </fields>
+    <fields>
+        <label>מוצר ללא תשלום</label>
+        <name>Is_Free__c</name>
+    </fields>
+    <fields>
+        <label>מוצר דמי הרשמה</label>
+        <name>Is_Registration_Fee__c</name>
+    </fields>
+</CustomObjectTranslation>

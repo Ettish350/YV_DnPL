@@ -1,0 +1,69 @@
+<template>
+    <div class="yv-login-page" dir={langDir}>
+        <div class="yv-login-form-pane">
+            <div class="yv-login-card">
+                <div class="yv-login-header">
+                    <img src={logoUrl} alt={labels.logoAlt} class="yv-login-logo" />
+                    <h1 class="yv-login-title">{labels.title}</h1>
+                    <p class="yv-login-subtitle">{labels.subtitle}</p>
+                </div>
+
+                <div class="yv-type-toggle" role="radiogroup" aria-label={labels.typeGroupAria}>
+                    <template for:each={typeOptions} for:item="opt">
+                        <button
+                            key={opt.key}
+                            type="button"
+                            role="radio"
+                            class={opt.className}
+                            aria-checked={opt.selected}
+                            data-key={opt.key}
+                            onclick={handleTypeSelect}
+                        >{opt.label}</button>
+                    </template>
+                </div>
+
+                <form class="yv-login-form" novalidate onsubmit={handleSubmit}>
+                    <template for:each={fields} for:item="f">
+                        <div class="yv-field" key={f.key}>
+                            <label class="yv-field-label" for={f.id}>{f.label}</label>
+                            <div class="yv-input-wrapper">
+                                <input
+                                    id={f.id}
+                                    type={f.inputType}
+                                    class="yv-field-input"
+                                    placeholder={f.placeholder}
+                                    value={f.value}
+                                    data-key={f.key}
+                                    oninput={handleFieldChange}
+                                    autocomplete={f.autocomplete}
+                                    required
+                                />
+                                <template lwc:if={f.isPassword}>
+                                    <button type="button" class="yv-password-toggle" onclick={handleTogglePassword}>{passwordToggleLabel}</button>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <template lwc:if={errorMessage}>
+                        <p class="yv-form-error" role="alert">{errorMessage}</p>
+                    </template>
+
+                    <button type="submit" class="yv-login-button" disabled={isSubmitDisabled}>
+                        <template lwc:if={isLoading}>
+                            <span class="yv-spinner" aria-hidden="true"></span>
+                        </template>
+                        <span>{labels.loginButton}</span>
+                    </button>
+
+                    <button type="button" class="yv-forgot-password" onclick={handleForgotPassword}>
+                        {labels.forgotPassword}
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="yv-login-hero">
+            <img src={heroImageUrl} alt={labels.heroAlt} class="yv-login-hero-image" />
+        </div>
+    </div>
+</template>

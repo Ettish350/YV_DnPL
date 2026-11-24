@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BudgetFramework__c</fullName>
+    <label>Budget framework</label>
+    <description>DM-Opportunity | legacy new_budget_framework | Budget framework.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Budget_Framework__c</referenceTo>
+    <relationshipLabel>Budget framework (Orders)</relationshipLabel>
+    <relationshipName>BudgetFramework</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

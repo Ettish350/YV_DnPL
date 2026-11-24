@@ -1,0 +1,49 @@
+<template>
+    <div class="screen" dir="rtl" lang="he">
+        <div class={heroCls}>
+            <div class="icon">{heroIcon}</div>
+            <div>
+                <h2 class="title">{headline}</h2>
+                <p class="sub">{subline}</p>
+                <template lwc:if={orderName}><p class="order">{orderName}</p></template>
+            </div>
+        </div>
+
+        <template lwc:if={hasRows}>
+            <ul class="list">
+                <template for:each={rows} for:item="r">
+                    <li key={r.key} class={r.cls}>
+                        <div class="group">
+                            <span class="gname">{r.group}</span>
+                            <a class="rlink" href={r.url} target="_blank" rel="noopener">{r.reservationName} ↗</a>
+                        </div>
+                        <div class="arrow" aria-hidden="true">←</div>
+                        <div class="who">
+                            <template lwc:if={r.hasStaff}>
+                                <span class="avatar">{r.initial}</span>
+                                <span class="sname">{r.staff}</span>
+                            </template>
+                            <template lwc:else>
+                                <span class="none">אין מדריך</span>
+                            </template>
+                        </div>
+                        <div class="state">
+                            <span class={r.badgeCls}>{r.badge}</span>
+                        </div>
+                        <template lwc:if={r.failed}>
+                            <div class="reason">{r.message}</div>
+                        </template>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template lwc:else>
+            <p class="empty">אין שורות להצגה.</p>
+        </template>
+
+        <div class="foot">
+            <span class="hint">לחיצה על קוד השורה (R-...) פותחת אותה בלשונית חדשה</span>
+            <button type="button" class="btn" onclick={handleFinish}>סיום</button>
+        </div>
+    </div>
+</template>

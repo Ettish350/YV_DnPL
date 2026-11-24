@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Testimony Status --></label>
+    <name>Testimony_Status__c</name>
+    <picklistValues>
+        <masterLabel>טרם מסר/ה עדות</masterLabel>
+        <translation><!-- טרם מסר/ה עדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כן, מסר/ה עדות</masterLabel>
+        <translation><!-- כן, מסר/ה עדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>לא מעוניינ/ת או יכול/ה למסור עדות</masterLabel>
+        <translation><!-- לא מעוניינ/ת או יכול/ה למסור עדות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מעוניינ/ת למסור עדות</masterLabel>
+        <translation><!-- מעוניינ/ת למסור עדות --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

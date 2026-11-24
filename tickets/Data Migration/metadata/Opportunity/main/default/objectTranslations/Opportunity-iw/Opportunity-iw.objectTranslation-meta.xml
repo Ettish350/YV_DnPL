@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>האם בקבוצה מבקרים להם מגבלה עבורה נדרשת התאמה?</label>
+        <name>AccessibilityRequirements__c</name>
+    </fields>
+    <fields>
+        <label>הערות לטיפול בחשבון</label>
+        <name>AccountHandlingComments__c</name>
+    </fields>
+    <fields>
+        <label>שכבת גיל</label>
+        <name>AgeGroup__c</name>
+    </fields>
+    <fields>
+        <label>מיקום פעילות אצל המזמין - כתובת</label>
+        <name>ActivityLocationAddress__c</name>
+    </fields>
+    <fields>
+        <label>מיקום פעילות אצל המזמין - ישוב</label>
+        <name>ActivityLocationCity__c</name>
+    </fields>
+    <fields>
+        <label>מספר משתתפים בפועל</label>
+        <name>ActualNumberOfParticipants__c</name>
+    </fields>
+    <fields>
+        <label>אפיון נוסף להזמנה</label>
+        <name>AdditionalCharacterization__c</name>
+    </fields>
+    <fields>
+        <label>תאריך משלוח חשבון אוטומטי</label>
+        <name>AutomaticInvoiceDeliveryDate__c</name>
+    </fields>
+    <fields>
+        <label>מסגרת תקציבית</label>
+        <name>BudgetFramework__c</name>
+    </fields>
+    <fields>
+        <label>הערות לביטול</label>
+        <name>CancellationComment__c</name>
+    </fields>
+    <fields>
+        <label>תאריך ביטול הפעילות</label>
+        <name>CancellationDate__c</name>
+    </fields>
+    <fields>
+        <label>סיבה לביטול הפעילות</label>
+        <name>CancellationReason__c</name>
+    </fields>
+    <fields>
+        <label>שם מבטל ההזמנה</label>
+        <name>CancelledBy__c</name>
+    </fields>
+    <fields>
+        <label>הזמנה בוטלה עם שיבוצים</label>
+        <name>CancelledWithAssignments__c</name>
+    </fields>
+    <fields>
+        <label>מאיפה אתם? (עיר, מדינה)</label>
+        <name>CityState__c</name>
+    </fields>
+    <fields>
+        <label>קופון</label>
+        <name>Coupon__c</name>
+    </fields>
+    <fields>
+        <label>סך הנחה</label>
+        <name>TotalDiscount__c</name>
+    </fields>
+    <fields>
+        <label>מאשר ההנחה</label>
+        <name>DiscountApprovedBy__c</name>
+    </fields>
+    <fields>
+        <label>תמיכה בהנחה</label>
+        <name>DiscountBudgetSource__c</name>
+    </fields>
+    <fields>
+        <label>האם למי מהמבקרים יש קשר משפחתי לשואה?</label>
+        <name>FamilyConnectionToHolocaust__c</name>
+    </fields>
+    <fields>
+        <label>האם זהו ביקורכם הראשון ביד ושם ב-5 שנים האחרונות –</label>
+        <name>IsFirstVisit__c</name>
+    </fields>
+    <fields>
+        <label>שפת הטופס</label>
+        <name>FormLanguage__c</name>
+    </fields>
+    <fields>
+        <label>סוג הגפן</label>
+        <name>GefenType__c</name>
+    </fields>
+    <fields>
+        <label>הפק ושלח חשבון אוטומטי</label>
+        <name>GenerateSendAutomaticInvoice__c</name>
+    </fields>
+    <fields>
+        <label>כיתה</label>
+        <name>Grade__c</name>
+    </fields>
+    <fields>
+        <label>האם יש בקבוצה ניצול/ת שואה?</label>
+        <name>HasHolocaustSurvivors__c</name>
+    </fields>
+    <fields>
+        <label>הערות פנימיות להזמנה</label>
+        <name>InternalComments__c</name>
+    </fields>
+    <fields>
+        <label>אישור רכז</label>
+        <name>IsApprovedByCoordinator__c</name>
+    </fields>
+    <fields>
+        <label>האם דרוש טיפול בשיבוצים</label>
+        <name>IsCareOfSchedulesRequired__c</name>
+    </fields>
+    <fields>
+        <label>הופק חשבון מרוכז</label>
+        <name>IsConcentratedInvoiceCreated__c</name>
+    </fields>
+    <fields>
+        <label>כולל טקס</label>
+        <name>IsIncludeCeremony__c</name>
+    </fields>
+    <fields>
+        <label>התקבל אשור חתום</label>
+        <name>IsSignedConfirmationReceived__c</name>
+    </fields>
+    <fields>
+        <label>נדרשת הזמנת רכש</label>
+        <name>IsPurchaseOrderRequired__c</name>
+    </fields>
+    <fields>
+        <label>האם ההזמנה נעולה</label>
+        <name>IsOrderLocked__c</name>
+    </fields>
+    <fields>
+        <label>האם נדרש איש קשר משני</label>
+        <name>IsSecondContactRequired__c</name>
+    </fields>
+    <fields>
+        <label>איש קשר משני</label>
+        <name>SecondContact__c</name>
+    </fields>
+    <fields>
+        <label>נשלח מייל אישור</label>
+        <name>IsConfirmationEmailSent__c</name>
+    </fields>
+    <fields>
+        <label>אח"מ</label>
+        <name>IsVisitorVip__c</name>
+    </fields>
+    <fields>
+        <label>ללא מוסד</label>
+        <name>IsWithoutInstitution__c</name>
+    </fields>
+    <fields>
+        <label>תאריך סיום מסע</label>
+        <name>JourneyEndDate__c</name>
+    </fields>
+    <fields>
+        <label>תאריך תחילת מסע</label>
+        <name>JourneyStartDate__c</name>
+    </fields>
+    <fields>
+        <label>שפת ההדרכה</label>
+        <name>InstructionLanguage__c</name>
+    </fields>
+    <fields>
+        <label>מספר הזמנה (מערכת ישנה)</label>
+        <name>LegacyOrderNumber__c</name>
+    </fields>
+    <fields>
+        <label>מספר רץ של הזמנה</label>
+        <name>OrderSequence__c</name>
+    </fields>
+    <fields>
+        <label>מספר מדריכים חיצוניים</label>
+        <name>NumberOfExternalGuides__c</name>
+    </fields>
+    <fields>
+        <label>מספר קבוצות</label>
+        <name>NumberOfGroups__c</name>
+    </fields>
+    <fields>
+        <label>מספר משתתפים</label>
+        <name>NumberOfParticipants__c</name>
+    </fields>
+    <fields>
+        <label>סוג הזמנה מקוונת</label>
+        <name>OnlineOrderType__c</name>
+    </fields>
+    <fields>
+        <label>הערות לתשלום</label>
+        <name>PaymentComments__c</name>
+    </fields>
+    <fields>
+        <label>סטטוס תשלום</label>
+        <name>PaymentStatus__c</name>
+    </fields>
+    <fields>
+        <label>מספר הזמנת רכש</label>
+        <name>PurchaseOrderNumber__c</name>
+    </fields>
+    <fields>
+        <label>מטרת הביקור</label>
+        <name>PurposeOfVisit__c</name>
+    </fields>
+    <fields>
+        <label>אסמכתא</label>
+        <name>Reference__c</name>
+    </fields>
+    <fields>
+        <label>שיוך דתי</label>
+        <name>ReligiousAffiliation__c</name>
+    </fields>
+    <fields>
+        <label>סטטוס טיפול</label>
+        <name>HandlingStatus__c</name>
+    </fields>
+    <fields>
+        <label>מחלקה משותפת להזמנה</label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label>מקור משני להזמנה</label>
+        <name>OrderSubSource__c</name>
+    </fields>
+    <fields>
+        <label>סה"כ לתשלום</label>
+        <name>TotalPriceBeforeDiscount__c</name>
+    </fields>
+    <fields>
+        <label>סה"כ לתשלום לאחר הנחה</label>
+        <name>TotalToPay__c</name>
+    </fields>
+    <fields>
+        <label>שם המבקר</label>
+        <name>VisitorName__c</name>
+    </fields>
+    <fields>
+        <label>מתנה שקיבל המבקר</label>
+        <name>VisitorPresent__c</name>
+    </fields>
+    <fields>
+        <label>תפקיד המבקר</label>
+        <name>VisitorRole__c</name>
+    </fields>
+    <fields>
+        <label>הערות יד ושם ללקוח</label>
+        <name>YadVashemCommentsToCustomer__c</name>
+    </fields>
+    <fields>
+        <label>רכז אחראי ביד ושם</label>
+        <name>ResponsibleCoordinator__c</name>
+    </fields>
+    <fields>
+        <label>צילום הביקור</label>
+        <name>IsVisitPhotographed__c</name>
+    </fields>
+    <fields>
+        <label>פגישה</label>
+        <name>IsMeetingHeld__c</name>
+    </fields>
+    <fields>
+        <label>סטטוס ביקור</label>
+        <name>VisitStatus__c</name>
+    </fields>
+    <fields>
+        <label>תאור המבקר</label>
+        <name>VisitorDescription__c</name>
+    </fields>
+    <fields>
+        <label>הזמנת רכש התקבלה</label>
+        <name>IsPurchaseOrderReceived__c</name>
+    </fields>
+    <fields>
+        <label>גורם מחויב</label>
+        <name>BilledParty__c</name>
+    </fields>
+    <fields>
+        <label>השתקת תזכורות</label>
+        <name>IsMuteReminders__c</name>
+    </fields>
+    <fields>
+        <label>מדריך משוב</label>
+        <name>FeedbackGuide__c</name>
+    </fields>
+    <fields>
+        <label>מזהה מערכת ישנה</label>
+        <name>Legacy_ID__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Framework__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>YV20-227 | A04-04 | D-042 | Lookup filter by department: only the frameworks of the order's department, all frameworks when the order has no department, any framework for the Admin profile. DM-Opportunity | legacy new_budget_framework | Budget framework.</description>
+    <label>Budget Framework</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <errorMessage>מסגרת תקציבית זו שייכת למחלקה אחרת. ניתן לבחור רק מסגרות של מחלקת ההזמנה.</errorMessage>
+        <filterItems>
+            <field>Budget_Framework__c.Department__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Department__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Department__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filterItems>
+        <infoMessage>מוצגות רק מסגרות תקציביות של מחלקת ההזמנה.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Budget_Framework__c</referenceTo>
+    <relationshipLabel>Budget framework (Orders)</relationshipLabel>
+    <relationshipName>BudgetFramework</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

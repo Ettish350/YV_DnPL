@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advance_Booking_Limit__c</fullName>
+    <label>Advance Booking Limit</label>
+    <description>A1-01 | V01-02 | Limit on how far in advance a product shown online can be booked. Unit is days; default 365 (12 months, a working assumption: no DD code sets the value).</description>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

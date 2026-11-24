@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- במשאב דו-מצבי: שימוש ככיתה בתפיסה בלעדית, או כניסה למוזיאון עם קבוצות במקביל --></help>
+    <label>אופן שימוש</label>
+    <name>Usage_Mode__c</name>
+    <picklistValues>
+        <masterLabel>כיתה</masterLabel>
+        <translation><!-- כיתה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כניסה למוזיאון</masterLabel>
+        <translation><!-- כניסה למוזיאון --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

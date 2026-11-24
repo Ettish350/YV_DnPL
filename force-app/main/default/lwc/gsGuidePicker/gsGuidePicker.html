@@ -1,0 +1,93 @@
+<template>
+    <div class="screen" dir="rtl" lang="he">
+        <div class="strip">
+            <div class="kicker">{counter}</div>
+            <h2 class="title">{headerText}</h2>
+            <div class="steps">
+                <template for:each={progress} for:item="p">
+                    <i key={p.key} class={p.cls}></i>
+                </template>
+            </div>
+        </div>
+
+        <template lwc:if={noFullMatch}>
+            <div class="note warnnote"><b>אין התאמה מלאה.</b> אפשר לבחור את הקרוב ביותר, לראות מה חסר, או לדלג.</div>
+        </template>
+
+        <div class="toolbar">
+            <div class="search">
+                <input type="search" placeholder="חיפוש מדריך לפי שם" aria-label="חיפוש מדריך לפי שם"
+                       value={query} oninput={handleSearch} />
+                <template lwc:if={searching}>
+                    <button type="button" class="clear" aria-label="נקה חיפוש" onclick={handleClear}>✕</button>
+                </template>
+            </div>
+            <template lwc:if={has25}>
+                <button type="button" class={only25Cls} aria-pressed={only25Pressed} onclick={handleOnly25}>מדריכי 25 בלבד</button>
+            </template>
+        </div>
+
+        <div class="selbar" aria-live="polite">{selectedSummary}</div>
+
+        <div class="cards" role="radiogroup" aria-label="בחר מדריך">
+            <template for:each={rows} for:item="r">
+                <div key={r.key} class="row">
+                    <template lwc:if={r.isSection}>
+                        <template lwc:if={r.toggle}>
+                            <button type="button" class="section toggler" aria-expanded={r.expanded} onclick={handleNearToggle}>
+                                <span>{r.title} <small>({r.count}) · {r.sub}</small></span>
+                                <span class="arrow">{r.arrow}</span>
+                            </button>
+                        </template>
+                        <template lwc:else>
+                            <div class="section"><span>{r.title} <small>({r.count})</small></span></div>
+                        </template>
+                    </template>
+
+                    <template lwc:if={r.isCard}>
+                        <button type="button" class={r.cls} role="radio" aria-checked={r.checked}
+                                aria-disabled={r.disabled} disabled={r.disabled}
+                                data-value={r.value} onclick={handleSelect}>
+                            <span class="avatar">{r.initial}</span>
+                            <span class="body">
+                                <span class="name">{r.name}
+                                    <template lwc:if={r.tag}><span class="tag">{r.tag}</span></template>
+                                </span>
+                                <span class="chips">
+                                    <template lwc:if={r.full}><span class="chip ok">✓ התאמה מלאה: מוסמך, זמין ופנוי</span></template>
+                                    <template for:each={r.gaps} for:item="g">
+                                        <span key={g.key} class={g.cls}>{g.text}</span>
+                                    </template>
+                                </span>
+                            </span>
+                            <span class="tick"></span>
+                        </button>
+                    </template>
+
+                    <template lwc:if={r.isMore}>
+                        <button type="button" class="morebtn" onclick={handleMore}>{r.label}</button>
+                    </template>
+
+                    <template lwc:if={r.isNote}>
+                        <p class="listnote">{r.text}</p>
+                    </template>
+                </div>
+            </template>
+
+            <button type="button" class={skipCls} role="radio" aria-checked={skipChecked}
+                    data-value="SKIP" onclick={handleSelect}>
+                <span class="avatar">↷</span>
+                <span class="body">
+                    <span class="name">אשבץ מאוחר יותר</span>
+                    <span class="chips"><span class="chip muted">הקבוצה תישאר ממתינה לשיבוץ</span></span>
+                </span>
+                <span class="tick"></span>
+            </button>
+        </div>
+
+        <div class="foot">
+            <span class="hint">{hint}</span>
+            <button type="button" class="btn" onclick={handleNext}>{nextLabel}</button>
+        </div>
+    </div>
+</template>

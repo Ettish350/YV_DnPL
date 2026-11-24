@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Level__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(TEXT(Donor_Tier__c)), 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 25000000, &quot;Patron of the Mount&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 10000000, &quot;Torchbearer&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 5000000, &quot;Visionary&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 2000000, &quot;Pillar&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 1000000, &quot;Benefactor&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 500000, &quot;Trustee&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 250000, &quot;Guardian&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 100000, &quot;Builder&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 50000, &quot;Sponsor&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 10000, &quot;Supporter &amp; Associates&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 5000, &quot;Zachor Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 1800, &quot;Chai Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 1000, &quot;Jerusalem Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 500, &quot;Advocate Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 250, &quot;Sustaining Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 100, &quot;Supporting Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 50, &quot;Member&quot;, 
+    IF(BLANKVALUE(Gifts_Amount_For_Donor_Level__c, 0) &gt;= 25, &quot;Associate Member&quot;, 
+    NULL 
+    )))))))))))))))))), 
+TEXT(Donor_Tier__c) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Donor Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

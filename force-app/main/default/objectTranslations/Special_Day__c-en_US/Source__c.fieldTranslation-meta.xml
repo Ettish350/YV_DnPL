@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Hebcal: נוצר אוטומטית משירות החגים. ידני: הוזן ביד ולא ישתנה בריצה חוזרת --></help>
+    <label><!-- Source --></label>
+    <name>Source__c</name>
+    <picklistValues>
+        <masterLabel>Hebcal</masterLabel>
+        <translation><!-- Hebcal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ידני</masterLabel>
+        <translation><!-- ידני --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

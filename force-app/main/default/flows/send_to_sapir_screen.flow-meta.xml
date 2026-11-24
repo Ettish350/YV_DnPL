@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>call_Devora_Sapir</name>
+        <label>call Devora Sapir</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>CallURL</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>urls</name>
+            <value>
+                <elementReference>url_for_sapir</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>CallURL</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>67.0</apiVersion>
+    <decisions>
+        <name>is_case_ready</name>
+        <label>is case ready</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>case_is_ready</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ready_for_Sapir_toggle.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_ready_for_sapir</targetReference>
+            </connector>
+            <label>case is ready</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>where_to_go</name>
+        <label>where to go</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>zero_state</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_case.Ready_for_Sapir__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>send_to_sapir_screen</targetReference>
+            </connector>
+            <label>zero state</label>
+        </rules>
+        <rules>
+            <name>was_sent_to_sapir</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_case.Ready_for_Sapir__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>screen_waiting_for_sapir</targetReference>
+            </connector>
+            <label>was sent to sapir</label>
+        </rules>
+        <rules>
+            <name>returned_from_sapir</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>get_case.Sapir_Record_ID__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>screen_after_sapir</targetReference>
+            </connector>
+            <label>returned from sapir</label>
+        </rules>
+    </decisions>
+    <description>send a &quot;collect the fragments&quot; case to sapir</description>
+    <environments>Default</environments>
+    <interviewLabel>send to sapir screen {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>send to sapir screen</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>get_case</name>
+        <label>get case</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>where_to_go</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>case_id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>update_ready_for_sapir</name>
+        <label>update ready for sapir</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>call_Devora_Sapir</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>case_id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Ready_for_Sapir__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>screen_after_sapir</name>
+        <label>screen after sapir</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>text_after_sapir</name>
+            <fieldText>&lt;p&gt;{!text_after_sapir_template}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>screen_waiting_for_sapir</name>
+        <label>screen waiting for sapir</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Copy_1_of_text_after_sapir</name>
+            <fieldText>&lt;p&gt;{!text_waiting_for_sapir_template}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>send_to_sapir_screen</name>
+        <label>send to sapir screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>is_case_ready</targetReference>
+        </connector>
+        <fields>
+            <name>send_to_sapir_screen_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>send_to_sapir_screen_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>send_to_sapir_alert_text</name>
+                    <fieldText>&lt;p style=&quot;text-align: right;&quot;&gt;{!send_to_sapir_alert}&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>ready_for_Sapir_toggle.value</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <booleanValue>true</booleanValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>9</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>send_to_sapir_screen_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>ready_for_Sapir_toggle</name>
+                    <extensionName>flowruntime:toggle</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>label</name>
+                        <value>
+                            <stringValue>Ready for Sapir?</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleActive</name>
+                        <value>
+                            <stringValue>Ready</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>messageToggleInactive</name>
+                        <value>
+                            <stringValue>Not yet</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>3</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Send to Sapir</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>get_case</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>send_to_sapir_alert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div dir=rtl style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;p style=&quot;color: #cc0000; font-size: 14px; line-height: 1.6; margin: 0; font-weight: 500;&quot;&gt;
+    לתשומת לבך, לאחר שליחה לספיר מסך זה יינעל ולא ניתן יהיה לשלוח פעם נוספת. &lt;br&gt;האם אתה בטוח שהמקרה מוכן לעדכון בספיר?
+  &lt;/p&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>text_after_sapir_template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div dir=rtl style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;p style=&quot;color: #cc0000; font-size: 14px; line-height: 1.6; margin: 0; font-weight: 500;&quot;&gt;
+    הרשומה סונכרנה מול ספיר &lt;br&gt;מספר זיהוי בספיר: {!get_case.Sapir_Record_ID__c}
+  &lt;/p&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>text_waiting_for_sapir_template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;div dir=rtl style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;p style=&quot;color: #cc0000; font-size: 14px; line-height: 1.6; margin: 0; font-weight: 500;&quot;&gt;
+    הרשומה ממתינה לסנכרון בספיר &lt;br&gt;נא להמתין
+  &lt;/p&gt;
+&lt;/div&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>url_for_sapir</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>https://collections.yadvashem.org/api/salesforce/createCtpInSapir?CtpCaseId={!get_case.Id}</text>
+    </textTemplates>
+    <variables>
+        <name>case_id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

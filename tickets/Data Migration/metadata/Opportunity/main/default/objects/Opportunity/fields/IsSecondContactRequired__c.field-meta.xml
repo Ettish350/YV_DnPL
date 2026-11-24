@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsSecondContactRequired__c</fullName>
+    <label>Second contact required</label>
+    <description>DM-Opportunity | legacy new_is_second_contact | Second contact required.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

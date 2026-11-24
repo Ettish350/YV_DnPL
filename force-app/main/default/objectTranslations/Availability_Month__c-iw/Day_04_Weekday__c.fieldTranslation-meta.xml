@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>היום בשבוע של יום 4</help>
+    <label>יום בשבוע 4</label>
+    <name>Day_04_Weekday__c</name>
+</CustomFieldTranslation>

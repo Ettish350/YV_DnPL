@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Floor --></label>
+    <name>Floor__c</name>
+    <picklistValues>
+        <masterLabel>-1</masterLabel>
+        <translation><!-- -1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>-2</masterLabel>
+        <translation><!-- -2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 1</masterLabel>
+        <translation><!-- Ground 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 2</masterLabel>
+        <translation><!-- Ground 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 3</masterLabel>
+        <translation><!-- Ground 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 4</masterLabel>
+        <translation><!-- Ground 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 5</masterLabel>
+        <translation><!-- Ground 5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ground 6+</masterLabel>
+        <translation><!-- Ground 6+ --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

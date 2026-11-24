@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsApprovedByCoordinator__c</fullName>
+    <label>Approved by coordinator</label>
+    <description>DM-Opportunity | legacy new_is_approved_by_coordinator | Approved by coordinator.</description>
+    <defaultValue>false</defaultValue>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

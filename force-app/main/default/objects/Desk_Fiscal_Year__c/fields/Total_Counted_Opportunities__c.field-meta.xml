@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Counted_Opportunities__c</fullName>
+    <description>[31/08/2025] [Neev] - 
+Help field for the Jira ticket KMXT-34 
+Field that counts opportunities from the Desk and same Fiscal year</description>
+    <externalId>false</externalId>
+    <label>Total Counted Opportunities</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Day_28_Date__c</fullName>
+    <description>DM-Availability | DD 13, A13-01 | Date of day 28 of the record&apos;s month. Empty when the month has no day 28. For the Titan form and other systems (Mikey 19.11.2026).</description>
+    <formula>IF(28 &gt; Days_In_Month__c, NULL, DATE(VALUE(Year__c), VALUE(Month__c), 1) + 27)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>התאריך של יום 28</inlineHelpText>
+    <label>Day 28 Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

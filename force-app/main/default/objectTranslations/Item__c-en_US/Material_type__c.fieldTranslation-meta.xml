@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Material type --></label>
+    <name>Material_type__c</name>
+    <picklistValues>
+        <masterLabel>דיגיטלי</masterLabel>
+        <translation><!-- דיגיטלי --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מקור</masterLabel>
+        <translation><!-- מקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>פיזי העתק</masterLabel>
+        <translation><!-- פיזי העתק --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

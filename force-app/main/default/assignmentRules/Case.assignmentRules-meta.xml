@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Routing by Department</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Yaatz_Info</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Documents and written testimonies,Search for information on Shoah victims,Photographs,Films and video/audio testimonies,Information on the fate of the Jews during the Holocaust,Yaatz Info General</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Yaatz_Info</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Righteous Among the Nations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Information about the Righteous among the Nations</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Museums</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>General Information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Museum</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Museums</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Artworks and artifacts in Yad Vashem&apos;s collections</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Righteous_Among_Nations</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Righteous Among the Nations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>New request for recognition and/or inquiry about application status</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Trainings</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Guided tours for students</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Preparation_for_Trips_to_Poland</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Preparatory courses for students visiting Poland</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Administration</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Permissions and Partnership Inquiries</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Teacher_Trainings</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Israel teacher training programs</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Consulting_and_Guidance_for_Edu</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Educational consultation: resources, school projects and educational activities&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Other</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Online_Courses</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Online courses</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Security_Forces</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>IDF and Israeli security forces</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_International_Seminars</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Jewish education</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>School_Trainings_and_Tours_for_the_Gen</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Guided Tours</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Publications</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education,Academic Research and Publications</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Publications</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>International_Programs_and_Seminars</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Education</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>International programs and seminars</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Communications_Division</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Media and Internet</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Press Releases,Information for Journalists,Magazine,Other</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Information_Technologies</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Media and Internet</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Technical support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Library</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Submitting Materials to Yad Vashem,Library</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Hall_Of_Names</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Shoah victims commemoration (Names database)</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Testimonies</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Schedule a survivor testimony recording</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Online_Store</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>General Information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Online Store</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MobileExhibitions</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>General Information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>תערוכות ניידות ready2print</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Collect_Fragments</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>&quot;Collections (Archives, Name Search/Commemoration, Museum and Library)&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Donating Personal Items,Collection Day Registration Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Public_Relations</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>General Information</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>About the Holocaust,About Yad Vashem,Feedback,Visiting,Other</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>International_Institute_for_Holocaust_Re</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.MainSubject__c</field>
+                <operation>equals</operation>
+                <value>Academic Research and Publications</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.SecondarySubject__c</field>
+                <operation>equals</operation>
+                <value>Research,Scholars Information,Conferences,Other</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

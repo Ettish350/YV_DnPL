@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Location__c</fullName>
+    <label>Activity Location</label>
+    <description>A1-01 | A01-07 | Activity location (YV Location) of the product.</description>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>YV_Location__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

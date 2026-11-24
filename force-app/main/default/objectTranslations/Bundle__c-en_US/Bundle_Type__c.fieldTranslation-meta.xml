@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Bundle Type --></label>
+    <name>Bundle_Type__c</name>
+    <picklistValues>
+        <masterLabel>בר מצווה</masterLabel>
+        <translation><!-- בר מצווה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>השתלמות</masterLabel>
+        <translation><!-- השתלמות --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>חבילת ביקור</masterLabel>
+        <translation><!-- חבילת ביקור --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>כנס</masterLabel>
+        <translation><!-- כנס --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

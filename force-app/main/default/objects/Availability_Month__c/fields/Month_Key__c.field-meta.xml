@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Month_Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>DM-Availability | DD 13, A13-01 | Staff Id + Year + MM. Filled by flow B2_Availability_Month_Set_Key, so a guide cannot have two records for the same month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>מתמלא אוטומטית: נותן שירות + חודש. מונע שתי רשומות לאותו מדריך באותו חודש</inlineHelpText>
+    <label>Month Key</label>
+    <length>30</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

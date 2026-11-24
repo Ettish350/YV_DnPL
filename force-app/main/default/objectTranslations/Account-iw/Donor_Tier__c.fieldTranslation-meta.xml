@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Donor Tier --></label>
+    <name>Donor_Tier__c</name>
+    <picklistValues>
+        <masterLabel>Advocate Member</masterLabel>
+        <translation><!-- Advocate Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Associate Member</masterLabel>
+        <translation><!-- Associate Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Benefactor</masterLabel>
+        <translation><!-- Benefactor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Builder</masterLabel>
+        <translation><!-- Builder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Circle of Friends</masterLabel>
+        <translation><!-- Circle of Friends --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guardian</masterLabel>
+        <translation><!-- Guardian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jerusalem Member</masterLabel>
+        <translation><!-- Jerusalem Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Member</masterLabel>
+        <translation><!-- Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Patron of the Mount</masterLabel>
+        <translation><!-- Patron of the Mount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pillar</masterLabel>
+        <translation><!-- Pillar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sponsor</masterLabel>
+        <translation><!-- Sponsor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supporter &amp; Associates</masterLabel>
+        <translation><!-- Supporter &amp; Associates --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supporting Member</masterLabel>
+        <translation><!-- Supporting Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sustaining Member</masterLabel>
+        <translation><!-- Sustaining Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Torchbearer</masterLabel>
+        <translation><!-- Torchbearer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trustee</masterLabel>
+        <translation><!-- Trustee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visionary</masterLabel>
+        <translation><!-- Visionary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>“Chai” Member</masterLabel>
+        <translation><!-- “Chai” Member --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>“Zachor” Member</masterLabel>
+        <translation><!-- “Zachor” Member --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

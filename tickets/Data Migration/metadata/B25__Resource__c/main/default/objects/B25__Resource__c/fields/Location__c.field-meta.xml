@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <label>Location</label>
+    <description>DM-Resource | legacy new_location | DD 11 step 1, A11-03 | Location of the resource; filters rooms by the activity day location.</description>
+    <inlineHelpText>המיקום שבו נמצא המשאב. משמש לסינון החדרים לפי מיקום יום הפעילות</inlineHelpText>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>YV_Location__c</referenceTo>
+    <relationshipLabel>Resources</relationshipLabel>
+    <relationshipName>Resources</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

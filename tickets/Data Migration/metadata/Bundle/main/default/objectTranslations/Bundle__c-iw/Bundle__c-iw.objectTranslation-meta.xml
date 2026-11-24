@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label>בר מצווה</label>
+        <name>Bar_Mitzvah</name>
+    </recordTypes>
+    <recordTypes>
+        <label>כנס</label>
+        <name>Conference</name>
+    </recordTypes>
+    <recordTypes>
+        <label>השתלמות</label>
+        <name>Training</name>
+    </recordTypes>
+    <recordTypes>
+        <label>חבילת ביקור</label>
+        <name>Visit_Package</name>
+    </recordTypes>
+</CustomObjectTranslation>

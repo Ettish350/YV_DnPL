@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>מזגן אחרי 18:00</label>
+        <name>AC_After_18__c</name>
+    </fields>
+    <fields>
+        <label>הערות</label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label>צורת סידור ברירת מחדל</label>
+        <name>Default_Arrangement__c</name>
+    </fields>
+    <fields>
+        <label>קיים מיקרופון</label>
+        <name>Has_Microphone__c</name>
+    </fields>
+    <fields>
+        <label>ניתן לאיחוד</label>
+        <name>Is_Consolidable__c</name>
+    </fields>
+    <fields>
+        <label>ניתן לפיצול</label>
+        <name>Is_Splittable__c</name>
+    </fields>
+    <fields>
+        <label>משאב דו-מצבי</label>
+        <name>Is_Two_Mode__c</name>
+    </fields>
+    <fields>
+        <label>מיקום</label>
+        <name>Location__c</name>
+        <relationshipLabel>משאבים</relationshipLabel>
+    </fields>
+    <fields>
+        <label>שם באנגלית</label>
+        <name>Name_En__c</name>
+    </fields>
+    <fields>
+        <label>משאב מאוחד</label>
+        <name>United_Resource__c</name>
+        <relationshipLabel>משאבים מאוחדים</relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>תאור המבקר</label>
+    <name>VisitorDescription__c</name>
+    <picklistValues>
+        <masterLabel>אחר</masterLabel>
+        <translation><!-- אחר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>מלך/נסיך/קיסר</masterLabel>
+        <translation><!-- מלך/נסיך/קיסר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>משרד החוץ</masterLabel>
+        <translation><!-- משרד החוץ --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>נשיא</masterLabel>
+        <translation><!-- נשיא --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>קנצלר</masterLabel>
+        <translation><!-- קנצלר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ראש ממשלה</masterLabel>
+        <translation><!-- ראש ממשלה --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שגריר</masterLabel>
+        <translation><!-- שגריר --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>שגריר חדש</masterLabel>
+        <translation><!-- שגריר חדש --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תורם</masterLabel>
+        <translation><!-- תורם --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>תורם פוטנציאלי</masterLabel>
+        <translation><!-- תורם פוטנציאלי --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

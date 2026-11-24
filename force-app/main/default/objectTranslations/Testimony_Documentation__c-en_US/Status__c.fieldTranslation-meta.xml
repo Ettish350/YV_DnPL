@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deceased</masterLabel>
+        <translation><!-- Deceased --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending File Ingestion</masterLabel>
+        <translation><!-- Pending File Ingestion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Follow-up Interview Scheduling</masterLabel>
+        <translation><!-- Pending Follow-up Interview Scheduling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Interview Scheduling</masterLabel>
+        <translation><!-- Pending Interview Scheduling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Interviewer Assignment</masterLabel>
+        <translation><!-- Pending Interviewer Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Item Number Assignment</masterLabel>
+        <translation><!-- Pending Item Number Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Videographer Assignment</masterLabel>
+        <translation><!-- Pending Videographer Assignment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rescheduled</masterLabel>
+        <translation><!-- Rescheduled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Testimony Completed</masterLabel>
+        <translation><!-- Testimony Completed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

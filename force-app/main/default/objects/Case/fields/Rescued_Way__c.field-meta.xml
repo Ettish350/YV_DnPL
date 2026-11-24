@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rescued_Way__c</fullName>
+    <label>Rescued Way</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>בריחה</fullName>
+                <default>false</default>
+                <label>בריחה</label>
+            </value>
+            <value>
+                <fullName>הגירה</fullName>
+                <default>false</default>
+                <label>הגירה</label>
+            </value>
+            <value>
+                <fullName>עליה</fullName>
+                <default>false</default>
+                <label>עליה</label>
+            </value>
+            <value>
+                <fullName>מסתור</fullName>
+                <default>false</default>
+                <label>מסתור</label>
+            </value>
+            <value>
+                <fullName>זהות בדויה</fullName>
+                <default>false</default>
+                <label>זהות בדויה</label>
+            </value>
+            <value>
+                <fullName>מחנות</fullName>
+                <default>false</default>
+                <label>מחנות</label>
+            </value>
+            <value>
+                <fullName>גטאות</fullName>
+                <default>false</default>
+                <label>גטאות</label>
+            </value>
+            <value>
+                <fullName>חייל יהודי</fullName>
+                <default>false</default>
+                <label>חייל יהודי</label>
+            </value>
+            <value>
+                <fullName>גירוש</fullName>
+                <default>false</default>
+                <label>גירוש</label>
+            </value>
+            <value>
+                <fullName>חסיד אומות עולם</fullName>
+                <default>false</default>
+                <label>חסיד אומות עולם</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

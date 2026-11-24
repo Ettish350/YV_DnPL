@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Start Date Time of the Reservation --></help>
+    <label><!-- Visit Start Date --></label>
+    <name>Visit_Start_Date__c</name>
+</CustomFieldTranslation>

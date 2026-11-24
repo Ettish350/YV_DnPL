@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Real-Time Calendar Updates: Grants Read access to the Push Topic Standard Object, enabling real-time calendar updates in GoMeddo.
+
+Reservation Contact Access: Grants Read access to the Reservation Contact object, allowing users to link multiple Contacts t</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GoMeddo Standard User PS</label>
+    <permissionSets>Add_Reservation_Contact_permissions</permissionSets>
+    <permissionSets>Enable_real_time_calendar_updates_for_standard_users_permission_set</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

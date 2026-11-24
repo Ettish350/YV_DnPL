@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Notes__c</fullName>
+    <description>סימון פנימי למשתמשים להבין מה סטטוס הפניה מפורט יותר לפי טקסט חופשי - לבקשת אסיה ושאר משתמשי היכל השמות. 02.06.2026</description>
+    <externalId>false</externalId>
+    <inlineHelpText>כותרת</inlineHelpText>
+    <label>Case Notes</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

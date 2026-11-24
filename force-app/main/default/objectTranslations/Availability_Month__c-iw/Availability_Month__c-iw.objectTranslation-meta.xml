@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>חודש הזמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>חודש זמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>חודשי הזמינות</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>חודשי זמינות</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Availability Month Layout</layout>
+        <sections>
+            <label>יום 1</label>
+            <section>Day 1</section>
+        </sections>
+        <sections>
+            <label>יום 10</label>
+            <section>Day 10</section>
+        </sections>
+        <sections>
+            <label>יום 11</label>
+            <section>Day 11</section>
+        </sections>
+        <sections>
+            <label>יום 12</label>
+            <section>Day 12</section>
+        </sections>
+        <sections>
+            <label>יום 13</label>
+            <section>Day 13</section>
+        </sections>
+        <sections>
+            <label>יום 14</label>
+            <section>Day 14</section>
+        </sections>
+        <sections>
+            <label>יום 15</label>
+            <section>Day 15</section>
+        </sections>
+        <sections>
+            <label>יום 16</label>
+            <section>Day 16</section>
+        </sections>
+        <sections>
+            <label>יום 17</label>
+            <section>Day 17</section>
+        </sections>
+        <sections>
+            <label>יום 18</label>
+            <section>Day 18</section>
+        </sections>
+        <sections>
+            <label>יום 19</label>
+            <section>Day 19</section>
+        </sections>
+        <sections>
+            <label>יום 2</label>
+            <section>Day 2</section>
+        </sections>
+        <sections>
+            <label>יום 20</label>
+            <section>Day 20</section>
+        </sections>
+        <sections>
+            <label>יום 21</label>
+            <section>Day 21</section>
+        </sections>
+        <sections>
+            <label>יום 22</label>
+            <section>Day 22</section>
+        </sections>
+        <sections>
+            <label>יום 23</label>
+            <section>Day 23</section>
+        </sections>
+        <sections>
+            <label>יום 24</label>
+            <section>Day 24</section>
+        </sections>
+        <sections>
+            <label>יום 25</label>
+            <section>Day 25</section>
+        </sections>
+        <sections>
+            <label>יום 26</label>
+            <section>Day 26</section>
+        </sections>
+        <sections>
+            <label>יום 27</label>
+            <section>Day 27</section>
+        </sections>
+        <sections>
+            <label>יום 28</label>
+            <section>Day 28</section>
+        </sections>
+        <sections>
+            <label>יום 29</label>
+            <section>Day 29</section>
+        </sections>
+        <sections>
+            <label>יום 3</label>
+            <section>Day 3</section>
+        </sections>
+        <sections>
+            <label>יום 30</label>
+            <section>Day 30</section>
+        </sections>
+        <sections>
+            <label>יום 31</label>
+            <section>Day 31</section>
+        </sections>
+        <sections>
+            <label>יום 4</label>
+            <section>Day 4</section>
+        </sections>
+        <sections>
+            <label>יום 5</label>
+            <section>Day 5</section>
+        </sections>
+        <sections>
+            <label>יום 6</label>
+            <section>Day 6</section>
+        </sections>
+        <sections>
+            <label>יום 7</label>
+            <section>Day 7</section>
+        </sections>
+        <sections>
+            <label>יום 8</label>
+            <section>Day 8</section>
+        </sections>
+        <sections>
+            <label>יום 9</label>
+            <section>Day 9</section>
+        </sections>
+        <sections>
+            <label><!-- General Info --></label>
+            <section>General Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>מספר חודש זמינות</nameFieldLabel>
+    <webLinks>
+        <label><!-- Build_Months --></label>
+        <name>Build_Months</name>
+    </webLinks>
+</CustomObjectTranslation>

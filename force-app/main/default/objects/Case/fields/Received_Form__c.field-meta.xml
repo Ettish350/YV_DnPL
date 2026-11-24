@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_Form__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[12/05/2026] [Neev] - 
+When a form is submitted for Yaatz check this box to symbolize that the user had send the form</description>
+    <label>Received Form</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

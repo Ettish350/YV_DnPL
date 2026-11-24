@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Institution_Required_For_School_Order</fullName>
+    <active>true</active>
+    <description>YV20-229 | V04-02, V03-03, A04-03 | An order (Order record type) in a department marked Institution_Required__c cannot be saved without an institution (AccountId). Uses the order's department until the user-department question is ruled (O2).</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &quot;Order&quot;,
+    Department__r.Institution_Required__c = true,
+    ISBLANK(AccountId)
+)</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>הזמנת בית ספר מחייבת מוסד</errorMessage>
+</ValidationRule>

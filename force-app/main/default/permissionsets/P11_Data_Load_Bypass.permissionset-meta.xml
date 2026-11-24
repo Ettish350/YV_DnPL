@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>P11_Data_Load_Bypass</name>
+    </customPermissions>
+    <description>P11 | V11-06, V11-07, V11-08 | Data loads only: skips the process 11 room reservation rules. Assign to the migration user for a load and remove it afterwards.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>עקיפת כללי שיבוץ חדרים לטעינה</label>
+</PermissionSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>DM-Availability | DD 13, A13-01 | The guide (GoMeddo Staff) whose month this is. Replaces Commitment__c (Mikey 18.11.2026): the commitment is only one source the builder reads.</description>
+    <inlineHelpText>נותן השירות שהחודש שייך לו</inlineHelpText>
+    <label>Staff</label>
+    <referenceTo>B25__Staff__c</referenceTo>
+    <relationshipLabel>Availability Months</relationshipLabel>
+    <relationshipName>Availability_Months</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Cancel_Room_Reservations</name>
+        <label>Cancel room reservations</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>P11_CancelRoomReservations</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>reservationId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>cancelReason</name>
+            <value>
+                <elementReference>CancelReasonText</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>P11_CancelRoomReservations</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <description>P11 | A11-09 | When a reservation (activity day or session) moves to the cancelled status, its child room reservations are cancelled at once with the same reason (Apex P11_CancelRoomReservations). Reservations with a guide stay.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>CancelReasonText</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.Cancel_Reason__c})</expression>
+    </formulas>
+    <interviewLabel>P11_Reservation_Cancel_Cascade {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>P11 ביטול מפגש - שחרור חדרים</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Cancel_Room_Reservations</targetReference>
+        </connector>
+        <filterFormula>ISCHANGED({!$Record.B25__Status__c}) &amp;&amp; {!$Record.B25__Status__r.Name} = &quot;בוטלה&quot;</filterFormula>
+        <object>B25__Reservation__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

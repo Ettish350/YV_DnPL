@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>International_Institute_for_Holocaust_Re_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>International Institute for Holocaust Re</label>
+    <queue>International_Institute_for_Holocaust_Re</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invitation_To_Collection_Day__c</fullName>
+    <description>Use this link to share with a person who wants to donate Holocaust artifacts</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(
+&quot;https://yvsandbox.formtitan.com/ftproject/collectdayclose?caseid=&quot; &amp; CASESAFEID(Id),
+&quot;Collect Day Close&quot;,
+&quot;_blank&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Use this link to share with a person who wants to donate Holocaust artifacts</inlineHelpText>
+    <label>Invitation To Collection Day</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

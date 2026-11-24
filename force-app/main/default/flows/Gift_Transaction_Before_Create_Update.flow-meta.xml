@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>64.0</apiVersion>
+    <assignments>
+        <name>Assign_Desk_from_Donor</name>
+        <label>Assign Desk from Donor</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Donor.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Desk_from_Gift_Commitment</name>
+        <label>Assign Desk from Gift Commitment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.GiftCommitment.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Assign_Desk_to_Gift_Committment</name>
+        <label>Assign Desk to Gift Committment</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Desk__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.MatchingEmployerTransaction.Desk__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Check_if_Donor_exists</name>
+        <label>Check if Donor exists</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Desk_to_Gift_Committment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Donor does not exist</defaultConnectorLabel>
+        <rules>
+            <name>Donor_Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.DonorId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Desk_from_Donor</targetReference>
+            </connector>
+            <label>Donor Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Gift_Commitment_is_Null</name>
+        <label>Check if Gift Commitment is Null</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Desk_from_Gift_Commitment</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Gift Commitment is not Null</defaultConnectorLabel>
+        <rules>
+            <name>Gift_Commitment_is_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.GiftCommitmentId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_Donor_exists</targetReference>
+            </connector>
+            <label>Gift Commitment is Null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_if_Gift_Transaction_is_New</name>
+        <label>Check if Gift Transaction is New</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Gift Transaction is Updated</defaultConnectorLabel>
+        <rules>
+            <name>Gift_Transaction_is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_Gift_Commitment_is_Null</targetReference>
+            </connector>
+            <label>Gift Transaction is New</label>
+        </rules>
+    </decisions>
+    <description>[02/09/2025] [Neev] - 
+When a gift Transaction is created, if there is no Gift Commitment value it takes from the Createdby.Desk the value for the desk, 
+if there is a Gift Commitment we take the Desk value from that Gift Commitment.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>Gift Transaction Before Create &amp; Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Gift Transaction Before Create &amp; Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Gift_Transaction_is_New</targetReference>
+        </connector>
+        <object>GiftTransaction</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

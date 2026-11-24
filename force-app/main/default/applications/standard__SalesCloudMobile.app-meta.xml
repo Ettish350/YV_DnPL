@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Sales Cloud Mobile</label>
+    <navType>Standard</navType>
+    <tabs>standard-MobileHome</tabs>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-ContentNote</tabs>
+    <tabs>Testimony_Documentation__c</tabs>
+    <tabs>Get_YV_Data__c</tabs>
+    <tabs>SurveyResponse__c</tabs>
+    <tabs>Contributor_Original_Owner_Relationship__c</tabs>
+    <tabs>B25__Resource_Type__c</tabs>
+    <tabs>B25__Conflict__c</tabs>
+    <tabs>Bundle_Item__c</tabs>
+    <tabs>Connected_Bundle__c</tabs>
+    <tabs>Activity_Day_Subject__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

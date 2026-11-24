@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>סוג שיבוץ</label>
+        <name>Booking_Kind__c</name>
+    </fields>
+    <fields>
+        <label>סיבת ביטול</label>
+        <name>Cancel_Reason__c</name>
+    </fields>
+    <fields>
+        <label>סיבת השריון</label>
+        <name>Hold_Reason__c</name>
+    </fields>
+    <fields>
+        <label>מבקש השריון</label>
+        <name>Requested_By__c</name>
+    </fields>
+    <fields>
+        <label>סידור מיוחד</label>
+        <name>Special_Arrangement__c</name>
+    </fields>
+    <fields>
+        <label>אופן שימוש</label>
+        <name>Usage_Mode__c</name>
+    </fields>
+</CustomObjectTranslation>

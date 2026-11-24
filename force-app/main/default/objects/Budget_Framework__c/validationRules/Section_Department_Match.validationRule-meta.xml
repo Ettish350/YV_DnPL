@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section_Department_Match</fullName>
+    <active>true</active>
+    <description>DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | The section must belong to the framework&apos;s department (Department 1:N Section 1:N Budget framework).</description>
+    <errorConditionFormula>NOT(ISBLANK(Section__c)) &amp;&amp; Section__r.Department__c &lt;&gt; Department__c</errorConditionFormula>
+    <errorDisplayField>Section__c</errorDisplayField>
+    <errorMessage>המדור שנבחר שייך למחלקה אחרת</errorMessage>
+</ValidationRule>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Department</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public Relations</fullName>
+                <default>true</default>
+                <label>Public Relations</label>
+            </value>
+            <value>
+                <fullName>Collections</fullName>
+                <default>false</default>
+                <label>Collections</label>
+            </value>
+            <value>
+                <fullName>Education and Learning</fullName>
+                <default>false</default>
+                <label>Education and Learning</label>
+            </value>
+            <value>
+                <fullName>Spokespersons</fullName>
+                <default>false</default>
+                <label>Spokespersons</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+            <value>
+                <fullName>Research Institute</fullName>
+                <default>false</default>
+                <label>Research Institute</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

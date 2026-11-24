@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>68.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>A09-02 Assignment overview</masterLabel>
+    <description>PROTOTYPE | A09-02 | Opening tiles and the two ways to continue, for the guide assignment flow.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="orderName" type="String" role="inputOnly" label="Order name"/>
+            <property name="totalCount" type="Integer" role="inputOnly" label="Groups waiting"/>
+            <property name="fullCount" type="Integer" role="inputOnly" label="Groups with a full match"/>
+            <property name="mode" type="String" role="outputOnly" label="AUTO or ONE"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
