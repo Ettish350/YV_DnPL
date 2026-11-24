@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Where_To_Meet__c</fullName>
-    <description>DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | Legacy new_where_to_meet.</description>
+    <description>DM-Budget_Framework | D-039 (draft) | Lior 12.11.2026 | Legacy new_where_to_meet</description>
     <externalId>false</externalId>
     <label>Where To Meet On Visit Day</label>
     <length>255</length>
